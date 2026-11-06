@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">freekeyboard</string>
+    <string name="ime_name">freekeyboard</string>
+    <string name="settings_title">Настройки freekeyboard</string>
+    <string name="subtype_en">Английский</string>
+    <string name="subtype_ru">Русский</string>
+    <string name="subtype_generic">%s</string>
+
+    <string name="settings_section_setup">Подключение</string>
+    <string name="settings_enable_ime">Включить клавиатуру в системе</string>
+    <string name="settings_select_ime">Выбрать freekeyboard</string>
+
+    <string name="settings_section_languages">Языки</string>
+    <string name="language_en">Английский (QWERTY)</string>
+    <string name="language_ru">Русский (ЙЦУКЕН)</string>
+    <string name="language_last_warning">Нужен хотя бы один язык</string>
+
+    <string name="settings_section_theme">Тема</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_oled">OLED чёрная</string>
+    <string name="settings_key_borders">Границы клавиш</string>
+
+    <string name="settings_section_preferences">Настройки</string>
+    <string name="settings_keys_header">Клавиши</string>
+    <string name="settings_number_row">Ряд с цифрами</string>
+    <string name="settings_number_row_summary">Всегда показывать цифры над буквами</string>
+    <string name="settings_show_emoji_key">Клавиша эмодзи</string>
+    <string name="settings_show_emoji_key_summary">Отдельная клавиша для эмодзи</string>
+    <string name="settings_keypress_header">Нажатие клавиш</string>
+    <string name="settings_sound">Звук при нажатии</string>
+    <string name="settings_haptic">Вибрация при нажатии</string>
+    <string name="settings_popup">Всплывающая буква</string>
+    <string name="settings_long_press_symbols">Долгое нажатие для символов</string>
+    <string name="settings_long_press_symbols_summary">Удержание клавиши открывает варианты</string>
+    <string name="settings_long_press_delay">Задержка долгого нажатия</string>
+    <string name="settings_long_press_delay_value">%d мс</string>
+
+    <string name="settings_section_text_correction">Исправление текста</string>
+    <string name="settings_suggestions_header">Подсказки</string>
+    <string name="settings_show_suggestions">Показывать полоску подсказок</string>
+    <string name="settings_next_word">Подсказки следующего слова</string>
+    <string name="settings_block_offensive">Блокировать оскорбительные слова</string>
+    <string name="settings_corrections_header">Исправления</string>
+    <string name="settings_auto_cap">Автозаглавные</string>
+    <string name="settings_auto_cap_summary">Заглавная в начале предложения</string>
+    <string name="settings_double_space">Двойной пробел → точка</string>
+
+    <string name="settings_about">О приложении</string>
+    <string name="settings_about_body">freekeyboard — свободная клавиатура с открытым исходным кодом. Без сервисов Google. Лицензия GPL-3.0.</string>
+
+    <string name="key_symbols">\?123</string>
+    <string name="key_abc">ABC</string>
+    <string name="key_emoji">☺</string>
+    <string name="language_picker_title">Язык</string>
+</resources>

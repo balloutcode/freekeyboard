@@ -1,0 +1,5 @@
+freekeyboard is a free and open-source Android system keyboard (GPL-3.0).
+
+Type in English (QWERTY) and Russian (ЙЦУКЕН). Includes symbols layer, shift/caps, long-press character variants, offline emoji panel, and Light/Dark/OLED themes.
+
+No Google branding. No swipe typing in this release. Suggest/autocorrect is planned for a later feature.

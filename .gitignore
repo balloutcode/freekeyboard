@@ -1,0 +1,19 @@
+/.gradle/
+/build/
+/app/build/
+/local.properties
+/.idea/
+/.kotlin/
+*.iml
+.DS_Store
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.dex
+
+# Ad-hoc emulator / UI dumps (not product assets)
+/fk-*.png
+/ui-settings.xml
+.cursor/screenshots/
