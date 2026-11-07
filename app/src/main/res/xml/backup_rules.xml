@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Defense-in-depth if allowBackup is ever re-enabled: never back up local secrets. -->
+<full-backup-content>
+    <exclude domain="file" path="datastore/" />
+    <exclude domain="root" path="datastore/" />
+</full-backup-content>

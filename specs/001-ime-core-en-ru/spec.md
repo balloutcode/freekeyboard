@@ -4,7 +4,7 @@
 
 **Created**: 2026-11-06
 
-**Status**: Implemented (as-built sync 2026-11-07)
+**Status**: Implemented (as-built sync 2026-11-08)
 
 **Input**: System soft keyboard freekeyboard with Gboard-like UX (no Google brand): IME enablement, EN QWERTY + RU ЙЦУКЕН, language switch, symbols/digits, long-press variants, emoji panel, offline suggestions, Light/Dark/OLED themes, Russian settings UI, portrait + landscape; no swipe-typing; no Google cloud/voice/translate/floating keyboard.
 
@@ -43,6 +43,14 @@
 - **Suggestion suppression**: Password, `TYPE_NULL`, non-text classes, `NO_SUGGESTIONS`, email, URI, and filter fields MUST hide the suggestion strip.
 - **Emoji / first-frame height**: Emoji panel height and first-frame inset estimates MUST match the letter-layer content height for the current orientation, number-row preference, and suggestion-strip visibility (no jump when opening emoji; no under-estimate when number row is on).
 - **Word backspace**: Hold-backspace word delete removes the trailing whitespace run plus the preceding word token, counting Unicode code points.
+
+### Session 2026-11-08 (privacy + Bugbot as-built)
+
+- **Suggestion chrome vs candidates**: Word suggestion chips remain suppressed for password / `TYPE_NULL` / non-text / `NO_SUGGESTIONS` / email / URI / filter / phone / number. The Features toolbar strip (⊞) MUST still appear on those fields so theme / one-hand / settings remain reachable. Autofill inline chips (feature 003) may share that strip.
+- **Multiline Enter**: When `TYPE_TEXT_FLAG_MULTI_LINE` and ime action is NONE/UNSPECIFIED, Enter inserts `\n` (MUST NOT fire DONE).
+- **Space mutations**: Autocorrect and double-space→period MUST NOT run when suggestions are suppressed or the field is a password.
+- **Caret swipe**: Spacebar horizontal swipe moves the caret; if the local text window is truncated (>512 chars before/after), IME uses DPAD key events instead of absolute `setSelection`.
+- **Privacy baseline**: See feature [004-privacy-hardening](../004-privacy-hardening/spec.md) and constitution II (backup off, clipboard opt-in). Clipboard history itself is specified in 002/004, not 001.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -197,8 +205,10 @@ A user sees up to three offline word candidates while typing and can accept a su
 - **FR-023**: Starting input (`onStartInput` / `onStartInputView`) MUST reset to the letter layer with Shift off and picker dismissed while preserving the last active language.
 - **FR-024**: For `TYPE_NULL` editors, Latin alphanumerics, Space, and common US punctuation MUST be sent as key events (Shift meta for uppercase / shifted punctuation); unmappable characters MAY use `commitText`.
 - **FR-025**: Russian number-row 11th pad MUST be inert (`NOOP`).
-- **FR-026**: Suggestion strip MUST be suppressed for password / `TYPE_NULL` / non-text / `NO_SUGGESTIONS` / email / URI / filter fields.
-- **FR-027**: Emoji panel height and first-frame inset estimates MUST match letter-layer content height for orientation, number row, and suggestion-strip visibility.
+- **FR-026**: Word suggestion **candidates** MUST be suppressed for password / `TYPE_NULL` / non-text / `NO_SUGGESTIONS` / email / URI / filter / phone / number fields. A Features **toolbar** strip MUST remain available on those fields (candidates empty). Autofill chips MAY appear in the same strip (003).
+- **FR-027**: Emoji panel height and first-frame inset estimates MUST match letter-layer content height for orientation, number row, and strip chrome (toolbar is treated as present for first-frame estimates).
+- **FR-028**: Multiline editors with unspecified/none ime action MUST insert newline on Enter rather than performing DONE.
+- **FR-029**: Autocorrect and double-space period MUST NOT mutate password or other suggestion-suppressed fields.
 - **FR-009**: Keys with alternates MUST support long-press variant popup selection when long-press is enabled.
 - **FR-010**: Backspace, Space, and Enter/editor-action keys MUST work according to the focused field’s editor info.
 - **FR-011**: Phone portrait and landscape MUST both present a usable bottom soft keyboard; landscape MUST NOT force fullscreen extract IME UI.
@@ -243,7 +253,7 @@ A user sees up to three offline word candidates while typing and can accept a su
 
 - Target devices are phones running Android 12 or newer; tablets/foldables are out of scope.
 - “Gboard-like” means behavioral and visual parity for covered controls, not pixel-perfect cloning of proprietary assets.
-- Voice input, GIF/stickers, clipboard history, glide typing, translate, and floating keyboard remain out of scope.
+- Voice input, GIF/stickers, glide typing, translate, and floating keyboard remain out of scope. Local clipboard history is specified in 002/004 (opt-in).
 - Suggestion dictionaries are offline FLOSS/static data bundled with the app; personal learning dictionaries may be specified later.
 - Users grant the normal Android IME enablement permission via system settings.
 - Emoji coverage uses platform-available emoji glyphs; no proprietary emoji font pack is required for v1.

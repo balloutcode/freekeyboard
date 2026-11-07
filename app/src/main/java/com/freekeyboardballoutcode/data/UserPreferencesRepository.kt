@@ -87,7 +87,7 @@ class UserPreferencesRepository(private val context: Context) {
             oneHandedSide = prefs[oneHandedSideKey]
                 ?.let { runCatching { OneHandedSide.valueOf(it) }.getOrNull() }
                 ?: OneHandedSide.RIGHT,
-            clipboardHistoryEnabled = prefs[clipboardHistoryEnabledKey] ?: true,
+            clipboardHistoryEnabled = prefs[clipboardHistoryEnabledKey] ?: false,
             soundVolume = (prefs[soundVolumeKey] ?: 1f).coerceIn(0f, 1f),
             hapticStrength = (prefs[hapticStrengthKey] ?: 1f).coerceIn(0.25f, 1f),
             emojiFontScale = (prefs[emojiFontScaleKey] ?: 1f).coerceIn(0.8f, 1.4f),

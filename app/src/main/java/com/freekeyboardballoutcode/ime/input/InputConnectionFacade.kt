@@ -50,7 +50,7 @@ class InputConnectionFacade(
                 ic.commitText("", 1)
                 return
             }
-            val before = ic.getTextBeforeCursor(64, 0)?.toString().orEmpty()
+            val before = ic.getTextBeforeCursor(WORD_DELETE_BUFFER_CHARS, 0)?.toString().orEmpty()
             val codePoints = WordDelete.codePointsToDelete(before)
             if (codePoints <= 0) return
             if (!ic.deleteSurroundingTextInCodePoints(codePoints, 0)) {
@@ -59,7 +59,7 @@ class InputConnectionFacade(
                 var start = end
                 while (start > 0 && before[start - 1].isWhitespace()) start--
                 while (start > 0 && !before[start - 1].isWhitespace()) start--
-                val utf16 = if (start < end) end - start else codePoints
+                val utf16 = if (start < end) end - start else utf16UnitsForCodePoints(before, codePoints)
                 if (!ic.deleteSurroundingText(utf16, 0)) {
                     repeat(codePoints) { deleteBackward() }
                 }
@@ -72,8 +72,13 @@ class InputConnectionFacade(
     fun deleteBeforeCursor(codePoints: Int) {
         if (codePoints <= 0) return
         val ic = connectionProvider() ?: return
-        if (!ic.deleteSurroundingTextInCodePoints(codePoints, 0)) {
-            ic.deleteSurroundingText(codePoints, 0)
+        if (ic.deleteSurroundingTextInCodePoints(codePoints, 0)) return
+        // Fallback expects UTF-16 units, not code-point counts (emoji / surrogates).
+        val before = ic.getTextBeforeCursor(codePoints * 2 + 16, 0)?.toString().orEmpty()
+        val utf16 = utf16UnitsForCodePoints(before, codePoints)
+        if (utf16 <= 0) return
+        if (!ic.deleteSurroundingText(utf16, 0)) {
+            repeat(codePoints) { deleteBackward() }
         }
     }
 
@@ -82,6 +87,11 @@ class InputConnectionFacade(
         val info = editorInfoProvider()
         if (interpreter.requiresRawKeys(info)) {
             sendDownUp(KeyEvent.KEYCODE_ENTER)
+            return
+        }
+        // Multiline with unspecified/none action: insert newline (not DONE).
+        if (interpreter.prefersNewlineOnEnter(info)) {
+            ic.commitText("\n", 1)
             return
         }
         val action = interpreter.editorAction(info)
@@ -95,26 +105,60 @@ class InputConnectionFacade(
     /**
      * Move the caret by [delta] Unicode code points. Positive → right, negative → left.
      * Used by spacebar cursor swipe (Gboard parity).
+     *
+     * When [avoidLargeTextBuffer] is true (password / suppressed fields), only DPAD
+     * key events are used so field contents are not copied into the IME process.
+     * DPAD is also used when the local buffer is truncated — truncated windows must
+     * not be passed to [InputConnection.setSelection] as absolute offsets.
      */
-    fun moveCursorBy(delta: Int) {
+    fun moveCursorBy(delta: Int, avoidLargeTextBuffer: Boolean = false) {
         if (delta == 0) return
         val ic = connectionProvider() ?: return
         val info = editorInfoProvider()
-        if (interpreter.requiresRawKeys(info)) {
-            val keyCode = if (delta < 0) KeyEvent.KEYCODE_DPAD_LEFT else KeyEvent.KEYCODE_DPAD_RIGHT
-            repeat(kotlin.math.abs(delta)) { sendDownUp(keyCode) }
+        if (avoidLargeTextBuffer || interpreter.requiresRawKeys(info)) {
+            moveByDpad(delta)
             return
         }
-        val before = ic.getTextBeforeCursor(10_000, 0)?.toString().orEmpty()
-        val after = ic.getTextAfterCursor(10_000, 0)?.toString().orEmpty()
+        val before = ic.getTextBeforeCursor(CURSOR_BUFFER_CHARS, 0)?.toString().orEmpty()
+        val after = ic.getTextAfterCursor(CURSOR_BUFFER_CHARS, 0)?.toString().orEmpty()
+        // Incomplete before-window → absolute setSelection would jump toward index 0.
+        // Incomplete after-window → right moves can stop early thinking EOF.
+        if (before.length >= CURSOR_BUFFER_CHARS ||
+            (delta > 0 && after.length >= CURSOR_BUFFER_CHARS)
+        ) {
+            moveByDpad(delta)
+            return
+        }
         val full = before + after
         val posCp = before.codePointCount(0, before.length)
         val totalCp = full.codePointCount(0, full.length)
         val newCp = (posCp + delta).coerceIn(0, totalCp)
         if (newCp != posCp) {
+            // before is complete ⇒ before.length is the absolute caret UTF-16 index.
             val newPos = full.offsetByCodePoints(0, newCp)
             ic.setSelection(newPos, newPos)
         }
+    }
+
+    companion object {
+        /** Cap for caret-swipe text reads; truncated → DPAD path. */
+        const val CURSOR_BUFFER_CHARS = 512
+        /** Hold-backspace word delete looks this far before the caret. */
+        const val WORD_DELETE_BUFFER_CHARS = 1024
+
+        /** UTF-16 units of the last [codePoints] code points in [text]. */
+        fun utf16UnitsForCodePoints(text: String, codePoints: Int): Int {
+            if (codePoints <= 0 || text.isEmpty()) return 0
+            val total = text.codePointCount(0, text.length)
+            val take = codePoints.coerceAtMost(total)
+            val start = text.offsetByCodePoints(0, total - take)
+            return text.length - start
+        }
+    }
+
+    private fun moveByDpad(delta: Int) {
+        val keyCode = if (delta < 0) KeyEvent.KEYCODE_DPAD_LEFT else KeyEvent.KEYCODE_DPAD_RIGHT
+        repeat(kotlin.math.abs(delta)) { sendDownUp(keyCode) }
     }
 
     private fun sendKeyChar(char: Char) {

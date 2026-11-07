@@ -1,6 +1,7 @@
 package com.freekeyboardballoutcode.ime.keyboard
 
 import android.os.SystemClock
+import android.view.View
 import com.freekeyboardballoutcode.data.ClipboardEntry
 import com.freekeyboardballoutcode.data.InputLanguage
 import com.freekeyboardballoutcode.data.KeyboardLayer
@@ -52,7 +53,7 @@ data class KeyboardUiState(
     val doubleSpacePeriod: Boolean = true,
     val oneHandedMode: Boolean = false,
     val oneHandedSide: OneHandedSide = OneHandedSide.RIGHT,
-    val clipboardHistoryEnabled: Boolean = true,
+    val clipboardHistoryEnabled: Boolean = false,
     val clipboardEntries: List<ClipboardEntry> = emptyList(),
     val rejectedSuggestions: Set<String> = emptySet(),
     val isPasswordField: Boolean = false,
@@ -68,6 +69,8 @@ data class KeyboardUiState(
     val hapticStrength: Float = 1f,
     val emojiFontScale: Float = 1f,
     val autocorrectEnabled: Boolean = false,
+    /** Inflated platform autofill chips (password managers). Never log contents. */
+    val inlineSuggestionViews: List<View> = emptyList(),
 ) {
     val effectiveNumberRow: Boolean
         get() = numberRow || (numberRowForPasswords && isPasswordField)
@@ -203,9 +206,18 @@ class KeyboardController(
                 numberAllowsSigned = interpreter.numberAllowsSigned(info),
                 incognito = interpreter.isIncognito(info),
                 suppressSuggestions = interpreter.suppressSuggestions(info),
+                inlineSuggestionViews = emptyList(),
             )
         }
         refreshAfterEdit(consumeOnce = false)
+    }
+
+    fun setInlineSuggestions(views: List<View>) {
+        _state.update { it.copy(inlineSuggestionViews = views) }
+    }
+
+    fun clearInlineSuggestions() {
+        _state.update { it.copy(inlineSuggestionViews = emptyList()) }
     }
 
     fun onUpdateSelection() {
@@ -271,7 +283,12 @@ class KeyboardController(
     /** Spacebar horizontal swipe: move caret without inserting space (Gboard). */
     fun onSpaceCursorSwipe(delta: Int) {
         if (delta == 0) return
-        input.moveCursorBy(delta)
+        val st = _state.value
+        // Password / suppressed fields: avoid pulling large text buffers into the IME heap.
+        input.moveCursorBy(
+            delta = delta,
+            avoidLargeTextBuffer = st.isPasswordField || st.suppressSuggestions || st.incognito,
+        )
         refreshAfterEdit(consumeOnce = false)
     }
 
@@ -337,7 +354,10 @@ class KeyboardController(
     }
 
     fun openClipboardPanel() {
-        if (!_state.value.clipboardHistoryEnabled) return
+        val st = _state.value
+        if (!st.clipboardHistoryEnabled) return
+        // Never surface clipboard history over password / suppressed / incognito fields.
+        if (st.isPasswordField || st.suppressSuggestions || st.incognito) return
         _state.update {
             it.copy(showClipboardPanel = true, showFeaturesMenu = false, layer = KeyboardLayer.LETTERS)
         }
@@ -380,15 +400,18 @@ class KeyboardController(
         }
     }
 
-    fun cycleTheme() {
+    /** Cycles theme and returns the new value (for immediate persist / nav chrome). */
+    fun cycleTheme(): ThemePreference {
+        var next = ThemePreference.LIGHT
         _state.update {
-            val next = when (it.theme) {
+            next = when (it.theme) {
                 ThemePreference.LIGHT -> ThemePreference.DARK
                 ThemePreference.DARK -> ThemePreference.OLED_DARK
                 ThemePreference.OLED_DARK -> ThemePreference.LIGHT
             }
             it.copy(theme = next, showFeaturesMenu = false)
         }
+        return next
     }
 
     fun selectLanguage(language: InputLanguage) {
@@ -406,6 +429,13 @@ class KeyboardController(
     private fun onSpace() {
         val prefs = _state.value
         val info = input.editorInfo()
+        // Password / email / URI / raw-key fields: never mutate with period or autocorrect.
+        if (prefs.suppressSuggestions || prefs.isPasswordField) {
+            lastAutocorrectOriginal = null
+            input.commitText(" ")
+            refreshAfterEdit(consumeOnce = true)
+            return
+        }
         if (prefs.doubleSpacePeriod && shouldInsertPeriodOnDoubleSpace(input.textBeforeCursor())) {
             input.deleteBeforeCursor(1)
             input.commitText(". ")

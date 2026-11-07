@@ -31,7 +31,7 @@
     <string name="settings_one_handed">Режим одной руки</string>
     <string name="settings_one_handed_summary">Сжать клавиатуру к краю экрана</string>
     <string name="settings_clipboard">История буфера обмена</string>
-    <string name="settings_clipboard_summary">Локально сохранять скопированный текст (без облака)</string>
+    <string name="settings_clipboard_summary">Выкл. по умолчанию. Локально, без облака; при выключении история очищается</string>
     <string name="settings_show_emoji_key">Клавиша эмодзи</string>
     <string name="settings_show_emoji_key_summary">Отдельная клавиша для эмодзи</string>
     <string name="settings_keypress_header">Нажатие клавиш</string>

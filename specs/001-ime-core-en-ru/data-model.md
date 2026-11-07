@@ -1,6 +1,6 @@
 # Data Model: IME Core EN/RU
 
-**As-built**: 2026-11-07
+**As-built**: 2026-11-08
 
 ## Entities
 
@@ -19,10 +19,10 @@
 
 | Field | Type | Rules |
 |-------|------|-------|
-| id | enum: `LETTERS`, `SYMBOLS`, `EMOJI` | Mutually exclusive visible layer |
+| id | enum: `LETTERS`, `SYMBOLS`, `EMOJI`, `NUMBER` | Mutually exclusive visible layer |
 | symbolsAlt | boolean | When `SYMBOLS`, toggles primary vs alternate symbol page via Shift (tap **or** long-press) |
 
-**Transitions**: LETTERS ↔ SYMBOLS via layer keys; LETTERS/SYMBOLS → EMOJI via emoji key; EMOJI → LETTERS via ABC; language change forces LETTERS. **`onStartInput` / `onStartInputView` force LETTERS**, `symbolsAlt=false`, dismiss language picker (language preserved).
+**Transitions**: LETTERS ↔ SYMBOLS via layer keys; LETTERS/SYMBOLS → EMOJI via emoji key; EMOJI/NUMBER → LETTERS via ABC; number/phone/datetime start on `NUMBER`. **`onStartInput`** forces LETTERS or NUMBER, `symbolsAlt=false`, dismiss panels (language preserved). `onStartInputView` does not re-reset layer.
 
 ### ShiftState
 
@@ -78,11 +78,22 @@
 | source | enum | `COMPLETION`, `NEXT_WORD` |
 | limit | int | Strip shows up to 3 |
 
-**Rules**: Offline dictionary/fuzzy match; optional next-word model; optional offensive filter. Strip hidden when `show_suggestion_strip` is false, layer ≠ LETTERS, or `EditorInfoInterpreter.suppressSuggestions` (password / TYPE_NULL / non-text / NO_SUGGESTIONS / email / URI / filter).
+**Rules**: Offline dictionary/fuzzy match; optional next-word / autocorrect; optional offensive filter. **Word chips** hidden when `show_suggestion_strip` is false, layer ≠ LETTERS, or `suppressSuggestions`. **Features toolbar** still mounts when suppressed. Rejected words persist only outside suppressed/password/incognito fields (store `rejected_suggestions`).
+
+### ClipboardEntry (feature 002/004)
+
+| Field | Type | Rules |
+|-------|------|-------|
+| id | string | `${epochMs}_${UUID}` |
+| text | string | ≤500 chars |
+| pinned | boolean | pin refreshes clock; TTL 7d pinned / 1h unpinned |
+| createdAtMs | long | prune persisted via `prunePersisted()` |
+
+Store name: `clipboard_history` (excluded from backup). Default preference **off**.
 
 ### UserPreferences (aggregate)
 
-Persisted DataStore document (`user_prefs`):
+Persisted DataStore document (`user_prefs`) — excluded from Android backup:
 
 | Key | Type | Default |
 |-----|------|---------|
@@ -103,6 +114,13 @@ Persisted DataStore document (`user_prefs`):
 | block_offensive_words | boolean | `true` |
 | auto_capitalization | boolean | `true` |
 | double_space_period | boolean | `true` |
+| number_row_for_passwords | boolean | `false` |
+| one_handed_mode | boolean | `false` |
+| one_handed_side | enum | `RIGHT` |
+| clipboard_history_enabled | boolean | `false` (opt-in) |
+| sound_volume / haptic_strength / emoji_font_scale | float | `1` / `1` / `1` |
+| autocorrect_enabled | boolean | `false` |
+| personal_dictionary | string set | empty |
 
 ## Validation Rules
 
@@ -129,7 +147,8 @@ LETTERS --?123--> SYMBOLS --ABC--> LETTERS
 LETTERS --emoji--> EMOJI --ABC--> LETTERS
 SYMBOLS --emoji--> EMOJI --ABC--> LETTERS
 SYMBOLS --Shift/long-Shift--> SYMBOLS(alt) --Shift/long-Shift--> SYMBOLS
-* --onStartInput--> LETTERS (shift OFF, symbolsAlt false, picker dismissed)
+NUMBER --ABC--> LETTERS
+* --onStartInput--> LETTERS | NUMBER (shift OFF, panels dismissed)
 ```
 
 ### Language

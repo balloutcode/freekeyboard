@@ -7,6 +7,8 @@
 
 High: none filed. Medium-1 and Low-1 fixed in follow-up (prefs re-sync on IME show + static Features label).
 
+**As-built note (2026-11-08)**: Later Security + Bugbot hardening is tracked in `specs/004-privacy-hardening/` (not re-opened here).
+
 ---
 
 ## MEDIUM-1 — Settings "Режим одной руки" OFF does not disable an already-active one-hand session

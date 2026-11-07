@@ -50,6 +50,7 @@ fun KeyboardRoot(
     onPersistOneHanded: suspend (Boolean, OneHandedSide) -> Unit = { _, _ -> },
     onRejectSuggestion: suspend (String) -> Unit = {},
     onPinClipboard: suspend (ClipboardEntry) -> Unit = {},
+    onRemoveClipboard: suspend (ClipboardEntry) -> Unit = {},
 ) {
     val state by controller.state.collectAsStateWithLifecycle()
     val view = LocalView.current
@@ -104,6 +105,9 @@ fun KeyboardRoot(
                                 onPin = { entry ->
                                     scope.launch { onPinClipboard(entry) }
                                 },
+                                onRemove = { entry ->
+                                    scope.launch { onRemoveClipboard(entry) }
+                                },
                                 onClose = { controller.dismissClipboardPanel() },
                             )
                         }
@@ -131,11 +135,14 @@ fun KeyboardRoot(
                         else -> {
                             if (state.showFeaturesMenu) {
                                 FeaturesMenu(
-                                    clipboardEnabled = state.clipboardHistoryEnabled,
+                                    clipboardEnabled = state.clipboardHistoryEnabled &&
+                                        !state.isPasswordField &&
+                                        !state.suppressSuggestions &&
+                                        !state.incognito,
                                     oneHandedEnabled = state.oneHandedMode,
                                     onTheme = {
-                                        controller.cycleTheme()
-                                        scope.launch { onPersistTheme(controller.state.value.theme) }
+                                        val next = controller.cycleTheme()
+                                        scope.launch { onPersistTheme(next) }
                                     },
                                     onClipboard = { controller.openClipboardPanel() },
                                     onOneHanded = {
@@ -149,6 +156,15 @@ fun KeyboardRoot(
                                     onEmoji = { controller.openEmojiFromMenu() },
                                     onSettings = openSettings,
                                     onDismiss = { controller.dismissFeaturesMenu() },
+                                )
+                            } else if (state.inlineSuggestionViews.isNotEmpty()) {
+                                // Autofill chips (password managers) — show even when
+                                // word suggestions are suppressed (password/email/URI).
+                                SuggestionBar(
+                                    suggestions = emptyList(),
+                                    inlineViews = state.inlineSuggestionViews,
+                                    onOpenFeatures = { controller.toggleFeaturesMenu() },
+                                    incognito = state.incognito,
                                 )
                             } else if (
                                 !state.suppressSuggestions &&
@@ -176,6 +192,13 @@ fun KeyboardRoot(
                                     )
                             ) {
                                 // Keep strip chrome on ?123 (A10-008); empty chips / toolbar-only.
+                                SuggestionBar(
+                                    suggestions = emptyList(),
+                                    onOpenFeatures = { controller.toggleFeaturesMenu() },
+                                    incognito = state.incognito,
+                                )
+                            } else if (state.suppressSuggestions) {
+                                // Password / email / phone / number: toolbar only (Features access).
                                 SuggestionBar(
                                     suggestions = emptyList(),
                                     onOpenFeatures = { controller.toggleFeaturesMenu() },

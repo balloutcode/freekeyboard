@@ -67,9 +67,9 @@
 
 1. Type a partial word; tap a suggestion
 2. Type a letter, Space, Space with double-space enabled
-3. Focus a password or email field — suggestion strip stays hidden
+3. Focus a password or email field — word chips stay hidden; Features (⊞) toolbar remains
 
-**Expect**: Candidate acceptance inserts word + space; double-space yields `. `; strip suppressed on password/email.
+**Expect**: Candidate acceptance inserts word + space; double-space yields `. ` on normal text; password/email show toolbar without word chips; space does not autocorrect passwords.
 
 ### S7 — Human-emulation smoke
 
@@ -91,11 +91,22 @@ Simulate a short bilingual message: `Hello` → globe → `да` → emoji → r
 3. Focus a number/phone field → digit pad; ABC returns to letters
 4. Suggestion strip apps button → Функции: theme cycle, emoji, one-hand, clipboard, settings (no mic/search)
 5. One-hand: enable → keyboard shrinks with side rail; flip ↔; expand ⤢ exits
-6. Copy text in another app → open Буфер → tap paste; pin survives; unpinned TTL ~1h
-7. Long-press an unwanted suggestion chip → it disappears from future suggestions
+6. Settings: enable «История буфера обмена» (off by default) → copy text while keyboard visible → Буфер → paste / Удалить; pin TTL ≤7d; unpinned ~1h; toggle off clears store
+7. Long-press an unwanted suggestion chip → it disappears from future suggestions (not persisted on password fields)
 8. Settings: enable «Ряд цифр в паролях»; focus password → number row appears even if global row off
+9. Multiline note with default imeOptions → Enter inserts newline (not DONE)
+10. Long document → space swipe moves caret without jumping to start
 
 **Expect**: Behaviors above; still no glide typing / voice / GIF / Google branding.
+
+### S10 — Inline autofill (003) + privacy (004)
+
+1. Autofill service = Proton Pass / Bitwarden / Google with saved login
+2. Focus username/password → chips may appear in strip (provider-dependent; stock AVD often has 0 datasets)
+3. Confirm `dumpsys input_method` shows `mInlineSuggestionsEnabled=true` for freekeyboard
+4. Confirm app backup disabled (`adb backup` / Manifest `allowBackup=false`)
+
+See `specs/003-inline-autofill/spec.md` and `specs/002-gboard-parity/evidence/autofill-emulator-smoke.md`.
 
 ## Out of scope checks (must NOT appear)
 

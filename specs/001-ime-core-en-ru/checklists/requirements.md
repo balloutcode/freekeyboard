@@ -36,3 +36,4 @@
 - Spec reconciled to shipped IME after human-emulation QA (status: Implemented).
 - 2026-11-06 evening: Caps Lock Gboard parity, neutral Dark theme, settings theming, bottom inset, and functional suite results folded into SDD.
 - 2026-11-07 as-built: FR-023–027 + SC-009 (start-input reset, TYPE_NULL RawKeyCodes, RU NOOP pad, suggestion suppression, shared height metrics); constitution 1.0.1 clarifies offline strip in IME core; plan documentation tree lists `spec.md` + `checklists/`.
+- 2026-11-08 as-built: FR-026 clarified (candidates vs Features toolbar); FR-028/029; constitution **1.1.0**; details in 004.

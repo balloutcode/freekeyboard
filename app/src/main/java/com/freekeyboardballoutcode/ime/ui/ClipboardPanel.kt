@@ -26,6 +26,7 @@ fun ClipboardPanel(
     entries: List<ClipboardEntry>,
     onPaste: (String) -> Unit,
     onPin: (ClipboardEntry) -> Unit,
+    onRemove: (ClipboardEntry) -> Unit,
     onClose: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -70,13 +71,13 @@ fun ClipboardPanel(
                 if (pinned.isNotEmpty()) {
                     SectionLabel("Закреплённые", colors.onKey)
                     pinned.forEach { entry ->
-                        ClipboardRow(entry, colors.onKey, colors.key, onPaste, onPin)
+                        ClipboardRow(entry, colors.onKey, colors.key, onPaste, onPin, onRemove)
                     }
                 }
                 if (recent.isNotEmpty()) {
                     SectionLabel("Недавние", colors.onKey)
                     recent.forEach { entry ->
-                        ClipboardRow(entry, colors.onKey, colors.key, onPaste, onPin)
+                        ClipboardRow(entry, colors.onKey, colors.key, onPaste, onPin, onRemove)
                     }
                 }
             }
@@ -102,13 +103,14 @@ private fun ClipboardRow(
     keyBg: androidx.compose.ui.graphics.Color,
     onPaste: (String) -> Unit,
     onPin: (ClipboardEntry) -> Unit,
+    onRemove: (ClipboardEntry) -> Unit,
 ) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .background(keyBg, RoundedCornerShape(8.dp))
             .padding(horizontal = 8.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
     ) {
         Text(
             text = entry.text,
@@ -127,6 +129,14 @@ private fun ClipboardRow(
             fontSize = 12.sp,
             modifier = Modifier
                 .clickable { onPin(entry) }
+                .padding(8.dp),
+        )
+        Text(
+            text = "Удалить",
+            color = onKey.copy(alpha = 0.75f),
+            fontSize = 12.sp,
+            modifier = Modifier
+                .clickable { onRemove(entry) }
                 .padding(8.dp),
         )
     }

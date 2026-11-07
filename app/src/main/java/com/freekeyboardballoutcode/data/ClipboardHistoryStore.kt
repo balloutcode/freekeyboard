@@ -6,6 +6,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import java.util.UUID
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -19,7 +20,7 @@ data class ClipboardEntry(
 )
 
 /**
- * Local-only clipboard history (A13). Unpinned entries expire after [TTL_MS].
+ * Local-only clipboard history (A13). Unpinned expire after [TTL_MS]; pinned after [PINNED_TTL_MS].
  * No phone↔PC sync, no screenshots.
  */
 class ClipboardHistoryStore(private val context: Context) {
@@ -27,6 +28,17 @@ class ClipboardHistoryStore(private val context: Context) {
 
     val entries: Flow<List<ClipboardEntry>> = context.clipboardStore.data.map { prefs ->
         decode(prefs[entriesKey]).let { pruneExpired(it, System.currentTimeMillis()) }
+    }
+
+    /** Persist TTL pruning so expired rows leave disk, not only the in-memory Flow view. */
+    suspend fun prunePersisted(nowMs: Long = System.currentTimeMillis()) {
+        context.clipboardStore.edit { prefs ->
+            val decoded = decode(prefs[entriesKey])
+            val pruned = pruneExpired(decoded, nowMs)
+            if (pruned.size != decoded.size) {
+                prefs[entriesKey] = encode(pruned)
+            }
+        }
     }
 
     suspend fun capture(text: String, nowMs: Long = System.currentTimeMillis()) {
@@ -38,7 +50,7 @@ class ClipboardHistoryStore(private val context: Context) {
             current.add(
                 0,
                 ClipboardEntry(
-                    id = "${nowMs}_${trimmed.hashCode()}",
+                    id = "${nowMs}_${UUID.randomUUID()}",
                     text = trimmed.take(MAX_CHARS),
                     pinned = false,
                     createdAtMs = nowMs,
@@ -57,7 +69,12 @@ class ClipboardHistoryStore(private val context: Context) {
         context.clipboardStore.edit { prefs ->
             val now = System.currentTimeMillis()
             val current = pruneExpired(decode(prefs[entriesKey]), now).map {
-                if (it.id == id) it.copy(pinned = pinned) else it
+                if (it.id != id) {
+                    it
+                } else {
+                    // Refresh clock on pin so PINNED_TTL starts from the pin action.
+                    it.copy(pinned = pinned, createdAtMs = if (pinned) now else it.createdAtMs)
+                }
             }
             prefs[entriesKey] = encode(current)
         }
@@ -71,13 +88,24 @@ class ClipboardHistoryStore(private val context: Context) {
         }
     }
 
+    suspend fun clearAll() {
+        context.clipboardStore.edit { prefs ->
+            prefs[entriesKey] = encode(emptyList())
+        }
+    }
+
     companion object {
         const val TTL_MS = 60L * 60L * 1000L
+        /** Pinned clips must not live forever on disk. */
+        const val PINNED_TTL_MS = 7L * 24L * 60L * 60L * 1000L
         const val MAX_ENTRIES = 25
         const val MAX_CHARS = 500
 
         fun pruneExpired(entries: List<ClipboardEntry>, nowMs: Long): List<ClipboardEntry> =
-            entries.filter { it.pinned || nowMs - it.createdAtMs <= TTL_MS }
+            entries.filter { entry ->
+                val ttl = if (entry.pinned) PINNED_TTL_MS else TTL_MS
+                nowMs - entry.createdAtMs <= ttl
+            }
 
         /** Line-oriented codec (unit-testable without mocked org.json). */
         fun encode(entries: List<ClipboardEntry>): String =

@@ -1,11 +1,10 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.0 → 1.0.1
-- Modified principles: none (clarifications only)
-- Added sections: N/A
+- Version change: 1.0.1 → 1.1.0
+- Modified principles: II (privacy storage / backup / clipboard clarifications)
+- Added sections: Product Constraints — sensitive local data
 - Removed sections: N/A
-- Product Constraints: offline suggestion strip is IME-core; personal learning remains later
-- Follow-up TODOs: none
+- Follow-up TODOs: optional EncryptedDataStore for clipboard (deferred)
 -->
 
 # freekeyboard Constitution
@@ -26,8 +25,16 @@ The keyboard MUST work fully offline for core typing. No telemetry, crash
 reporting to third parties, or cloud sync of typed content. Network access
 MUST NOT be required for input, emoji, themes, or settings. Any future
 optional network feature MUST be explicit opt-in, disclosed in UI, and
-compatible with F-Droid consent rules. Rationale: an IME sees all text; trust
-requires local-only defaults.
+compatible with F-Droid consent rules.
+
+Sensitive local data (clipboard history, rejected-suggestion tokens, personal
+dictionary) MUST NOT leave the device via Android Backup / device transfer:
+`allowBackup` MUST stay false (or equivalent exclusion rules). Clipboard
+history MUST be opt-in, honor platform-sensitive clip flags (API 33+), avoid
+capture over password / suppressed / incognito fields, and wipe when disabled.
+Password and other suggestion-suppressed fields MUST NOT receive autocorrect
+or double-space mutation. Rationale: an IME sees all text; trust requires
+local-only defaults and careful persistence.
 
 ### III. Gboard UX Parity Without Brand or Asset Copying
 User-facing behavior and visual design SHOULD match the contemporary Gboard
@@ -55,8 +62,10 @@ Minimum Android API is 31. Implementation uses current stable Kotlin, Jetpack
 Compose, and Android Gradle Plugin pins recorded in feature plans. Soft
 keyboard UI MAY use Compose inside `InputMethodService` only when synthetic
 Lifecycle / ViewModelStore / SavedState owners are provided and lifecycle is
-advanced to RESUMED while the IME window is visible. Rationale: Compose
-without correct owners freezes recomposition and animations in IME context.
+advanced to RESUMED while the IME window is visible. Release builds SHOULD
+enable R8 minify + resource shrink with keep rules for IME/settings entry
+points. Rationale: Compose without correct owners freezes recomposition;
+release hardening raises the bar for static analysis without changing UX.
 
 ### VII. Spec-Driven Delivery
 Work proceeds in bounded features under Spec Kit: constitution → specify →
@@ -77,6 +86,10 @@ reviewable and F-Droid-ready.
 - Emoji panel, light/dark/OLED themes, offline suggestions, and EN/RU layouts
   are in-scope for the IME core feature set as specified per feature directory.
 - Personal dictionary data MUST remain on-device.
+- Inline autofill (API 30+) hosts platform password-manager chips only; the
+  app MUST NOT implement an AutofillService or log credential content.
+- Clipboard history: local-only MVP; default **off**; unpinned TTL 1h; pinned
+  TTL ≤ 7 days; per-entry delete; clear-on-disable.
 
 ## Development Workflow
 
@@ -100,4 +113,4 @@ active feature plans still comply or are revised. All PRs and Spec Kit
 analyze/implement steps MUST verify compliance with Core Principles.
 Unjustified violations are ERROR gates in planning.
 
-**Version**: 1.0.1 | **Ratified**: 2026-11-06 | **Last Amended**: 2026-11-07
+**Version**: 1.1.0 | **Ratified**: 2026-11-06 | **Last Amended**: 2026-11-08

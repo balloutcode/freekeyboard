@@ -2,6 +2,7 @@ package com.freekeyboardballoutcode.ime.input
 
 import android.text.InputType
 import android.view.inputmethod.EditorInfo
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -103,6 +104,30 @@ class EditorInfoInterpreterTest {
             inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_SIGNED
         }
         assertTrue(interpreter.numberAllowsSigned(signed))
+    }
+
+    @Test
+    fun prefersNewlineOnEnter_multilineUnspecified() {
+        val multiline = EditorInfo().apply {
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
+            imeOptions = EditorInfo.IME_ACTION_UNSPECIFIED
+        }
+        assertTrue(interpreter.prefersNewlineOnEnter(multiline))
+        assertEquals(EnterKeyStyle.ENTER, interpreter.enterKeyStyle(multiline))
+
+        val singleLineDone = EditorInfo().apply {
+            inputType = InputType.TYPE_CLASS_TEXT
+            imeOptions = EditorInfo.IME_ACTION_UNSPECIFIED
+        }
+        assertFalse(interpreter.prefersNewlineOnEnter(singleLineDone))
+        assertEquals(EnterKeyStyle.DONE, interpreter.enterKeyStyle(singleLineDone))
+
+        val multilineSend = EditorInfo().apply {
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
+            imeOptions = EditorInfo.IME_ACTION_SEND
+        }
+        assertFalse(interpreter.prefersNewlineOnEnter(multilineSend))
+        assertEquals(EnterKeyStyle.SEND, interpreter.enterKeyStyle(multilineSend))
     }
 
     @Test

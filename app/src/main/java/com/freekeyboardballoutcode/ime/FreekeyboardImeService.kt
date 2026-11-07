@@ -3,10 +3,15 @@ package com.freekeyboardballoutcode.ime
 import android.content.ClipboardManager
 import android.graphics.drawable.ColorDrawable
 import android.inputmethodservice.InputMethodService
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InlineSuggestionsRequest
+import android.view.inputmethod.InlineSuggestionsResponse
 import android.widget.FrameLayout
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.ComposeView
@@ -16,9 +21,11 @@ import androidx.lifecycle.setViewTreeLifecycleOwner
 import androidx.lifecycle.setViewTreeViewModelStoreOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
 import com.freekeyboardballoutcode.data.ClipboardHistoryStore
+import com.freekeyboardballoutcode.data.ClipboardSensitivity
 import com.freekeyboardballoutcode.data.RejectedSuggestionsStore
 import com.freekeyboardballoutcode.data.ThemePreference
 import com.freekeyboardballoutcode.data.UserPreferencesRepository
+import com.freekeyboardballoutcode.ime.autofill.InlineAutofillSupport
 import com.freekeyboardballoutcode.ime.input.InputConnectionFacade
 import com.freekeyboardballoutcode.ime.keyboard.KeyboardController
 import com.freekeyboardballoutcode.ime.ui.GboardMetrics
@@ -26,6 +33,10 @@ import com.freekeyboardballoutcode.ime.ui.KeyboardRoot
 import com.freekeyboardballoutcode.ui.theme.DarkBackground
 import com.freekeyboardballoutcode.ui.theme.LightBackground
 import com.freekeyboardballoutcode.ui.theme.OledBackground
+import com.freekeyboardballoutcode.data.UserPreferences
+import java.util.concurrent.Executor
+import java.util.concurrent.atomic.AtomicInteger
+import java.util.concurrent.atomic.AtomicReference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -39,6 +50,11 @@ class FreekeyboardImeService : InputMethodService() {
     private val owners = ImeLifecycleOwner()
     private val serviceJob = SupervisorJob()
     private val serviceScope = CoroutineScope(serviceJob + Dispatchers.Main.immediate)
+    private val mainHandler = Handler(Looper.getMainLooper())
+    private val mainExecutor = Executor { mainHandler.post(it) }
+    private val inlineInflateGeneration = AtomicInteger(0)
+    /** Theme written from Features menu but not yet visible in DataStore emission. */
+    private val pendingTheme = AtomicReference<ThemePreference?>(null)
 
     private lateinit var prefs: UserPreferencesRepository
     private lateinit var clipboardStore: ClipboardHistoryStore
@@ -61,17 +77,28 @@ class FreekeyboardImeService : InputMethodService() {
         controller = KeyboardController(input)
         prefsJob = serviceScope.launch {
             prefs.preferences.collectLatest {
-                controller.applyPreferences(it)
-                keyboardRoot?.let { root -> applyImeNavChrome(root, it.theme) }
+                val snapshot = withPendingTheme(it)
+                val wasClipboard = controller.state.value.clipboardHistoryEnabled
+                controller.applyPreferences(snapshot)
+                when {
+                    wasClipboard && !snapshot.clipboardHistoryEnabled -> {
+                        clipboardStore.clearAll()
+                        uninstallClipboardCapture()
+                    }
+                    !wasClipboard && snapshot.clipboardHistoryEnabled && isInputViewShown -> {
+                        installClipboardCapture()
+                    }
+                }
+                keyboardRoot?.let { root -> applyImeNavChrome(root, snapshot.theme) }
             }
         }
         serviceScope.launch {
             rejectedStore.rejected.collectLatest { controller.applyRejectedSuggestions(it) }
         }
         serviceScope.launch {
+            clipboardStore.prunePersisted()
             clipboardStore.entries.collectLatest { controller.applyClipboardEntries(it) }
         }
-        installClipboardCapture()
         installViewTreeOwners(window?.window?.decorView)
         configureImeWindow()
     }
@@ -102,13 +129,30 @@ class FreekeyboardImeService : InputMethodService() {
                     scope = serviceScope,
                     onPersistLanguage = { prefs.setLastActiveLanguage(it) },
                     onPersistEmoji = { prefs.recordEmoji(it) },
-                    onPersistTheme = { prefs.setTheme(it) },
+                    onPersistTheme = { theme ->
+                        pendingTheme.set(theme)
+                        keyboardRoot?.let { root -> applyImeNavChrome(root, theme) }
+                        try {
+                            prefs.setTheme(theme)
+                        } finally {
+                            pendingTheme.compareAndSet(theme, null)
+                        }
+                    },
                     onPersistOneHanded = { enabled, side ->
                         prefs.setThemeAndOneHanded(oneHanded = enabled, side = side)
                     },
-                    onRejectSuggestion = { rejectedStore.reject(it) },
+                    onRejectSuggestion = { word ->
+                        val st = controller.state.value
+                        // Session UI already hides the chip; only persist outside sensitive fields.
+                        if (!st.suppressSuggestions && !st.isPasswordField && !st.incognito) {
+                            rejectedStore.reject(word)
+                        }
+                    },
                     onPinClipboard = { entry ->
                         clipboardStore.setPinned(entry.id, !entry.pinned)
+                    },
+                    onRemoveClipboard = { entry ->
+                        clipboardStore.remove(entry.id)
                     },
                 )
             }
@@ -135,15 +179,22 @@ class FreekeyboardImeService : InputMethodService() {
             val landscape = resources.configuration.orientation ==
                 android.content.res.Configuration.ORIENTATION_LANDSCAPE
             val ui = if (::controller.isInitialized) controller.state.value else null
+            // Toolbar/Features strip is shown even when word suggestions are suppressed.
             val contentDp = GboardMetrics.letterLayerContentHeightDp(
                 landscape = landscape,
-                numberRow = ui?.numberRow == true,
-                includeSuggestionStrip = ui?.showSuggestionStrip != false,
+                numberRow = ui?.effectiveNumberRow == true,
+                includeSuggestionStrip = true,
             )
             val estimated =
                 (contentDp * density).toInt() + imeNavStripHeightPx()
             val windowH = window?.window?.decorView?.height
                 ?: resources.displayMetrics.heightPixels
+            // Recompute once Compose lays out so the estimate does not stick for a frame.
+            input.post {
+                if (isInputViewShown && input.height > 0) {
+                    updateInputViewShown()
+                }
+            }
             (windowH - estimated).coerceAtLeast(0)
         }
         outInsets.contentTopInsets = top
@@ -154,8 +205,52 @@ class FreekeyboardImeService : InputMethodService() {
     override fun onStartInput(attribute: EditorInfo?, restarting: Boolean) {
         super.onStartInput(attribute, restarting)
         if (::controller.isInitialized) {
+            inlineInflateGeneration.incrementAndGet()
+            controller.clearInlineSuggestions()
             controller.onStartInput()
         }
+    }
+
+    override fun onCreateInlineSuggestionsRequest(uiExtras: Bundle): InlineSuggestionsRequest? {
+        if (!::controller.isInitialized) return null
+        return InlineAutofillSupport.createInlineSuggestionsRequest(
+            context = this,
+            theme = controller.state.value.theme,
+        )
+    }
+
+    override fun onInlineSuggestionsResponse(response: InlineSuggestionsResponse): Boolean {
+        if (!::controller.isInitialized) return false
+        val suggestions = response.inlineSuggestions
+        if (suggestions.isEmpty()) {
+            controller.clearInlineSuggestions()
+            return false
+        }
+        val generation = inlineInflateGeneration.incrementAndGet()
+        val density = resources.displayMetrics.density
+        val inflateSize = InlineAutofillSupport.chipMinSizePx(density).toAndroidSize()
+        val collected = arrayOfNulls<View>(suggestions.size)
+        val remaining = AtomicInteger(suggestions.size)
+        suggestions.forEachIndexed { index, suggestion ->
+            suggestion.inflate(this, inflateSize, mainExecutor) { view ->
+                if (generation != inlineInflateGeneration.get()) return@inflate
+                if (view != null) {
+                    collected[index] = view
+                }
+                if (remaining.decrementAndGet() == 0 && generation == inlineInflateGeneration.get()) {
+                    controller.setInlineSuggestions(collected.filterNotNull())
+                }
+            }
+        }
+        return true
+    }
+
+    override fun onFinishInput() {
+        inlineInflateGeneration.incrementAndGet()
+        if (::controller.isInitialized) {
+            controller.clearInlineSuggestions()
+        }
+        super.onFinishInput()
     }
 
     override fun onStartInputView(info: EditorInfo?, restarting: Boolean) {
@@ -168,8 +263,10 @@ class FreekeyboardImeService : InputMethodService() {
         // becomes visible so Settings toggles win over any stale in-memory runtime state
         // (e.g. Features menu enabled one-hand but a later Settings OFF must undock).
         syncPreferencesFromStore()
+        installClipboardCapture()
+        serviceScope.launch { runCatching { clipboardStore.prunePersisted() } }
+        // Field state is reset in onStartInput only (avoid double reset / autofill flicker).
         super.onStartInputView(info, restarting)
-        controller.onStartInput()
     }
 
     override fun onUpdateSelection(
@@ -200,6 +297,7 @@ class FreekeyboardImeService : InputMethodService() {
         keyboardRoot?.let { applyImeNavChrome(it, controller.state.value.theme) }
         owners.onResume()
         syncPreferencesFromStore()
+        installClipboardCapture()
         super.onWindowShown()
     }
 
@@ -207,16 +305,25 @@ class FreekeyboardImeService : InputMethodService() {
     private fun syncPreferencesFromStore() {
         if (!::prefs.isInitialized || !::controller.isInitialized) return
         serviceScope.launch {
-            runCatching { controller.applyPreferences(prefs.preferences.first()) }
+            runCatching {
+                controller.applyPreferences(withPendingTheme(prefs.preferences.first()))
+            }
         }
     }
 
+    private fun withPendingTheme(snapshot: UserPreferences): UserPreferences {
+        val pending = pendingTheme.get() ?: return snapshot
+        return snapshot.copy(theme = pending)
+    }
+
     override fun onFinishInputView(finishingInput: Boolean) {
+        uninstallClipboardCapture()
         super.onFinishInputView(finishingInput)
         owners.onPause()
     }
 
     override fun onWindowHidden() {
+        uninstallClipboardCapture()
         super.onWindowHidden()
         owners.onPause()
     }
@@ -231,11 +338,7 @@ class FreekeyboardImeService : InputMethodService() {
     }
 
     override fun onDestroy() {
-        clipboardListener?.let { listener ->
-            val cm = getSystemService(CLIPBOARD_SERVICE) as? ClipboardManager
-            cm?.removePrimaryClipChangedListener(listener)
-        }
-        clipboardListener = null
+        uninstallClipboardCapture()
         prefsJob?.cancel()
         serviceScope.cancel()
         keyboardRoot = null
@@ -243,13 +346,25 @@ class FreekeyboardImeService : InputMethodService() {
         super.onDestroy()
     }
 
+    /**
+     * Capture only while the keyboard is visible (not for the whole IME process lifetime).
+     * Skips sensitive clips, password/suppressed/incognito fields, and when history is off.
+     */
     private fun installClipboardCapture() {
+        if (clipboardListener != null) return
+        if (!controller.state.value.clipboardHistoryEnabled) return
         val cm = getSystemService(CLIPBOARD_SERVICE) as? ClipboardManager ?: return
         val listener = ClipboardManager.OnPrimaryClipChangedListener {
-            if (!controller.state.value.clipboardHistoryEnabled) return@OnPrimaryClipChangedListener
-            if (controller.state.value.incognito) return@OnPrimaryClipChangedListener
-            val text = cm.primaryClip
-                ?.takeIf { it.itemCount > 0 }
+            val st = controller.state.value
+            if (!st.clipboardHistoryEnabled) return@OnPrimaryClipChangedListener
+            if (st.incognito || st.isPasswordField || st.suppressSuggestions) {
+                return@OnPrimaryClipChangedListener
+            }
+            val clip = cm.primaryClip ?: return@OnPrimaryClipChangedListener
+            if (ClipboardSensitivity.isSensitive(clip.description)) {
+                return@OnPrimaryClipChangedListener
+            }
+            val text = clip.takeIf { it.itemCount > 0 }
                 ?.getItemAt(0)
                 ?.coerceToText(this)
                 ?.toString()
@@ -260,6 +375,14 @@ class FreekeyboardImeService : InputMethodService() {
         }
         clipboardListener = listener
         cm.addPrimaryClipChangedListener(listener)
+    }
+
+    private fun uninstallClipboardCapture() {
+        clipboardListener?.let { listener ->
+            val cm = getSystemService(CLIPBOARD_SERVICE) as? ClipboardManager
+            cm?.removePrimaryClipChangedListener(listener)
+        }
+        clipboardListener = null
     }
 
     /**

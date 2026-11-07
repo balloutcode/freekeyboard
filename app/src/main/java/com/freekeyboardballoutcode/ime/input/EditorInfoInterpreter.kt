@@ -28,7 +28,20 @@ class EditorInfoInterpreter {
         }
     }
 
+    /**
+     * Multiline editors with NONE/UNSPECIFIED ime action should insert `\n`
+     * (Gboard/Android default) instead of firing DONE.
+     */
+    fun prefersNewlineOnEnter(editorInfo: EditorInfo?): Boolean {
+        if (editorInfo == null) return false
+        val multilines = editorInfo.inputType and InputType.TYPE_TEXT_FLAG_MULTI_LINE != 0
+        if (!multilines) return false
+        val action = editorInfo.imeOptions and EditorInfo.IME_MASK_ACTION
+        return action == EditorInfo.IME_ACTION_NONE || action == EditorInfo.IME_ACTION_UNSPECIFIED
+    }
+
     fun enterKeyStyle(editorInfo: EditorInfo?): EnterKeyStyle {
+        if (prefersNewlineOnEnter(editorInfo)) return EnterKeyStyle.ENTER
         return when (editorAction(editorInfo)) {
             EditorInfo.IME_ACTION_SEND -> EnterKeyStyle.SEND
             EditorInfo.IME_ACTION_SEARCH -> EnterKeyStyle.SEARCH

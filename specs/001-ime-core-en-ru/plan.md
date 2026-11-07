@@ -14,6 +14,8 @@ Deliver a system soft keyboard (freekeyboard) with Gboard-like EN/RU layouts, sy
 
 **As-built sync (2026-11-07)**: Specs/plan/contracts reconciled to post code-review code: Symbols Shift long-press toggles alt page; RU number-row `NOOP` pad; `onStartInput` resets to Letters; `RawKeyCodes` for TYPE_NULL; suggestion suppression by `EditorInfo`; shared `GboardMetrics.letterLayerContentHeight` for emoji + first-frame insets; robust IME nav tint; unit coverage for LayoutOptions / RawKeyCodes / WordDelete / controller state.
 
+**As-built sync (2026-11-08)**: Privacy/Bugbot hardening lives primarily in [004](../004-privacy-hardening/); 001 contracts updated for toolbar-on-suppress, multiline Enter, caret-swipe DPAD fallback, and password space guards. Constitution **1.1.0**.
+
 ## Technical Context
 
 **Language/Version**: Kotlin 2.4.21; JDK toolchain 21

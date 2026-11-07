@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import com.freekeyboardballoutcode.R
+import com.freekeyboardballoutcode.data.ClipboardHistoryStore
 import com.freekeyboardballoutcode.data.ThemePreference
 import com.freekeyboardballoutcode.data.UserPreferencesRepository
 import com.freekeyboardballoutcode.settings.ui.SettingsScreens
@@ -31,11 +32,13 @@ import kotlinx.coroutines.launch
 
 class SettingsActivity : ComponentActivity() {
     private lateinit var prefs: UserPreferencesRepository
+    private lateinit var clipboardStore: ClipboardHistoryStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         prefs = UserPreferencesRepository(applicationContext)
+        clipboardStore = ClipboardHistoryStore(applicationContext)
 
         setContent {
             val state by prefs.preferences.collectAsStateWithLifecycle(
@@ -88,7 +91,12 @@ class SettingsActivity : ComponentActivity() {
                             }
                         },
                         onToggle = { key, value ->
-                            lifecycleScope.launch { prefs.setBoolean(key, value) }
+                            lifecycleScope.launch {
+                                prefs.setBoolean(key, value)
+                                if (key == "clipboard_history_enabled" && !value) {
+                                    clipboardStore.clearAll()
+                                }
+                            }
                         },
                         onLongPressDelay = { ms ->
                             lifecycleScope.launch { prefs.setLongPressDelayMs(ms) }

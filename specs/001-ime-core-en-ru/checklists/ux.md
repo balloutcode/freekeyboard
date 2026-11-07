@@ -55,7 +55,7 @@
 ## Consistency with out-of-scope
 
 - [x] Is offline suggestion strip specified without implying Google cloud/voice candidates?
-- [x] Is suggestion suppression for password/email/TYPE_NULL/`NO_SUGGESTIONS` covered?
+- [x] Is suggestion **candidate** suppression for password/email/TYPE_NULL/`NO_SUGGESTIONS` covered, with Features toolbar still available?
 - [x] Are swipe/voice/translate/GIF/floating keyboard exclusions explicit?
 - [x] Is freekeyboard branding (no Google/Gboard marks) consistent across settings and IME chrome?
 - [x] Are success criteria for UX still technology-agnostic and measurable?

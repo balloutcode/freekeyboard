@@ -1,5 +1,6 @@
 package com.freekeyboardballoutcode.ime.keyboard
 
+import android.view.inputmethod.EditorInfo
 import com.freekeyboardballoutcode.data.KeyboardLayer
 import com.freekeyboardballoutcode.data.OneHandedSide
 import com.freekeyboardballoutcode.data.ShiftMode
@@ -85,5 +86,32 @@ class KeyboardControllerStateTest {
         c.applyPreferences(UserPreferences(oneHandedMode = true, oneHandedSide = OneHandedSide.LEFT))
         assertTrue(c.state.value.oneHandedMode)
         assertEquals(OneHandedSide.LEFT, c.state.value.oneHandedSide)
+    }
+
+    @Test
+    fun openClipboardPanel_blockedOnPasswordField() {
+        val info = EditorInfo().apply {
+            inputType = EditorInfo.TYPE_CLASS_TEXT or EditorInfo.TYPE_TEXT_VARIATION_PASSWORD
+        }
+        val c = KeyboardController(
+            InputConnectionFacade(
+                connectionProvider = { null },
+                editorInfoProvider = { info },
+            ),
+        )
+        c.applyPreferences(UserPreferences(clipboardHistoryEnabled = true))
+        c.onStartInput()
+        assertTrue(c.state.value.isPasswordField || c.state.value.suppressSuggestions)
+        c.openClipboardPanel()
+        assertFalse(c.state.value.showClipboardPanel)
+    }
+
+    @Test
+    fun openClipboardPanel_allowedWhenEnabledOnPlainText() {
+        val c = controller()
+        c.applyPreferences(UserPreferences(clipboardHistoryEnabled = true))
+        c.onStartInput()
+        c.openClipboardPanel()
+        assertTrue(c.state.value.showClipboardPanel)
     }
 }

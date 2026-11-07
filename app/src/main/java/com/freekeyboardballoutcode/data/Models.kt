@@ -57,7 +57,8 @@ data class UserPreferences(
     val numberRowForPasswords: Boolean = false,
     val oneHandedMode: Boolean = false,
     val oneHandedSide: OneHandedSide = OneHandedSide.RIGHT,
-    val clipboardHistoryEnabled: Boolean = true,
+    /** Opt-in: clipboard history is off until the user enables it in Settings. */
+    val clipboardHistoryEnabled: Boolean = false,
     val soundVolume: Float = 1f,
     val hapticStrength: Float = 1f,
     val emojiFontScale: Float = 1f,

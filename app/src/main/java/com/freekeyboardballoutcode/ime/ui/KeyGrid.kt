@@ -50,10 +50,13 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInRoot
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.hideFromAccessibility
 import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.onLongClick
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
@@ -481,6 +484,23 @@ private fun RowScope.KeyButton(
                         onClick(label = null) {
                             onTap()
                             true
+                        }
+                        // TalkBack / Switch Access: expose hold behaviors (space LP, shift LP, word delete).
+                        val longPress = onSpaceLongPress
+                        if (longPress != null) {
+                            onLongClick(label = "Long press") {
+                                longPress()
+                                true
+                            }
+                        }
+                        val holdRepeat = onHoldRepeat
+                        if (holdRepeat != null) {
+                            customActions = listOf(
+                                CustomAccessibilityAction("Delete previous word") {
+                                    holdRepeat(true)
+                                    true
+                                },
+                            )
                         }
                     }
                 } else {

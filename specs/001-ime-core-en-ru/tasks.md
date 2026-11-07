@@ -212,3 +212,13 @@ Complete Phases 1–3 (Setup, Foundational, US1) for first demoable IME; then US
 - [x] C023 Unit tests: LayoutOptions, RawKeyCodes, WordDelete, EditorInfoInterpreter, KeyboardControllerState, GboardMetrics
 - [x] C024 As-built sync of `spec.md`, `plan.md`, `data-model.md`, contracts, `research.md`, `quickstart.md`, checklists, constitution 1.0.1
 - [x] C025 Polish pass: plan doc tree lists `spec.md`/`checklists/`; Key Entities + SC-009; SYMBOLS Shift clarification aligned with long-press
+
+---
+
+## Phase N+2: Convergence (2026-11-08 privacy / Bugbot as-built)
+
+**Purpose**: Keep 001 SDD aligned with cross-cutting 003/004 behavior without rewriting earlier task IDs.
+
+- [x] C026 FR-026–029: toolbar-on-suppress; multiline Enter; password space guards (see also `specs/004-privacy-hardening/`)
+- [x] C027 Contracts + data-model + quickstart synced (NUMBER layer, clipboard opt-in refs, caret DPAD, backup off)
+- [x] C028 Constitution 1.1.0 privacy/storage amendments referenced from 001 plan
