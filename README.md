@@ -50,7 +50,8 @@ APK: `app/build/outputs/apk/debug/app-debug.apk`
 - Панель emoji с категориями и «Недавние»
 - Offline suggestion strip (без облака); автокоррект / личный словарь — feature 002
 - Темы: Светлая / Тёмная (neutral charcoal) / OLED
-- Без swipe, voice, GIF, translate, floating keyboard
+- Без написания жестами (glide), voice, GIF, translate, floating keyboard
+- Свайп влево/вправо по пробелу перемещает курсор (как в Gboard)
 
 ## Spec Kit
 

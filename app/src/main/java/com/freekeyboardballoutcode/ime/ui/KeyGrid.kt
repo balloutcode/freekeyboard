@@ -50,6 +50,11 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInRoot
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.hideFromAccessibility
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -58,6 +63,7 @@ import androidx.compose.ui.zIndex
 import com.freekeyboardballoutcode.data.InputLanguage
 import com.freekeyboardballoutcode.data.ShiftMode
 import com.freekeyboardballoutcode.ime.input.EnterKeyStyle
+import com.freekeyboardballoutcode.ime.input.SpaceCursorSwipe
 import com.freekeyboardballoutcode.ime.keyboard.KeyAction
 import com.freekeyboardballoutcode.ime.keyboard.KeyDefinition
 import com.freekeyboardballoutcode.ime.keyboard.KeyboardLayout
@@ -74,20 +80,28 @@ fun KeyGrid(
     onKey: (KeyDefinition) -> Unit,
     onVariant: (String) -> Unit,
     onSpaceLongPress: () -> Unit,
+    onSpaceCursorSwipe: (delta: Int) -> Unit = {},
     onShiftLongPress: () -> Unit = {},
     onBackspaceRepeat: (byWord: Boolean) -> Unit = {},
     onPressPreview: (KeyPressPreview?) -> Unit = {},
     onVariantPicker: (KeyVariantPicker?) -> Unit = {},
+    @Suppress("UNUSED_PARAMETER")
+    onOpenSettings: () -> Unit = {},
     keyBorders: Boolean = true,
     popupOnKeypress: Boolean = true,
     longPressDelayMs: Int = 300,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalKeyboardColors.current
+    val fontScale = LocalConfiguration.current.fontScale.coerceIn(1f, 1.35f)
     val landscape = LocalConfiguration.current.orientation ==
         android.content.res.Configuration.ORIENTATION_LANDSCAPE
-    val keyHeight = if (landscape) GboardMetrics.keyHeightLandscape else GboardMetrics.keyHeightPortrait
-    val rowGap = if (landscape) GboardMetrics.rowGapLandscape else GboardMetrics.rowGapPortrait
+    val keyHeight =
+        (if (landscape) GboardMetrics.keyHeightLandscape else GboardMetrics.keyHeightPortrait) *
+            fontScale
+    val rowGap =
+        (if (landscape) GboardMetrics.rowGapLandscape else GboardMetrics.rowGapPortrait) *
+            fontScale
     val keyGap = if (landscape) GboardMetrics.keyGapLandscape else GboardMetrics.keyGapPortrait
     val sidePad = if (landscape) GboardMetrics.sidePadLandscape else GboardMetrics.sidePadPortrait
     var activePicker by remember { mutableStateOf<KeyVariantPicker?>(null) }
@@ -140,10 +154,18 @@ fun KeyGrid(
                         val showPreview = key.action == KeyAction.COMMIT &&
                             key.output.isNotEmpty() &&
                             key.output != " "
+                        // A20-001/A20-004: TalkBack / Switch Access description + click action.
+                        val accessibilityLabel = KeyAccessibility.describe(
+                            key = key,
+                            shift = shift,
+                            enterStyle = enterStyle,
+                            label = label,
+                        )
                         KeyButton(
                             label = label,
                             hint = key.hint,
                             icon = keyIcon(key, shift, enterStyle, layoutId = layout.id),
+                            accessibilityLabel = accessibilityLabel,
                             special = key.isSpecial,
                             weight = key.weight,
                             height = keyHeight,
@@ -169,11 +191,17 @@ fun KeyGrid(
                                     },
                                 )
                             },
-                            // Space / Globe: long-press opens language picker; Shift: Caps Lock.
+                            // Space: tap=space, horizontal swipe=move caret, LP=language picker.
+                            // Globe LP = picker; Shift LP = Caps Lock.
                             onSpaceLongPress = when (key.action) {
                                 KeyAction.SPACE, KeyAction.LANGUAGE -> onSpaceLongPress
                                 KeyAction.SHIFT -> onShiftLongPress
                                 else -> null
+                            },
+                            onSpaceCursorSwipe = if (key.action == KeyAction.SPACE) {
+                                onSpaceCursorSwipe
+                            } else {
+                                null
                             },
                             onHoldRepeat = if (key.action == KeyAction.BACKSPACE) {
                                 { byWord -> onBackspaceRepeat(byWord) }
@@ -225,6 +253,7 @@ private fun RowScope.KeyButton(
     label: String,
     hint: String?,
     icon: ImageVector?,
+    accessibilityLabel: String?,
     special: Boolean,
     weight: Float,
     height: Dp,
@@ -239,6 +268,7 @@ private fun RowScope.KeyButton(
     onTap: () -> Unit,
     onPressChange: (Boolean, Offset, Offset) -> Unit,
     onSpaceLongPress: (() -> Unit)?,
+    onSpaceCursorSwipe: ((delta: Int) -> Unit)?,
     onHoldRepeat: ((byWord: Boolean) -> Unit)?,
     variants: List<String>,
     onVariantSession: (active: Boolean, pos: Offset, size: Offset, selected: Int, columns: Int) -> Unit,
@@ -268,12 +298,88 @@ private fun RowScope.KeyButton(
             .weight(weight)
             .height(height)
             .zIndex(if (pressed) 2f else 0f)
-            .pointerInput(label, variants, longPressDelayMs, onHoldRepeat != null) {
+            .pointerInput(
+                label,
+                variants,
+                longPressDelayMs,
+                onHoldRepeat != null,
+                onSpaceCursorSwipe != null,
+            ) {
                 awaitEachGesture {
                     val down = awaitFirstDown()
                     down.consume()
                     pressed = true
                     onPressChange(true, position, keySize)
+
+                    // Space: swipe → caret; stationary hold → language picker; tap → space.
+                    // Must use timeouts: awaitPointerEvent alone never wakes on a still finger.
+                    if (onSpaceCursorSwipe != null && onSpaceLongPress != null) {
+                        val thresholdPx = with(density) { SpaceCursorSwipe.THRESHOLD_DP.dp.toPx() }
+                        val stepPx = with(density) { SpaceCursorSwipe.STEP_DP.dp.toPx() }
+                        var totalDx = 0f
+                        var emitted = 0
+                        var swipeMode = false
+                        var longPressFired = false
+                        val deadlineMs = System.currentTimeMillis() + longPressDelayMs
+                        try {
+                            while (true) {
+                                val remaining = (deadlineMs - System.currentTimeMillis()).coerceAtLeast(0L)
+                                val event = if (!swipeMode && !longPressFired) {
+                                    withTimeoutOrNull(remaining.coerceAtLeast(1L)) {
+                                        awaitPointerEvent()
+                                    }
+                                } else {
+                                    awaitPointerEvent()
+                                }
+                                if (event == null) {
+                                    // Stationary hold reached long-press delay.
+                                    if (!swipeMode && !longPressFired) {
+                                        longPressFired = true
+                                        pressed = false
+                                        onPressChange(false, position, keySize)
+                                        onSpaceLongPress()
+                                    }
+                                    continue
+                                }
+                                val change = event.changes.firstOrNull() ?: break
+                                if (change.changedToUp()) {
+                                    change.consume()
+                                    break
+                                }
+                                if (change.pressed) {
+                                    val dx = change.positionChange().x
+                                    if (dx != 0f) {
+                                        totalDx += dx
+                                        change.consume()
+                                    }
+                                    if (!swipeMode &&
+                                        SpaceCursorSwipe.isSwipeEngaged(totalDx, thresholdPx)
+                                    ) {
+                                        swipeMode = true
+                                    }
+                                    if (swipeMode) {
+                                        val delta = SpaceCursorSwipe.deltaSteps(
+                                            totalDxPx = totalDx,
+                                            stepPx = stepPx,
+                                            thresholdPx = thresholdPx,
+                                            alreadyEmittedSteps = emitted,
+                                        )
+                                        if (delta != 0) {
+                                            onSpaceCursorSwipe(delta)
+                                            emitted += delta
+                                        }
+                                    }
+                                }
+                            }
+                        } finally {
+                            pressed = false
+                            onPressChange(false, position, keySize)
+                            if (!swipeMode && !longPressFired) {
+                                onTap()
+                            }
+                        }
+                        return@awaitEachGesture
+                    }
 
                     val upBeforeLong = withTimeoutOrNull(longPressDelayMs.toLong()) {
                         waitForUpOrCancellation()
@@ -364,7 +470,24 @@ private fun RowScope.KeyButton(
                         }
                     }
                 }
-            },
+            }
+            // A20-001/002/004: TalkBack and Switch Access activate keys via an
+            // accessibility click action rather than raw touch events; this runs
+            // alongside (never instead of) the pointerInput gesture above.
+            .then(
+                if (accessibilityLabel != null) {
+                    Modifier.semantics(mergeDescendants = true) {
+                        contentDescription = accessibilityLabel
+                        onClick(label = null) {
+                            onTap()
+                            true
+                        }
+                    }
+                } else {
+                    // Inert spacer (e.g. RU number-row pad NOOP): hide from a11y tree.
+                    Modifier.clearAndSetSemantics { hideFromAccessibility() }
+                },
+            ),
         contentAlignment = Alignment.Center,
     ) {
         val faceModifier = if (circular) {
@@ -408,7 +531,9 @@ private fun RowScope.KeyButton(
             if (icon != null) {
                 Icon(
                     imageVector = icon,
-                    contentDescription = label,
+                    // Decorative: the parent Box's semantics (accessibilityLabel) already
+                    // carries the TalkBack description for this key (A20-001).
+                    contentDescription = null,
                     tint = contentColor.copy(alpha = contentAlpha),
                     modifier = Modifier.size(
                         if (special) GboardMetrics.keyIconSizeSpecial else GboardMetrics.keyIconSize,

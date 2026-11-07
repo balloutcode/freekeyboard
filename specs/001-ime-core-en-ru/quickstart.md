@@ -84,6 +84,19 @@ Simulate a short bilingual message: `Hello` → globe → `да` → emoji → r
 
 **Expect**: Keyboard opens on letters (not stuck on symbols/emoji); language unchanged.
 
+### S9 — 002 parity: RU, number pad, toolbar (manual)
+
+1. Tap space inserts ` `; swipe L/R on space moves caret; long-press space opens language picker
+2. RU: long-press `е` → pick `ё`; type `прив` → suggestion includes `привет`
+3. Focus a number/phone field → digit pad; ABC returns to letters
+4. Suggestion strip apps button → Функции: theme cycle, emoji, one-hand, clipboard, settings (no mic/search)
+5. One-hand: enable → keyboard shrinks with side rail; flip ↔; expand ⤢ exits
+6. Copy text in another app → open Буфер → tap paste; pin survives; unpinned TTL ~1h
+7. Long-press an unwanted suggestion chip → it disappears from future suggestions
+8. Settings: enable «Ряд цифр в паролях»; focus password → number row appears even if global row off
+
+**Expect**: Behaviors above; still no glide typing / voice / GIF / Google branding.
+
 ## Out of scope checks (must NOT appear)
 
 - Swipe path drawing / gesture typing

@@ -68,7 +68,7 @@ object EnQwerty {
                     KeyDefinition("symbols", "?123", action = KeyAction.LAYER_SYMBOLS, weight = 1.25f, isSpecial = true),
                     KeyDefinition(
                         "comma", ",", output = ",", weight = 0.9f,
-                        variants = listOf(",", "‚", "«", "»"),
+                        variants = listOf(",", "‚", "«", "»", "⚙"),
                     ),
                     KeyDefinition("emoji", "☺", action = KeyAction.EMOJI, weight = 0.9f, isSpecial = true),
                     KeyDefinition("language", "🌐", action = KeyAction.LANGUAGE, weight = 0.9f, isSpecial = true),

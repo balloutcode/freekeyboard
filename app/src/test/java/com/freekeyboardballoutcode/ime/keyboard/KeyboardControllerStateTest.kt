@@ -1,7 +1,9 @@
 package com.freekeyboardballoutcode.ime.keyboard
 
 import com.freekeyboardballoutcode.data.KeyboardLayer
+import com.freekeyboardballoutcode.data.OneHandedSide
 import com.freekeyboardballoutcode.data.ShiftMode
+import com.freekeyboardballoutcode.data.UserPreferences
 import com.freekeyboardballoutcode.ime.input.InputConnectionFacade
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -66,5 +68,22 @@ class KeyboardControllerStateTest {
             ),
         )
         assertEquals(ShiftMode.ONCE, c.state.value.shift)
+    }
+
+    @Test
+    fun applyPreferences_overridesRuntimeOneHandedMode() {
+        val c = controller()
+        c.setOneHandedMode(true, OneHandedSide.LEFT)
+        assertTrue(c.state.value.oneHandedMode)
+        assertEquals(OneHandedSide.LEFT, c.state.value.oneHandedSide)
+
+        // Settings OFF must win over Features-menu runtime toggle (MEDIUM-1).
+        c.applyPreferences(UserPreferences(oneHandedMode = false, oneHandedSide = OneHandedSide.RIGHT))
+        assertFalse(c.state.value.oneHandedMode)
+        assertEquals(OneHandedSide.RIGHT, c.state.value.oneHandedSide)
+
+        c.applyPreferences(UserPreferences(oneHandedMode = true, oneHandedSide = OneHandedSide.LEFT))
+        assertTrue(c.state.value.oneHandedMode)
+        assertEquals(OneHandedSide.LEFT, c.state.value.oneHandedSide)
     }
 }

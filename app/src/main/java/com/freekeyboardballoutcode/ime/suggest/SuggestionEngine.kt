@@ -6,6 +6,12 @@ import kotlin.math.min
 object SuggestionEngine {
     private val wordChar = Regex("""[\p{L}\p{N}'_-]+$""")
     private val lastWord = Regex("""[\p{L}\p{N}'_-]+(?=\s+$)""")
+    @Volatile
+    private var personalWords: List<String> = emptyList()
+
+    fun setPersonalWords(words: List<String>) {
+        personalWords = words.map { it.trim() }.filter { it.isNotEmpty() }
+    }
 
     fun currentPrefix(textBeforeCursor: CharSequence?): String {
         val before = textBeforeCursor?.toString().orEmpty()
@@ -24,19 +30,23 @@ object SuggestionEngine {
         nextWordEnabled: Boolean = true,
         blockOffensive: Boolean = true,
         capitalizeNext: Boolean = false,
+        rejected: Set<String> = emptySet(),
     ): List<String> {
         val prefix = currentPrefix(textBeforeCursor)
+        val rejectedLower = rejected.map { it.lowercase() }.toSet()
         val raw = if (prefix.isEmpty()) {
             if (!nextWordEnabled) emptyList()
-            else nextWordSuggestions(textBeforeCursor, language, limit, capitalizeNext)
+            else nextWordSuggestions(textBeforeCursor, language, limit * 2, capitalizeNext)
         } else {
-            completionSuggestions(prefix, language, limit, blockOffensive)
+            completionSuggestions(prefix, language, limit * 2, blockOffensive)
         }
-        return if (blockOffensive) {
-            raw.filterNot { ProfanityLexicon.isProfane(it, language) }
+        val filtered = raw.filterNot { it.lowercase() in rejectedLower }
+        val offensiveFiltered = if (blockOffensive) {
+            filtered.filterNot { ProfanityLexicon.isProfane(it, language) }
         } else {
-            raw
+            filtered
         }
+        return offensiveFiltered.take(limit)
     }
 
     private fun nextWordSuggestions(
@@ -64,16 +74,22 @@ object SuggestionEngine {
             if (blockOffensive && ProfanityLexicon.isProfane(w, language)) 1 else 0
         }
 
-        val prefixHits = words.asSequence()
+        val dict = personalWords + words
+        // Prefer dictionary order (higher-frequency entries first), then shorter completions.
+        val rankIndex: (String) -> Int = { w ->
+            val i = dict.indexOfFirst { it.equals(w, ignoreCase = true) }
+            if (i < 0) Int.MAX_VALUE else i
+        }
+        val prefixHits = dict.asSequence()
             .filter { it.startsWith(lower, ignoreCase = true) && !it.equals(prefix, ignoreCase = true) }
-            .sortedWith(compareBy(rankOffensive).thenBy { it.length })
+            .sortedWith(compareBy(rankOffensive).thenBy(rankIndex).thenBy { it.length })
             .take(limit)
             .map { matchCase(prefix, it) }
             .toList()
 
         if (prefixHits.size >= limit) return prefixHits
 
-        val fuzzy = words.asSequence()
+        val fuzzy = dict.asSequence()
             .filter { candidate ->
                 val c = candidate.lowercase()
                 if (c == lower) return@filter false
@@ -110,6 +126,31 @@ object SuggestionEngine {
             return word.replaceFirstChar { it.uppercaseChar() }
         }
         return word
+    }
+
+    /**
+     * Autocorrect on space: only when typed token is NOT already a dictionary word
+     * and a close (edit-distance ≤1, length≥3) candidate exists.
+     */
+    fun autocorrectCandidate(
+        prefix: String,
+        language: InputLanguage,
+        rejected: Set<String> = emptySet(),
+    ): String? {
+        if (prefix.length < 3) return null
+        val lower = prefix.lowercase()
+        if (lower in rejected.map { it.lowercase() }) return null
+        val dict = personalWords + SuggestionDictionary.words(language)
+        if (dict.any { it.equals(prefix, ignoreCase = true) }) return null
+        val hit = dict.asSequence()
+            .filter { kotlin.math.abs(it.length - prefix.length) <= 1 }
+            .filter { editDistance(lower, it.lowercase()) == 1 }
+            .filterNot { it.lowercase() in rejected.map { r -> r.lowercase() } }
+            .minWithOrNull(
+                compareBy<String> { editDistance(lower, it.lowercase()) }
+                    .thenBy { it.length },
+            ) ?: return null
+        return matchCase(prefix, hit)
     }
 
     /** Classic Levenshtein; short strings only. */

@@ -17,7 +17,12 @@ import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -35,10 +40,16 @@ fun SettingsScreens(
     onLanguageToggled: (InputLanguage, Boolean) -> Unit,
     onToggle: (String, Boolean) -> Unit,
     onLongPressDelay: (Int) -> Unit,
+    onSoundVolume: (Float) -> Unit = {},
+    onHapticStrength: (Float) -> Unit = {},
+    onEmojiFontScale: (Float) -> Unit = {},
+    onAddPersonalWord: (String) -> Unit = {},
+    onRemovePersonalWord: (String) -> Unit = {},
     onOpenImeSettings: () -> Unit,
     onSelectIme: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    var personalDraft by remember { mutableStateOf("") }
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -105,6 +116,24 @@ fun SettingsScreens(
             onCheckedChange = { onToggle("number_row", it) },
         )
         PrefSwitch(
+            title = stringResource(R.string.settings_number_row_passwords),
+            summary = stringResource(R.string.settings_number_row_passwords_summary),
+            checked = preferences.numberRowForPasswords,
+            onCheckedChange = { onToggle("number_row_for_passwords", it) },
+        )
+        PrefSwitch(
+            title = stringResource(R.string.settings_one_handed),
+            summary = stringResource(R.string.settings_one_handed_summary),
+            checked = preferences.oneHandedMode,
+            onCheckedChange = { onToggle("one_handed_mode", it) },
+        )
+        PrefSwitch(
+            title = stringResource(R.string.settings_clipboard),
+            summary = stringResource(R.string.settings_clipboard_summary),
+            checked = preferences.clipboardHistoryEnabled,
+            onCheckedChange = { onToggle("clipboard_history_enabled", it) },
+        )
+        PrefSwitch(
             title = stringResource(R.string.settings_show_emoji_key),
             summary = stringResource(R.string.settings_show_emoji_key_summary),
             checked = preferences.showEmojiKey,
@@ -116,10 +145,31 @@ fun SettingsScreens(
             checked = preferences.soundOnKeypress,
             onCheckedChange = { onToggle("sound_on_keypress", it) },
         )
+        Text(stringResource(R.string.settings_sound_volume), style = MaterialTheme.typography.bodyMedium)
+        Slider(
+            value = preferences.soundVolume,
+            onValueChange = onSoundVolume,
+            valueRange = 0f..1f,
+            modifier = Modifier.fillMaxWidth(),
+        )
         PrefSwitch(
             title = stringResource(R.string.settings_haptic),
             checked = preferences.hapticOnKeypress,
             onCheckedChange = { onToggle("haptic_on_keypress", it) },
+        )
+        Text(stringResource(R.string.settings_haptic_strength), style = MaterialTheme.typography.bodyMedium)
+        Slider(
+            value = preferences.hapticStrength,
+            onValueChange = onHapticStrength,
+            valueRange = 0.25f..1f,
+            modifier = Modifier.fillMaxWidth(),
+        )
+        Text(stringResource(R.string.settings_emoji_size), style = MaterialTheme.typography.bodyMedium)
+        Slider(
+            value = preferences.emojiFontScale,
+            onValueChange = onEmojiFontScale,
+            valueRange = 0.8f..1.4f,
+            modifier = Modifier.fillMaxWidth(),
         )
         PrefSwitch(
             title = stringResource(R.string.settings_popup),
@@ -180,6 +230,53 @@ fun SettingsScreens(
             checked = preferences.doubleSpacePeriod,
             onCheckedChange = { onToggle("double_space_period", it) },
         )
+        PrefSwitch(
+            title = stringResource(R.string.settings_autocorrect),
+            summary = stringResource(R.string.settings_autocorrect_summary),
+            checked = preferences.autocorrectEnabled,
+            onCheckedChange = { onToggle("autocorrect_enabled", it) },
+        )
+
+        HorizontalDivider()
+        SectionTitle(stringResource(R.string.settings_personal_dict))
+        Text(
+            stringResource(R.string.settings_personal_dict_summary),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
+        )
+        OutlinedTextField(
+            value = personalDraft,
+            onValueChange = { personalDraft = it },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true,
+            placeholder = { Text(stringResource(R.string.settings_personal_dict_hint)) },
+        )
+        Button(
+            onClick = {
+                onAddPersonalWord(personalDraft)
+                personalDraft = ""
+            },
+            modifier = Modifier.fillMaxWidth(),
+            enabled = personalDraft.isNotBlank(),
+        ) {
+            Text(stringResource(R.string.settings_personal_dict_add))
+        }
+        preferences.personalDictionary.forEach { word ->
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 4.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(word)
+                Text(
+                    stringResource(R.string.settings_personal_dict_remove),
+                    color = MaterialTheme.colorScheme.error,
+                    modifier = Modifier.clickable { onRemovePersonalWord(word) },
+                )
+            }
+        }
 
         HorizontalDivider()
         SectionTitle(stringResource(R.string.settings_about))

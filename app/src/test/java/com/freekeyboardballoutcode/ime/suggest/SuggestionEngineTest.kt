@@ -33,6 +33,15 @@ class SuggestionEngineTest {
     }
 
     @Test
+    fun russianPrivPrefixSuggestsPrivet() {
+        val result = SuggestionEngine.suggestions("прив", InputLanguage.RU)
+        assertTrue(
+            "Expected привет-like candidate for прив, got $result",
+            result.any { it.startsWith("привет", ignoreCase = true) },
+        )
+    }
+
+    @Test
     fun preservesCapitalization() {
         val result = SuggestionEngine.suggestions("Hel", InputLanguage.EN)
         assertTrue(result.first().startsWith("H"))
@@ -102,5 +111,28 @@ class SuggestionEngineTest {
         assertEquals(0, SuggestionEngine.editDistance("fuck", "fuck"))
         assertEquals(1, SuggestionEngine.editDistance("fuk", "fuck"))
         assertEquals(2, SuggestionEngine.editDistance("fukc", "fuck"))
+    }
+
+    @Test
+    fun autocorrectFixesNearMiss() {
+        // Single insertion: helllo → hello (length-penalized over other distance-1 neighbors).
+        val hit = SuggestionEngine.autocorrectCandidate("helllo", InputLanguage.EN)
+        assertEquals("hello", hit)
+    }
+
+    @Test
+    fun autocorrectSkipsKnownWord() {
+        assertEquals(null, SuggestionEngine.autocorrectCandidate("hello", InputLanguage.EN))
+    }
+
+    @Test
+    fun personalDictionarySurfacesInSuggestions() {
+        SuggestionEngine.setPersonalWords(listOf("freekeyboard"))
+        try {
+            val result = SuggestionEngine.suggestions("freek", InputLanguage.EN)
+            assertTrue(result.any { it.equals("freekeyboard", ignoreCase = true) })
+        } finally {
+            SuggestionEngine.setPersonalWords(emptyList())
+        }
     }
 }

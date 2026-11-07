@@ -1,0 +1,4805 @@
+﻿a a linha de emojis
+A banner to let users know that changes they make to text may be used to improve voice typing features for their use
+A busca de emojis non est
+A busca de emojis non funciona para o idioma
+A carregar autocolante de Emoji Kitchen
+a de Emoji
+a de Emoji Kitchen
+a de Emoji Kitchen para el emoji 
+a fleiri emoji
+A float value to be multiplied when computing keyboard height in landscape mode
+A float value to be multiplied when computing keyboard height in normal keyboard landscape mode
+A float value to be multiplied when computing keyboard height in normal keyboard portrait mode
+A float value to be multiplied when computing keyboard height in portrait mode
+A mostrar o emoji 
+A pesquisa de emojis est
+A pesquisa de emojis n
+A promo to let users know they can help improve voice typing
+A string value that explicitly sets the default keyboard height from a list of supported values
+A tecla de emojis est
+A11y description dictionary
+A11y description dictionary data is broken
+AAAucun autocollant Emoji Kitchen disponible pour cette combinais
+AABeim Tippen auf die Emoji-Taste Sticker und Suchoptionen anzeigen
+aaClear all on-device data that Gboard has saved to improve your typing and voice typing experience
+AADesliza el dedo para quitar la fila de emoji en cualquier momento
+AAEr is geen Emoji Kitchen-sticker beschikbaar voor deze c
+AAIntroducing the emoji row
+AAIsalayisha idatha yosesho lwe-Emoji Zama futhi emuva kwesikhathi
+AAIsitikha Semboni ye-Emoji ye-emoji ye-
+aaLa dimensione dei caratteri delle emoji e della tastiera corrisponde all
+AAPopulaire en vaak gebruikte emoji
+AAshow_floating_suggestions_while_editing_recent_autocorrected_wor
+AAsplit_keyboard_mode_foldable_keyboard_resize_keyboard_width_ratio
+AASteeds besig om Emojimenger-soekdata te laai
+AASubstitua palavras por emojis relacionados sugeridos com um toque
+aaSuggerimento di emoji rimosso
+AATampilkan tombol di toolbar keyboard untuk membuka keyboard emoji
+AATetapkan saiz dan bilangan emoji yang dipaparkan dalam satu baris
+aaThe text that you type into the translate box will be sent to Google for translat
+AATunakuletea safu mlalo ya emoji
+AAutocollant Emoji
+ABMuestra emojis populares y los m
+ABOVE_OTHER_POPUPS
+Abrir o panel de emojis
+Abrir painel de emojis
+Abrir panel de emojis
+AbstractDictionarySettingsFragment
+AbstractDoubleSpaceProcessor
+AbstractFreeListIN10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator11MatchedNodeEE
+AbstractFreeListIN10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator11MatchedNodeEE
+AbstractFreeListIN10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator14MatchedKeyNod
+AbstractHandwritingRecognizerWrapper
+AbstractPersonalDictionaryWordEditFragment
+AbstractPopupViewManager
+ACBemutatjuk az emojisort
+Accede a tus emojis favoritos al instante
+accede al instante a tus emojis favoritos
+Accede ao instante aos teus emojis favoritos
+Accedeix als emojis
+accedeix als teus emojis preferits a l
+Acceder a la tecla de emoji con una tecla espec
+Acceder a los emojis
+Acceder aos emojis
+Accedi alle emoji con un tasto dedicato
+ACCEPTS_UNDO_AFTER_EMOJIFIED
+Access clipboard
+Access emoji
+Access information from contacts for suggestions
+Access translate
+Access voice typing
+Access your favorite emojis instantly
+Access your favourite emojis instantly
+ACCESS_POINTS_BAR_CLOSED_AFTER_EMOJIFIED
+ACCESS_POINTS_BAR_SHOWN_AFTER_EMOJIFIED
+ACCESS_POINTS_PANEL_CLOSED_AFTER_EMOJIFIED
+ACCESS_POINTS_PANEL_SHOWN_AFTER_EMOJIFIED
+AccessibilityFullScreenPopupView
+AccessPointDragPopupView
+AccidentalEmojiKeyTapCounts
+Aceda instantaneamente aos seus emojis favoritos
+Aceder a emojis
+Acessar os emojis
+Acesse seus emojis favoritos instantaneamente
+ACTION_SHOW_TEXT_SUGGESTIONS
+Activate voice typing as default text input method
+Activating Emojify extension 
+Activating floating mode with keyboard customization 
+active_emoji_kitchen_browse
+Activezi clipboardul
+Adapt Gboard to your typing and voice typing usage patterns
+adaugi emoji 
+add an emoji
+add party popper emoji to celebrate
+Add punctuation automatically when voice typing
+Add screenshots to your Gboard clipboard for easier pasting
+Add some emojis
+add some happy emoji
+Add to dictionary
+addConvertedComposingTextToUserDictionary
+Added to dictionary
+additional_emojis_require_jni_filtering_in_hybrid_engine
+additional_keyboard_theme
+addRawComposingTextToEnglishUserDictionary
+Adds or replaces some words with emoji
+addToDictionary
+ade o sustituye algunas palabras por emojis
+ade un emoji alegre
+Adesivi Emoji Kitchen disponibili
+Adesivo do Emoji Mix
+Adesivo do Emoji Mix para os emojis 
+adesivo Emoji Kitchen
+Adesivo Emoji Kitchen per le emoji 
+Adesivos do Emoji Mix dispon
+adiciona alguns emojis felizes
+Adiciona emojis felizes
+Adiciona ou substitui algumas palavras por emojis
+Adicionar emojis
+adicionar emojis e muito mais
+Adicione emojis
+adicione emojis de alegria
+Adicione emojis felizes
+adir emojis
+adjustLanguageIndicatorPopupAccessibilityTraversalOrder
+AEnginn Emoji Kitchen l
+AError reading sanity check eval data for personalization model 
+AFailed to delete emoji kitchen database shm file with version
+AFailed to delete emoji kitchen database wal file with version
+afegeix algun emoji alegre
+Afegeix emojis
+Afegeix emojis alegres
+Afegeix emojis o substitueix algunes paraules per emojis
+Afegeix-hi emojis
+afegir emojis i m
+Affichage des emoji 
+affichage pour voir comment les suggestions sont g
+Afficher dans la bande de suggestion
+Afficher dans la bande de suggestions
+afficher de suggestions 
+afficher des suggestions
+afficher des suggestions pour cela
+Afficher la ligne des emoji r
+afficher le clavier emoji
+Afficher les emoji
+afficher les suggestions
+Afficher les suggestions dynamiquement
+Afficher les suggestions et acc
+Afturkalla emoji-till
+agentic_dictation_emoji_skintone_replacement
+Aggiunge o sostituisce alcune parole con emoji
+aggiungere emoji e altro ancora
+Aggiungi delle emoji felici
+Aggiungi emoji
+aggiungi qualche emoji sorridente
+aggiunta di emoji
+agrega algunos emojis felices
+Agrega emojis
+Agrega emojis alegres
+Agrega o reemplaza algunas palabras con emojis
+Agregar emojis
+agregar emojis y m
+ai_core_promote_streaming_suggestion
+Ainda a carregar dados de pesquisa de emojis
+Ajoute des emoji
+ajoute des emoji joyeux
+Ajoute des emojis
+ajouter des emoji
+ajte s nekom drugom opcijom za izradu novog emojija
+Akses Emoji
+Akses emoji favorit Anda secara instan
+Akses emoji kegemaran anda dengan segera
+Akses kekunci emoji dengan kekunci khusus
+ALa taille des emoji correspond 
+alat za odabir varijante emojija
+Alderantzikatu emoji-iradokizuna
+ALERT_DIALOG_THEME_ID
+Algararen emojia
+Alih keluar baris akses pantas emoji
+Alisin ang fast-access row para sa emoji
+Allow suggestions from your 
+allow_show_toast_in_popup_ime_window
+allPendingSuggestions
+als diccionaris o als emojis recents associats al teu altre perfil
+Alternativer for tekst til emoji
+Altre emoji
+always_show_popup
+always_show_suggestions
+always-pressed-popup-item
+alwaysShowPopup
+alwaysShowSuggestions
+AND base_variant_emoji 
+AND is_primary_for_emoji_1
+AND is_primary_for_emoji_2
+and it should consist only from emoji characters
+and learns from your dictated audio in real time or from Gboard voice typing audio snippets that you donate
+and NEVER append an unrelated default emoji like 
+and personal dictionary will be temporarily processed by Google
+and the cause for the exception being translated
+Anda belum menggunakan emoji apa pun
+Anda belum menggunakan mana-mana emoji lagi
+AndroidDictionaryWordEditFragment
+AndroidUserDictionaryQueries
+Ang kasalukuyang source na wika para sa pag-translate ay 
+Ang kasalukuyang target na wika para sa pag-translate ay 
+Angalia emoji zaidi
+Ange storlek och antal emojis som visas p
+Animated Emoji is empty
+Animated Emoji sticker
+Animated Emoji sticker for 
+ANIMATED_EMOJI
+animated_emoji TEXT NOT NULL
+ANIMATED_EMOJI_CONTENT_SUGGESTION_ERROR
+ANIMATED_EMOJI_CONTENT_SUGGESTION_IMPRESSION
+animated_emoji_images
+ANIMATED_EMOJI_QUERY
+animated_emoji_usage
+animated_emojis
+animatedEmoji
+AnimatedEmojiImage
+animatedEmojiKeywordAllowlist
+animatedEmojiResultFuture
+animatedEmojisEnabled
+AnimatedEmojiUsageHistory
+annotation_dictionary
+AnnotationDictionary
+ANot showing onboarding because suggestion strip is disabled 
+Anvend Glidende indtastning automatisk
+aos dicionarios nin aos emojis recentes asociados ao outro
+AppCompat theme 
+Apply keyboard theme
+applyClientDiff-SuggestionDiff
+applyKeyboardTheme
+applyTheme
+applyThemesFromThemeStyleArray
+applyThemeStyle
+applyToTheme
+apps_to_respect_type_text_flag_no_suggestions
+Appuyez deux fois pour appliquer la suggestion d
+Appuyez deux fois pour supprimer la suggestion d
+Appuyez pour activer les suggestions de contacts
+Appuyez pour parcourir Emoji
+APredstavljanje reda za brzi pristup emoji sli
+Apresente uma linha de emojis usados recentemente
+Apresente uma tecla dedicada para aceder aos emojis
+Apri il riquadro delle emoji
+Apri impostazioni di Emoji Kitchen
+aPrijedlog emojija je uklonjen
+APrikazivanje predstavljanja reda za brzi pristup emoji sli
+aPrimary emoji search engine failed 
+Are you sure that you want to delete the theme
+Are you sure you want to delete the theme
+arg_show_theme_details
+arg_simple_theme_name
+artma emojisi
+as de Emoji
+as last_shared_timestamp FROM emoji_filters GROUP BY emoji ORDER BY last_shared_timestamp DESC LIM
+as last_shared_timestamp FROM emoji_shares GROUP BY emoji ORDER BY last_shared_timestamp DESC LIM
+as last_shared_timestamp FROM emoji_shares GROUP BY emoji ORDER BY total_shares DESC
+as last_shared_timestamp FROM emoji_shares WHERE truncated_timestamp_millis
+as last_usage_timestamp FROM animated_emoji_usage GROUP BY animated_emoji ORDER BY last_usage_timestamp DESC LIMI
+AS shares FROM emoji_shares GROUP BY emoji
+AS shares FROM emoji_shares WHERE truncated_timestamp_millis
+AS usage FROM animated_emoji_usage WHERE truncated_timestamp_millis 
+as y explora opciones cuando se presiona la tecla de emojis
+aS-a aplicat sugestia de emoji
+Asboblar panelidagi emojilar
+Ascunde clipboardul
+Ascunde tastatura emoji
+Asset theme 
+Assistant voice typing
+ast tek emoji-t e tua t
+async_emoji_kitchen_
+async_emoji_kitchen_authority
+asyncFetchSuggestions
+at gumamit ng hindi bababa sa 2 wikang sumusuporta sa mga advanced na feature ng voice typing
+atan emoji yoxdur
+atau emoji terbaru yang terkait dengan profil lain
+atlar yoki oxirgi emojilar faqat tegishli profilda chiqadi va o
+attach_spell_checker_suggestions
+Attempt to save dictionary without filename
+Attempting to register a Glide v3 module
+Attempting to resize a fixed-size tensor
+Attempting to resize dimension 
+Atzitu emojiak
+Atzitu gustatzen zaizkizun emojiak berehala
+Aucun emoji correspondant
+Aucun emoji disponible
+Aucun emoji trouv
+Aucune suggestion d
+Aucune suggestion disponible
+Aucune suggestion pour le moment
+Aucune suggestion propos
+Aucune suggestion trouv
+audio input and personal dictionary will be temporarily processed by Google
+Auf Emoji Kitchen-Tastatur nach Emojis suchen
+Augmenta la mida dels emojis
+AUGMENTED_AUTO_FILL_PERSONAL_CONTEXT_ACTION_SUGGESTION
+AUGMENTED_AUTO_FILL_PERSONAL_CONTEXT_TEXT_PII_SUGGESTION
+AUGMENTED_AUTO_FILL_PERSONAL_CONTEXT_TEXT_SUGGESTION
+Augmenter la taille des emoji
+Aumenta dimensioni emoji
+Aumentar tamanho do emoji
+Aumentar tamanho dos emojis
+Auto commit glide input
+auto_imported_android_contacts_dictionary
+auto_imported_android_shortcuts_dictionary
+auto_show_translate
+AUTO_TRANSLATE
+auto_translate_banner
+Autocolante de Emoji Kitchen
+Autocolantes de Emoji Kitchen dispon
+autocollant Emoji Kitchen
+autocollant Emoji Kitchen en cours
+Autocollant Emoji Kitchen pour l
+Autocollants Emoji Kitchen disponibles
+Autocorrect suggestions are shown on the toolbar
+Autocorrect suggestions are shown on the toolbar and at the cu
+Autofill suggestions are now above your keyboard
+Auto-fill suggestions are now above your keyboard
+Automatic initialization is typically performed by EmojiCompatInitializer
+Automatic language switching and lang-id is available 
+Automatic language switching and lang-id is not available 
+Automatically display word suggestions while you type with
+Automatically start voice typing when keyboard is shown
+AutoPasteSuggestionHelper
+Autoriser les suggestions de
+Autoriser les suggestions de votre 
+autoshowtranslate
+Auto-space after suggestions
+Autres emoji
+autres suggestions
+autres suggestions en cours
+aux dictionnaires ni aux emoji r
+Avaa Emoji Kitchen 
+Avaa emojipaneeli
+Available ang mga suhestyong emoji
+availableEmojis
+Awekho ama-emoji atholakalayo
+awtomatiko nitong ie-enable ang voice typing
+Awtomatikong made-detect ng voice typing ang iyong wika
+Awtomatikong magdagdag ng bantas kapag gumagamit ng voice typing
+Awukakasebenzisi ama-emoji okwamanje
+Ayikho i-emoji efanayo
+Ayikho i-emoji etholakele
+Ayikwazanga ukulayisha isitika Semboni ye-Emoji
+Ayikwazi ukusesha Imboni ye-Emoji ngolimi olukhethiwe
+Ayikwazi ukuxhumeka kuseva ye-Google Translate
+Azikho iziphakamiso zama-emoji ezitholakalayo
+Azkenaldiko emojiak
+Back to clipboard
+BACKGROUND_TRAINING_PERSONALIZATION_CHECKPOINT_PUBLISHED
+Bad keyData with HANDWRITING_RECOGNIZER_STATE
+bad_ignored_auto_correction_by_suggestion_ratio
+Bado hujatumia emoji zozote
+Bado inapakia data ya utafutaji wa Emoji
+Bagikan Stiker Dapur Emoji
+Bande de suggestion
+Bande de suggestions
+Barakalla emojisi
+Baris akses cepat emoji
+Baris akses pantas emoji
+Baris Emoji
+Barra di accesso rapido alle emoji
+base_polyphone_word_dictionary
+base_variant_emoji
+base_variant_emoji TEXT NOT NULL
+BasePolyphoneWordDictionary
+baseVariantEmoji
+Basic_Emoji
+BasicPopupView
+BatterySaverTheme_Enabled
+BatterySaverThemeModule
+BBA promo to let users know that they can help improve voice typing
+BBAsikho isitika Semboni ye-Emoji esitholakalayo ngale nhlanganisela
+BBAuto commit the current composing text before the next glide input
+BBAwtomatikong simulan ang voice typing kapag ipinakita ang keyboard
+BBLa dimensione delle emoji corrisponde all
+BBMemperkenalkan baris emoji
+BBMenampilkan stiker dan menjelajahi opsi saat mengetuk tombol emoji
+BBnormal_keyboard_mode_foldable_keyboard_resize_keyboard_width_ratio
+BBsplit_desk__land_keyboard_resize_keyboard_custom_body_height_ratio
+BBTetapkan ukuran dan jumlah emoji yang ditampilkan dalam satu baris
+BBUsayizi wefonti ye-emoji nekhibhodi ulandela amasethingi esistim
+BBWelcome to Gboard clipboard
+bcAccede a la tecla de emojis con una tecla espec
+BCLa presentazione della barra di accesso rapido alle emoji 
+BCLes suggestions personnalis
+bCREATE TABLE IF NOT EXISTS emoji_filters 
+Bdelete_character_on_content_suggestion_interaction_app_restriction
+BDImpossible de rechercher Emoji Kitchen dans la langue s
+Bedankt-emoji
+before fetching suggestions
+Begien ordez bihotzak dituen aurpegiaren emojia
+begin EmojiKitchenDatabaseManager ---
+begin EmojiKitchenDataMddDownloader ---
+BEHIND_OTHER_POPUPS
+BEHIND_OTHER_POPUPS_BUT_ABOVE_ANCHOR
+beispielsweise um Text zu bearbeiten oder einen Emoji hinzuzuf
+Belgilar klaviaturasida emoji
+Benable_transition_between_emoji_and_emoji_kitchen_browse_in_tablet
+ber eine bestimmte Taste auf die Emoji-Taste zugreifen
+bern in Emoji Kitchen tippen
+Besarkan saiz emoji
+BExpressionMomentEmojifyAvailabilityNotification
+bg_floating_usage_dictionary_word_item_selector
+bg-chip-item-suggestion
+bg-chip-item-suggestion-widget
+bidirectional na switcher ng emoji
+bidirectionele emoji-schakelaar
+Bidirektionale Emoji-Auswahl
+Bihotzaren emojia
+Bihur ezazu emoji
+Bihurtu emoji
+Bilatu emoji
+Bilatu Emoji Kitchen-en
+Bilatu Emoji Kitchen-en testuaren edo emojien bidez
+Bilatu emojiak
+Bilatu emojiak Emoji Kitchen bidez
+Binline_suggestion_space_animation_only_min_time_between_d
+bisitahin ang Patakaran sa Privacy ng Google
+bla gjennom emojimikseren
+Black Theme
+Blijgezicht-emoji
+blockedEmojisForQuery
+Blue Grey Theme
+Blue theme
+blushing emoji
+Bmax_keyword_count_from_concept_prediction_for_emoji_kitchen_search
+bn indstillingerne for Emoji Mix
+bner emojitastaturet
+Board sa pag-translate
+Body keyboard view is null when getting emoji panel padding left
+Boldog arc emoji
+Bonisa i-emoji
+Bonisa i-emoji ye-
+Bonisa ikhibhodi ye-emoji
+Bonisa inkinobho kubha yamathuluzi yekhibhodi ukuze uvule ikhibhodi ye-emoji
+Bonisa ukhiye okhethekile ukuze ufinyelele ku-emoji
+bool SuffixDictionary
+bopomofo_mutable_dictionary_accessor_setting_scheme
+Boshqa emojilar
+Boshqa emojilarni ochish
+Bouton Emoji
+BREQUEST_EMOJI_SEARCH_SUGGESTIONS received with invalid payload
+brica de emojis
+brica de emojis con texto ou emojis
+brica de emojis dispo
+brica de emojis no idioma seleccionado
+brica de emojis para 
+broken heart emoji
+Brosandi emoji
+Brown Theme
+bruke det neste emoji-forslaget
+bruke emojier
+bS-a eliminat sugestia de emoji
+bThe calculate keyboard height is not in the range of 0 to 512
+Bu kombinatsiya uchun Emoji Studiya stikerlari mavjud emas
+Bu tilda emoji qidiruvi ishlamaydi
+Buat carian pada dapur emoji
+BugReportInfoPopup
+buildEmojiShortcutData
+BuiltinThemePackage
+Buka ama-emoji engeziwe
+Buka panel emoji
+Buka setelan Dapur Emoji
+Buka tetapan Dapur Emoji
+Buksan ang mga setting ng Emoji Kitchen
+Buksan ang panel ng emoji
+Bumalik sa clipboard
+Bunda emoji paneli berkitiladi
+Bundled emoji file not found
+bundled_emoji
+BundledEmojiDataFetcher
+BundledEmojiListLoader
+BundledEmojiMetadataFetcher
+Busca de emoji
+Busca emojis
+Buscar emoji
+Buscar emojis
+Buscar emojis de Emoji Kitchen
+Buscar emojis de Fusi
+Buscar emojis en F
+Buscar en Emoji Kitchen
+Buscar en Emoji Kitchen con texto o emojis
+but content suggestion is not supported to display
+but neither profile can access suggestions
+but this only works when the LayoutManager of this RecyclerView is an EmojiPickerLayoutManager
+Butang emoji
+Buton emoji
+Butonul de emoji
+Button ng emoji
+button should be visible only for custom themes
+Buyisela isiphakamiso se-emoji
+bWhether to enable the theme for extra small screen
+Bwriting_tools_v2_zero_state_instruction_suggestions_timeout_millis
+c cho emoji 
+Cadangan emoji sebelumnya
+Cadangan emoji seterusnya
+Cadangan emoji tersedia
+calculateFloatingKeyboardHeight
+call GlideException
+Call searchEmojis before activate
+called before emoji data file readied for locale 
+cambio bidireccional de emojis
+can_show_proofread_suggestion
+canApplyTheme
+Cancelled to check if emojiKitchenBrowseEntryPointEligible
+CANCELLED_BEFORE_RECEIVE_STREAMING_SUGGESTION
+CANCELLED_BEFORE_SHOW_STREAMING_SUGGESTION
+candidate_popup_layout
+candidate_user_dictionary_flags
+candidates_mixed_emojis
+Candidatesuggestion
+canFetchAnimatedEmojiContentFuture
+canFetchEmojiKitchenContentFuture
+cannot be mapped to a valid dictionary word
+Cannot connect to Google Translate server
+Cannot find a dictionary data
+Cannot find a suggestion filter data
+Cannot find an emoji string array or data is broken
+Cannot find an emoji token array
+Cannot find out applied suggestion
+Cannot find some usage dictionary data components
+Cannot get modification time of the user dictionary
+cannot get the emoji data
+cannot load multiple image candidates popup
+Cannot load mutable dictionary settings from
+cannot parse the emoji mapping
+Cannot read default system theme file
+Cannot resize slot_bytes
+Cannot set popup background for MODE_DIALOG
+Cannot show clipboard opt-in tooltip
+Cannot show popup view in popup ime window
+canShowEmojiSuggestions
+canShowNewSuggestions
+canShowSuggestions
+capturi de ecran la clipboardul Gboard pentru a le insera mai u
+car les suggestions continuent de s
+Cargando el emoji
+Cari dapur emoji
+Cari Dapur Emoji dengan teks atau emoji
+Cari emoji
+Carian Emoji tidak berfungsi untuk bahasa ini
+Carian emoji tidak tersedia
+Carregando adesivo do Emoji Mix
+CATEGORY_PREVIEW_THEME
+CATEGORY_SELECT_THEME
+CCMuestra emojis populares y de uso frecuente en el tec
+CCnormal_desk__land_keyboard_resize_keyboard_custom_body_height_ratio
+CContentSuggestionUiControllerImpl
+CCOnyesha emoji maarufu na unayotumia mara kwa mara kwe
+CCSaran emoji diterapkan
+ccSuggerimento di emoji applicato
+CCZa to kombinacijo ni na voljo nobena nalepka funkcije Emoji Kitchen
+cdPrimijenjen je prijedlog emojija
+Cela masque la touche Emoji
+Cerca emoji
+Cerca emoji Emoji Kitchen
+Cerca emojis
+Cerca in Emoji Kitchen
+Cerca in Emoji Kitchen con testo o emoji
+Cerca un emoji
+Cerrar panel de emojis
+Chagua emoji
+Chaguo za emoji kutokana na maandishi
+Change popup view z order
+Changes that you make to dictated text may be used to improve your use of voice typing features
+Character popup
+characters are composed in the inline text field or in a separate floating view
+Check back as suggestions keep improving
+checkActiveEmojiFontRevision
+checkAndRefreshMutableDictionaryDataSetting
+Checking for more suggestions
+cheln-Emoji
+cher la suggestion de termes choquants
+cher les autocollants et explorer les options lorsque vous appuyez sur la touche Emoji
+ChineseDoubleSpaceProcessor
+CHIP_EMOJI_SUGGESTION
+chip-item-suggestion-text
+chip-item-suggestion-text-secondary
+Chitha imenyu ye-popup
+Chiudi il riquadro delle emoji
+Chiudi la presentazione della barra di accesso rapido alle emoji
+Chiudi menu popup
+Choisir un emoji
+chsten Emoji-Vorschlag zu 
+chsten Glide-Eingabe per Autocommit 
+chster Emoji-Vorschlag
+cker eller senaste emojis f
+Clavier emoji
+Clavier pour parcourir Emoji
+Clavier pour parcourir Emoji Kitchen
+clear translate because app
+clear translate because input started
+CLEAR_USER_DICTIONARY
+ClearDictionary
+clearProactiveSuggestions-
+clearProactiveSuggestionsListener
+ClearProactiveSuggestionsNotificationKt
+clearSuggestionsListener
+clEN4absl11string_viewEEUlSA_SA_RKNS_10dictionary5TokenEE_
+clEN4absl11string_viewEEUlSD_SD_RKNS2_10dictionary5TokenEE_NS_9allocatorISI_EEFNSE_19Dicti
+click undo the add to dictionary
+Clicked view is not EmojiView
+Clicking back icon in emoji picker shouldn
+Clipboard suggestions
+CLIPBOARD_SELECT_SUGGESTION
+CLIPBOARD_SUGGESTION_SELECT_VIEW_BY_PK_ENTER
+clipboard-suggestion-paste-icon
+Close emoji fast-access row introduction
+Close emoji panel
+Close voice typing banner
+close_accessory_floating_keyboard
+Closing EmojiKitchenDataMddDownloader
+Coba opsi lain untuk membuat emoji baru
+codePointsToEmoji
+color_bg_ja_usage_dictionary_icon
+color_bg_ja_usage_dictionary_window_close_button
+color_candidate_text_material_dark_theme
+color_candidate_text_material_light_theme
+color_floating_candidate_ordinal
+color_popup_menu_label
+color_theme_details_dropdown_stroke
+color_theme_listing_candidate_preview_card_stroke
+color_translate_board_label_material_dark_theme
+Combine emoji
+COMMIT_SUGGESTION
+CommitFirstSuggestion
+CommitPartialSuggestionSegmentValue failed
+Compartilhar adesivo do Emoji Mix
+ComposingSuggestionCounts
+concept_prediction_sample_emoji_by_popularity
+conceptPredictionEmojiFromConcept
+conceptPredictionPredictEmojis
+conceptPredictionRankedEmojiPrediction
+CONDITIONAL DICTIONARY USAGE
+Condividi adesivo Emoji Kitchen
+config_clipboard
+config_default_dark_theme_file
+config_default_theme_file
+config_default_themes_dir
+config_enable_extra_small_theme_without_height
+config_haptic_cutoff
+config_theme
+config_theme_access_point
+config_translate
+Connecting to Google Translate server
+Conserver la suggestion 
+consulta le Norme sulla privacy di Google
+Consultez les suggestions apr
+contacts_dictionary_accessor
+content sa clipboard
+CONTENT_SUGGESTION
+content_suggestion_app_whitelist
+content_suggestion_tenor_collection_url_param
+CONTENT_TYPE_EMOJI
+CONTENT_TYPE_EMOJI_KITCHEN_STICKER
+contentsuggestion
+ContentSuggestionBodyContainer
+content-suggestion-clickable
+ContentSuggestionConsumer
+ContentSuggestionController
+ContentSuggestionCounts
+ContentSuggestionFeatureConfig
+ContentSuggestionItem
+ContentSuggestionMetricsProcessorHelper
+content-suggestion-primary-color
+ContentSuggestionProvider
+ContentSuggestionQueries
+ContentSuggestionQueriesDispatcher
+ContentSuggestionSettingsListenerModule
+contentSuggestionShare
+contentSuggestionStickerMaxCount
+ContentSuggestionUiController
+ContentSuggestionUiControllerImpl
+ContentSuggestionUtils
+contentSuggestionVisibleItemOffset
+contentSuggestionVisibleItemPosition
+ContextPrivacyConfig
+ContextPrivacyConfigCatalog
+ContextThemeWrapper
+Contextual content suggestion generation rules are not satisfied
+CONTEXTUAL_EMOJI_KITCHEN
+contextual_emoji_kitchen_result_ordering_strategy
+contextual_emoji_kitchen_supported_languages
+contextual_emoji_kitchen_threshold
+ContextualContentSuggestionFetcher
+ContextualEmojiGenerator
+contextualEmojiKitchenKeywordAllowlist
+ContextualEmojiKitchenKeywordProvider
+contextualEmojiKitchenThreshold
+Convert spoken emoji requests into exact unicode symbols and
+convertEmojiKitchenImages
+Converter em emoji
+Converteren naar emoji
+copied to clipboard
+copyUserThemeFileToTheDirectory
+Corrections and suggestions
+Corrections et suggestions
+CorrectionSuggestion
+Could not create the user theme directory 
+Could not invoke setEpicenterBounds on PopupWindow
+Could not load Emoji Kitchen sticker
+Could not load suggestions
+Could not restore theme
+cpinyin_mutable_dictionary_accessor_setting_scheme
+Cpref_key_inline_suggestion_swipe_on_space_promo_tooltip_shown_coun
+crank_inline_suggestion_language_tags
+CRANK_PIE_EMOJI
+create EmojifyModelGenerator
+Create Keyboard Theme
+Create keyboard theme with my image
+Create new EmojiKitchenDatabase with version
+CREATE TABLE IF NOT EXISTS animated_emoji_usage 
+CREATE TABLE IF NOT EXISTS emoji_shares 
+createEmojiCandidates
+createEmojiKitchenDatabaseInternal
+createEmojiVariantClickListener
+createEmojiViewData
+createHandwritingIme
+createMutableDictionaryAccessor
+createProactiveSuggestions
+createTheme
+CreateZipDictionary
+Creating Emojify extension 
+Creating new EmojiKitchenDatabase with version
+CREATIVE_EMOJI_KITCHEN_STICKER
+CREATIVE_EMOJI_STICKER
+CRITICAL MANDATE FOR PERSONAL DICTIONARY BIASING 
+criture dans la bande de suggestions lors de la saisie
+criture dans la bande de suggestions pendant la saisie
+cross_profile_temp_user_theme_
+CrossProfileDictionaryPreference
+Crying emoji
+CStartupSamplePercentage should be a floating number 
+CSuggestions should be disabled due to TYPE_TEXT_FLAG_NO_SUGGESTIONS
+ction6__funcIPFN4absl8StatusOrINS_10unique_ptrIN6speech7context8features25FeatureDictionaryProviderINS5_6common18RecognitionContext
+Cuba pilihan lain untuk membuat emoji baharu
+current version of emoji kitchen data 
+currentAppliedThemes 
+currentProactiveSuggestions
+currentSuggestions
+CURSOR_MOVED_AFTER_EMOJIFIED
+CUSTOM_THEME
+customDictionary
+customEmojiTypeface
+customized_theme
+Cwriting_tools_v2_cancel_zero_state_instruction_suggestion_on_typing
+Cyan Theme
+d as popup labels 
+d grote emoji
+d in emoji kitchen data cleanup work
+d large emoji
+d nagy emoji
+d stora emojis
+d store emojis
+d suurta emojia
+d ta emoji
+d ta katta emoji
+d will be sent to Google and temporarily processed to create grammar and writing suggestions
+Da skjules emoji-tasten
+Dados da pesquisa de emojis indispon
+Dadurch wird die Emoji-Taste ausgeblendet
+Daha fazla emoji
+Daha fazla emoji g
+Danke-Emoji
+Dapur emoji
+dark mode is not supported by theme or in current SDK
+DarkModeLockedSystemAutoThemeSpecProvider
+Data carian emoji tidak tersedia
+Data for emojis
+Data penelusuran emoji tidak tersedia
+Data ya utafuaji wa emoji haipatikani
+DATA_DICTIONARY_CHANGED
+Dati di ricerca delle emoji non disponibili
+Daumen-hoch-Emoji
+DayNightTheme
+DDBonisa ama-emoji adumile nasetshenziswa njalo kukhibhodi
+ddDouble-tap the mic to continue voice typing until you tap it again
+DDELIGHT_DECODEREXPRESSIVE_CONCEPT_TRIGGERINGFAKEFAKE_DEPENDENTFAKE_SLEEPINGLITE_EMOJI_PREDTFLITE_EMOJI_PREDTFLITE_NWPTRANSFOR
+DDEmoji suggestion applied
+DDEmoji suggestion removed
+DDErakutsi eranskailuak eta arakatzeko aukerak emojien tekla sakatzean
+DDfloating_keyboard_mode_foldable_keyboard_resize_keyboard_width_ratio
+DDMemperkenalkan baris emoji
+DDMostra emojis populares e usados con frecuencia no t
+ddone_handed_mode_keyboard_mode_foldable__land_new_uikeyboard_resize_keyboard_custom_body_height_ratio
+ddPinapaliit ng one-handed mode ang iyong keyboard para madali kan
+ddra i Emoji Kitchen
+DDsplit_keyboard_mode_foldable_keyboard_resize_keyboard_padding_bottom
+DDSubstitueix paraules per emojis relacionats suggerits amb un sol toc
+De grootte van emoji
+De zoekfunctie voor emoji
+Deactivating Emojify extension 
+DEAucun autocollant Emoji Kitchen n
+DECODE_FOR_HANDWRITING
+DECODE_HANDWRITING_HMM_INCREMENTAL
+DECODE_HANDWRITING_INCREMENTAL
+DecodeForHandwriting
+decodeForHandwritingNative
+DecodeForHandwritingRequest
+DecodeForHandwritingResponse
+decodeForHandwriting-time
+decodeForHandwritingWithHandleNative
+DECODER_SUGGESTION
+Decrease emoji size
+DEDette er emojiraden
+Deel Emojimenger-plakker
+Deep Purple Theme
+Default auto theme
+Default dark theme
+Default dark theme file name
+Default theme
+Default theme file name
+Default theme may be changed
+Default themes directory
+default_emoji_kitchen_theme_emojis
+default_lm_score_for_emoji_key
+default_suggestion
+default_suggestions
+DEFAULT_THEME_NAME
+DefaultEmojiPickerHeader
+defaultEmojiSize
+DefaultRecentEmojiProvider should NOT work before unlock
+Defineix la mida dels emojis i quants se
+Del klistremerke fra emojimikseren
+Dela Emoji Kitchen-dekal
+delay_to_wait_for_suggestions_before_commit_ms
+DELes suggestions personnalis
+DELETE FROM favorite_emoji_kitchen_metadata WHERE id in 
+Delete theme
+deleteContentSuggestionCacheDirectoryIfExists
+deleteTheme
+Deleting content suggestion cache directory
+Deleting suggestion candidate with a null text
+DELIGHT_DECODE_FOR_HANDWRITING
+DELIGHT_FETCH_SUGGESTIONS
+DELIGHT_FETCH_SUGGESTIONS_GESTURE
+DELIGHT_FETCH_SUGGESTIONS_NEXT_WORD_PREDICTION
+DELIGHT_FETCH_SUGGESTIONS_TAP
+DELIGHT_LOAD_EMOJI_SHORTCUT_MAP
+DELIGHT_LOAD_LANGUAGE_MODEL_EMOJI_ANNOTATION
+DELIGHT_UNLOAD_LANGUAGE_MODEL_EMOJI_ANNOTATION
+Delight5ReloadEmoji
+Den fysiske Alt-tasten viser emoji-tastaturet
+dent pour faire des suggestions
+der aux emoji
+der aux informations des contacts pour les suggestions
+der aux suggestions
+Der blev ikke fundet nogen emojis
+Des autocollants Emoji Kitchen sont propos
+Deschide panoul cu emoji
+Deshacer sugerencia de emoji
+Desliza para quitar la fila de emojis cuando quieras
+Deslize para remover a linha de emojis a qualquer momento
+Destroying Emojify extension 
+Dette skjuler emojitasten
+Deursoek Emojimenger met teks of emosiekoon
+device_intelligence_log_suggestion_latency_to_metadata
+DeviceIntelligenceInlineSuggestionsRequest
+dez aux emoji 
+DFailed to get input method entry for the handwriting keyboard of 
+dfFjern raden for rask tilgang til emojier
+DFRemplacer des mots par des emoji sugg
+DGNenhum autocolante de Emoji Kitchen dispon
+dGoogle Translate 
+dhe numrin e emoji-ve t
+DICTATE_EMOJI
+dictate_emoji_args
+DictateEmojiClientOpArgs
+dictionaries or recent emojis associated with the other profile
+DIFFERENTIAL_PRIVACY_STATUS
+Dimensione dei caratteri delle emoji e della tastiera aggiornata
+Dimensione delle emoji aggiornata
+Dimensione emoji
+dimensiunea emoji-ului
+Dimensiunea emoji-urilor
+Diminuer la taille des emoji
+Diminuir tamanho do emoji
+Diminuir tamanho dos emojis
+direct_token_dictionary
+DirectTokenDictionary
+Disable Remove Suggestion
+Disable the feature of handling screenshots in the clipboard
+disable_content_suggestion
+disable_emoji_search_server_engine_when_no_network
+disable_gm3_energy_colors_in_legacy_themes
+DISABLE_HANDWRITING_LAYOUT
+disable_inline_suggestions
+disable_last_active_tab_on_switch_to_emoji_button
+disable_popup_view_outside_touch
+disable_refresh_in_result_page_emoji_kitchen_browse_search
+disable_remove_suggestion
+disableStylusHandwriting
+disallowClipboard
+disallowEmojiBar
+disallowEmojiKeyboard
+disallowEmojiSwitchKey
+disallowTranslate
+Dismiss popup menu
+dismissPopupTooltip
+DISPLAY_CONTENT_FOR_NO_SUGGESTION_ERROR
+DISPLAY_INSTRUCTION_SUGGESTIONS
+display_loading_status_for_emoji_kitchen_picker_delay
+display_loading_status_for_emoji_kitchen_search_result_delay
+display_loading_status_for_emoji_search_delay
+display_loading_status_for_emoji_search_gemma_delay
+displayEmoji
+displayEmojiEntryPoint
+displayEmojiVariants
+displayOrCacheSuggestionsInHolder
+displayPopupTooltip
+displayPopupTooltipAndMaybeFocus
+displayProactiveSuggestions-
+DisplayProactiveSuggestionsNotificationKt
+displaySpellCheckerSuggestions
+displaySuggestions
+displaySuggestionsListener
+DISTINCT emoji
+dizionari o emoji recenti associati all
+dMotion easing theme attribute must have 4 control points if
+do not remember privacy sensitive input
+Do not translate the conversation
+dobro funkcionira bez dodavanja emojija
+documentRotationSuggestionConfidence
+documentRotationSuggestionDegrees
+Dodaj emojije
+Dodaj neke sretne emojije
+dodaj neki sretni emoji
+Dodaje emoji ili zamjenjuje neke rije
+Dodavanje emojija
+dodavanje emojija i drugo
+Dodirnite da biste pregledali Emoji Kitchen
+Dodirnite dvaput da biste uklonili prijedlog emojija
+Dostupne su naljepnice iz kuhinje za emojije
+Dostupni su prijedlozi emojija
+Double tap to apply next emoji suggestion
+Double tap to remove emoji suggestion
+Double-check suggestions before sharing personal info
+Double-tap to apply next emoji suggestion
+Double-tap to remove emoji suggestion
+DoubleTrieUserDictionary
+DownloadableThemeRestoreHelper
+DownloadableThemeRestoreModule
+DownloadDictionaryDataProvider
+downloaded_theme_
+downloaded_theme_061805c170abcc466275f2de52faef90
+downloaded_theme_0a409bb74fa6f128a249a14d5f0df149
+downloaded_theme_195be3a640235ba2e43717505a3f329d
+downloaded_theme_1cfff581af8d0009030a4398e5e1670b
+downloaded_theme_1ef45cd2ecf496e42c08c97e64c65226
+downloaded_theme_271a5d9afe99b30285ce898488269bd9
+downloaded_theme_278a5fd2355cd0c770b9453b4ed33c37
+downloaded_theme_27ddda34863915a7929ee2a2baf93d8c
+downloaded_theme_2aa1d1fd2eef6b5cd05d5e1c5fdb8054
+downloaded_theme_2c49266c502e52ecbfef121bbeee1db9
+downloaded_theme_2d7fa374ce0d5d1a95061dc8d2f146c5
+downloaded_theme_2ddb20da354861a96003c89fa29c5991
+downloaded_theme_2e14a9111a60f755a2acda95c838976c
+downloaded_theme_2e1f584e45a269ad4990338a0eca932f
+downloaded_theme_30aac5b21ebbb7addca0d2001c53e5dd
+downloaded_theme_32f6afc1f56ff1b0b0d32b5e04aca319
+downloaded_theme_34ff56c29b5c2c560aa396638a048230
+downloaded_theme_3a1735527b8732a16fb35ae840c65e14
+downloaded_theme_3d570974ef1f774aced898f272b1e9f5
+downloaded_theme_3f32636d0a181b9cb11a132e08643659
+downloaded_theme_43e3e50493f6727beadd75e5ca141952
+downloaded_theme_45d198ec4b6e7573d25ec06da7318093
+downloaded_theme_4716cd6149c3f5b5767dd5fdc41b3163
+downloaded_theme_5076402e65aa2cbcdbfc825aee578cfc
+downloaded_theme_56e98106f1bff84b9bdfb69289803f4e
+downloaded_theme_59badf3a76fce628c2ede272f48c5a4e
+downloaded_theme_65af05adfb0067c0d681123de93ad39f
+downloaded_theme_6c1d3ecb88327b0243c7ee0b81848f82
+downloaded_theme_7051c1deee8cd55d8c9d1fa911b4753b
+downloaded_theme_716ca29bccdc68e63c686080784dc072
+downloaded_theme_75587bbadffd8ddc9bf0ca40f5dc549d
+downloaded_theme_767f3cfa86d3ea54db667034fbd159c8
+downloaded_theme_7f213531f8ccc173ecab8c779209f41c
+downloaded_theme_7f890feb43ef8e95c4e720b244d19fb2
+downloaded_theme_85f9fc146ad4882d540ece3bdc5e1e87
+downloaded_theme_86ed3ba5d0163d36bb026bd213a95ec7
+downloaded_theme_88baf1cc25a6277d1cd482cab1cac71b
+downloaded_theme_90465db9d1939d4523256832c6614a25
+downloaded_theme_99cbea5e147adec5de5ef9e9938c6a28
+downloaded_theme_9ad10f8f967b6fb902658ad3e15d318d
+downloaded_theme_9d940bae3f0eee8bfa0790678bf15d3f
+downloaded_theme_a72ff4e730a0692a20cdc68c3580ea41
+downloaded_theme_a97105aa302ec7afb149d90ff9e8354b
+downloaded_theme_abfb72d9d477bb0b1a9b77b4cce3326c
+downloaded_theme_ae8acffa8f9042b58a5840078c25c4b7
+downloaded_theme_b0b3646f88a12997d0619bcc86ac6ca3
+downloaded_theme_b0d52f50d7d4d6804bc638865b074a78
+downloaded_theme_b1ffbcc5e7117658bf2d5d0c2bb6a764
+downloaded_theme_b2d94be20adae6840ebffacc21474f68
+downloaded_theme_b3d59fa1220a8acb690ba4a86ab99c35
+downloaded_theme_b49cec12d47b621fcd7f7e6e6768d56a
+downloaded_theme_b4df659f830191d186624f1787dac1c5
+downloaded_theme_b72e5a012f7fe8db32f0c40ec6e160d1
+downloaded_theme_cc197c58184fe8f15eb8f3a5f98ae632
+downloaded_theme_cda050ff44060e4ab8ef1f2bd6705fc4
+downloaded_theme_d6283f7c7c91dc12bd1e9febd4481167
+downloaded_theme_e38f42576959c27732974ee9cd25b520
+downloaded_theme_e56874bc66b3742c507d9b74f11fcfda
+downloaded_theme_e5dd59c23fdca72a96e4b5e1acf11163
+downloaded_theme_eb19be2914558fb6ccf42d6a96ae9de0
+downloaded_theme_ed184c9a963f9e95f96fff0cbc2cfffe
+downloaded_theme_ede812faeedb707a599671209d45a834
+downloaded_theme_f8e9fadf64f48cef4569a3552baa00d5
+downloaded_theme_fef5dcea2cad4d370e01e7849c26affe
+downloaded_theme_ff192899440d186d0badf928d7f73b3c
+Downloading stylus handwriting model
+Dpref_key_inline_suggestion_swipe_on_space_animation_only_shown_cou
+DProactiveSuggestionsHolderManager
+Drag here to exit floating mode
+DragConfirmationPopupView
+dropping suggestions for category 
+Dsupported_languages_for_emoji_kitchen_gemma_search_engine_for_search
+Du har ikke brugt nogen emojis endnu
+Du har ikke brukt noen emojier enn
+Du hast noch keine Emojis verwendet
+Du kan til enhver tid stryge for at fjerne emojir
+DUAL_CANDIDATES_VIEW_CONTROLLER_SELECTED_SUGGESTION_STRIP
+dubbelriktat emojibyte
+Dubbeltik om de emoji-suggestie te verwijderen
+Dubbeltik om de volgende emoji-suggestie toe te passen
+Dugme emoji
+Duimomhoog-emoji
+Duplicated dictionary setting for data id
+Durch Wischen kannst du die Emoji-Leiste jederzeit entfernen
+Dynamic color theme
+Dynamic colour theme
+Dynamic suggestion preview
+DynamicColorThemeSpecProvider
+DynamicThemeOverlay
+e algunhas palabras por emojis
+e pour voir comment les suggestions sont g
+e und Anzahl der Emojis fest
+Each suggestion must be 3 words or fewer
+EBody keyboard view is null when getting emoji panel popup anchor view
+EContentSuggestionUiControllerImpl
+ede relaterede emojis med 
+Edit clipboard
+Edit Keyboard Theme
+Edit theme
+EDIT_TYPE_EMOJIFY
+edo hitz batzuk emojiekin ordezten
+Education handling for emoji suggestions failed
+Educational tip about long pressing the microphone to start voice dictat
+EEAutocorrect suggestions shown at the cursor when toolbar is mi
+EEBonisa izitikha futhi uhlole ongakukhetha ngokuthepha ukhiye we-emoji
+EEDeslize rapidamente para remover a linha de emojis em qualquer altura
+EEfloating_desk__land_keyboard_resize_keyboard_custom_body_height_ratio
+EEHindi available sa field ng input na ito ang seamless na voice typing
+Een speciale toets tonen voor toegang tot emoji
+EEnormal_keyboard_mode_foldable_keyboard_resize_keyboard_padding_bottom
+EEone_handed_mode_keyboard_mode_foldable_new_uiprevious_one_handed_mode
+EEStel de grootte en het aantal emoji
+EEUmbhalo wakho usuvele usebenza kangcono ngaphandle kokufaka ama-emoji
+EEUsa la barra delle emoji per accedere subito alle tue emoji preferite
+EEWalang available na sticker ng Emoji Kitchen para sa kumbinasyong ito
+EFailed to delete emoji kitchen database journal file with vers
+EFBruk emoji-tasten med en egen tast
+EFFaites une recherche dans Emoji Kitchen au moyen de texte ou d
+EFLes suggestions personnalis
+eGoogle Translate 
+Eguneratu da emojien tamaina
+Eguneratu dira emojien tamaina eta teklatuaren letra-tamaina
+Ei vastaavaa emojia
+eiDouble-tap the mic to continue voice typing until you tap it again
+Eine Taste zum Aufrufen der Emojis anzeigen
+Either the g2p params are not provided correctly or exception_dictionary_filename doesn
+Ekkert emoji fannst
+Ekkert emoji sem passar
+El text ja funciona millor sense afegir emojis
+Elegir emoji
+Emoji Kitchen bidez emojiak arakatzeko teklatua
+Emoji Kitchen-Sticker der Emojis
+Emoji Studiyadan matn yoki emoji bilan qidirish
+emoji suggestion
+Emoji suggestion applied
+Emoji suggestion is disabled
+Emoji suggestions
+Emoji suggestions are disabled for locale 
+Emoji suggestions available
+EMOJI_HANDWRITING
+EMOJI_KITCHEN_BROWSE_EMOJI_CLICK_THROUGH_PANEL
+EMOJI_KITCHEN_BROWSE_EMOJI_FAB_TAP
+emoji_kitchen_browse_search_result_in_emoji_picker
+emoji_kitchen_browse_skip_content_suggestion_display_condition
+EMOJI_KITCHEN_FETCH_ANIMATED_EMOJI_LATENCY
+EMOJI_KITCHEN_FETCH_EMOJI_CONTEXT_RESULTS_LATENCY
+emoji_kitchen_for_zero_state_emojis_timeout
+EMOJI_KITCHEN_FORMULA_EMOJI_CLICK
+EMOJI_KITCHEN_SEARCH_FROM_EMOJI_PANEL
+EMOJI_KITCHEN_SHOW_ANIMATED_EMOJI_LATENCY
+EMOJI_SEARCH_SUGGESTIONS
+EMOJI_SEARCH_SUGGESTIONS received with bad key data
+EMOJI_SEARCH_SUGGESTIONS_AVAILABLE
+EMOJI_SUGGESTION
+EMOJI_SUGGESTION_CHIP
+emoji_suggestion_punctuation_allowlist
+EMOJI_TAPPED_SINCE_LAST_EMOJI_KEY
+emoji_to_emoji_num_predictions
+emojify_max_emoji_for_fallback_pattern
+emojify_max_emoji_for_prediction_generator
+emojify_max_emoji_for_summary_pattern
+emojify_min_emoji_for_append_pattern
+emojify_min_emoji_for_beat_pattern
+emojify_min_emoji_for_fallback_pattern
+emojify_min_emoji_for_summary_pattern
+EMOJIFY_MODEL_SUGGESTIONS_GENERATED_LATENCY
+emojify_popular_emojis_for_fallback_pattern
+EMOJIFY_RULE_BASED_SUGGESTIONS_GENERATED_LATENCY
+EmojifySuggestion
+EmojifySuggestioninput_text
+EmojifySuggestionManager
+emojiKitchenBrowseEmojiPanelPopupUi
+emoji-kitchen-browse-emoji-panel-search-box
+EmojiKitchenEmojiFilterData
+EmojiKitchenShareConfirmationPopupView
+emojiPanelPopupCallback
+EmojiPickerPopupView
+EmojiPickerPopupViewController
+emojis amb text o emojis
+EmojiSuggestion
+emojiSuggestionsEnabled
+EmojiZeroQuerySuggestionPicked
+EmojiZeroQuerySuggestionProposed
+Emoticon dictionary data is broken
+Empty emoji result string for codePoints
+Empty translate language list
+en_contacts_dictionary_accessor
+en_mutable_dictionary_accessor_setting_scheme
+en_shortcut_dictionary_accessor
+en_user_dictionary_accessor
+Enable extra small screen theme 
+Enable one-handed mode
+Enable the feature of handling screenshots in the clipboard
+enable_3d_couple_emojis
+enable_animated_emoji_content_suggestions
+enable_at_cursor_suggestions_for_pk
+enable_auto_capitalization
+enable_auto_capitalization_on_pk
+enable_auto_show_translate
+enable_battery_saver_theme
+enable_blocklist_for_proactive_emoji_kitchen
+enable_clipboard_query_refactoring
+enable_close_proactive_suggestions_access_point
+enable_contextual_gif_search_query_suggestion
+enable_debug_toast_for_proactive_emoji_kitchen
+enable_delete_user_dictionary_typos
+enable_double_space_period
+enable_emoji_alt_physical_key
+enable_emoji_embedding_index
+enable_emoji_for_dynamic_art_template_candidate
+enable_emoji_group_candidate_ui
+enable_emoji_kitchen_browse_entry_point_v2
+enable_emoji_kitchen_for_zero_state_emojis
+enable_emoji_kitchen_scaling
+enable_emoji_kitchen_scam_index
+enable_emoji_loader_migration
+enable_emoji_mistap
+enable_emoji_predictor_tflite_engine
+enable_emoji_search_engine_debug_toast
+enable_emoji_suggestion_from_top_candidate
+enable_emoji_to_expression
+enable_emoji_variant_mapping_for_emoji_candidates
+enable_emoji_variant_preferences_backup
+enable_emojify
+enable_emojify_language_tags
+enable_emojify_model
+enable_emojify_model_language_tags
+enable_emojify_settings_option
+enable_emojify_shortcut_when_followed_by_emoji
+enable_emojify_when_talkback_on
+enable_expression_moment_proactive_emoji_kitchen_language_tags
+enable_extended_clipboard_history
+enable_extra_small_width_portrait_theme
+enable_fallback_for_emoji_kitchen_gemma_search_engine_error
+enable_fallback_for_emoji_kitchen_search_server_error
+enable_fallback_for_emoji_search_gemma_engine_error
+enable_fallback_for_emoji_search_server_error
+enable_fallback_from_server_for_emoji_search_gemma_engine_error
+enable_feedback_notice_popup
+enable_floating_dock_hint_v2
+enable_frequent_emoji_recent_Tab
+enable_gemma_embedding_emoji_kitchen_ranker
+enable_handle_emoji_for_expression_candidates
+enable_handle_expression_moment_standard_emoji_kitchen
+ENABLE_HANDWRITING_LAYOUT
+enable_handwriting_promo
+enable_handwriting_training_cache
+enable_hybrid_handwriting_setting
+enable_hybrid_handwriting_training_cache
+enable_inline_suggestions_on_client_side
+enable_inline_suggestions_on_decoder_side
+enable_inline_suggestions_space_animation_only
+enable_inline_suggestions_space_tooltip
+enable_inline_suggestions_with_ac_from_crank_cifg
+enable_lite_emoji_prediction_engine
+enable_logging_for_emoji_search_query
+enable_multiword_suggestions_as_inline_from_crank_cifg
+enable_multiword_suggestions_from_user_history
+enable_ngram_emoji_shortcuts_by_spans
+enable_ngram_emoji_shortcuts_for_prediction
+enable_one_handed_dialog
+enable_play_emoji_kitchen_mix_animation
+enable_popup_on_keypress
+enable_predictions_from_emoji_shortcuts
+enable_prewarming_for_emoji_gemma_search_engine_activation
+enable_proactive_emoji_kitchen
+enable_screenshot_in_clipboard
+enable_semantic_emoji
+enable_shortcuts_dictionary
+enable_single_word_suggestions_as_inline_from_crank_cifg
+enable_suggestion_view_edu_mini_dialog
+enable_system_clipboard_direct_paste_for_quick_paste
+enable_theme_overlay_wrapping
+enable_transition_between_emoji_and_emoji_kitchen_browse
+enable_variants_indicator_in_emoji_search_filter_view
+enable_variants_indicator_in_emoji_search_result
+enable_variants_popup_in_emoji_search_filter_view
+enable_variants_popup_in_emoji_search_result
+enable_voice_in_handwriting
+enablePersonalization
+EnableTextConversionSuggestions
+Encara no has fet servir cap emoji
+encoded_single_trie_static_dictionary
+EncodedSingleTrieStaticDictionary
+Enfeitar con emojis
+engade emojis alegres
+Engade emojis ou substit
+Engadir emojis
+Engar emoji-till
+Engeza ama-emoji
+engeza ama-emoji ajabulisayo
+Engin emoji-t
+enim vezanim emojijima jednim dodirom
+enme emojisi
+enrollDictionary
+enrollMutableDictionary
+enrollMutableDictionaryAccessorSettingSchemes
+enrollMutableDictionaryAccessorSettingsForPinyin
+EPahusayin ang pag-type at voice typing batay sa mga pattern ng paggamit at pag
+Epref_key_inline_suggestion_swipe_on_space_promo_tooltip_last_shown
+er des suggestions
+er des suggestions de grammaire et de r
+er des suggestions grammaticales et r
+er un emoji
+Erakutsi azkenaldian erabilitako emojien errenkada bat
+Erakutsi botoi bat teklatuaren tresna-barran emojien teklatua irekitzeko
+Erakutsi emoji erabilienak teklatu nagusian
+Erakutsi emojiak
+Erakutsi emojiak atzitzeko berariazko tekla bat
+Erakutsi emojien teklatua
+Erpurua altxatuta daukan eskuaren emojia
+Error creating handwriting model for 
+error extending handwriting bounds
+Error parsing package name emojis map
+error save to emoji cache file
+Error while saving Zip theme package
+es de Emoji Kitchen
+es de emojis dispon
+es de pesquisa ao tocar na tecla de emojis
+es de recherche emoji indisponibles
+es de texto para emoji
+es do Emoji Mix
+es tocando na tecla de emojis
+Esci dalla tastiera floating
+Escolher emoji
+Escolle un emoji
+eSELECT animated_emoji
+Esker ona adierazteko eskuen emojia
+estan mostrant emojis de tipus 
+Estase cargando o emoji
+esto oculta la tecla de emoji
+Esto oculta la tecla de emojis
+Etsi Emoji Kitchenist
+etta felur emoji-lykilinn
+EUnselect current selected emoji is not supported in non browse state
+Every suggestion must be fulfillable by an AI 
+Exception while doTranslate
+Exibindo o emoji 
+Exibir o teclado de emojis ao pressionar a tecla Alt
+Exit floating keyboard
+Exit one handed mode
+Exit one-handed mode
+exit_floating_keyboard_hint_shown_times
+exit_floating_keyboard_last_shown_timestamp
+exit_floating_keyboard_start_showing_timestamp
+exit_floating_keyboard_tooltip_hint
+EXIT_FULL_SCREEN_HANDWRITING
+Exiting floating keyboard
+Exiting one handed keyboard
+Exiting one-handed keyboard
+Expected instanceof GlideModule
+Expected theme to define listPreferredItemHeight
+expression_disabled_when_emoji_kb_disallowed
+EXPRESSION_HEADER_EMOJI_CLICKED
+EXPRESSION_HEADER_EMOJI_SHOWN
+EXPRESSION_MOMENT_EMOJIFY
+expression_moment_proactive_emoji_kitchen_max_count
+expression_personalization_evaluation_handler
+EXPRESSION_PERSONALIZATION_MATERIALIZER
+ExpressionMomentEmojifyAvailabilityNotification
+ExpressionPersonalizationEvaluationResultHandler
+ExpressionPersonalizationMaterializer
+expressive_concept_emoji_predictor_max_num_words
+expressive_concept_emoji_predictor_scaling_factor
+expressive_concept_emoji_predictor_threshold
+ExtendedFloatingActionButton
+ExtendedFloatingActionButtonBehavior
+extendHandwritingBounds
+EXTENSION_DEACTIVATED_AFTER_EMOJIFIED
+EXTRACT_PREBUNDLED_EMOJI_DATA
+EXTRACT_PREBUNDLED_EMOJI_METADATA
+extractEmojiKitchenInfo
+Ez da aurkitu emojirik
+Ez dago bat datorren emojirik
+Ez dago emoji-iradokizunik erabilgarri
+Ez duzu erabili emojirik oraindik
+Ezin da bilatu Emoji Kitchen-en hautatutako hizkuntzan
+Ezin da konektatu Google Translate-ren zerbitzarira
+Ezin izan da kargatu Emoji Kitchen-eko eranskailua
+Ezkutatu emojien teklatua
+Fail to fetch content for content suggestion with Throwable
+fail to fetch theme file
+fail to fetch theme file cross profile
+fail to write theme file
+Failed export personal dictionary
+failed in inflateSetDictionary 
+failed to activate handwriting event handler
+Failed to add animated emoji usage to history
+Failed to add emoji filter to history
+Failed to add emoji share to history
+Failed to add views to suggestion holder
+Failed to check if emojiKitchenBrowseEntryPointEligible
+Failed to clear renderable emoji cache
+Failed to convert emoji codes to emoji for EK ID
+Failed to copy the user theme file
+Failed to create clipboard image directory
+Failed to create system dictionary
+Failed to decode glide cache file at 
+Failed to decode recent theme data
+Failed to delete emoji kitchen database file with version
+Failed to delete emoji kitchen database version
+Failed to delete typo from Android UserDictionary
+Failed to delete typos from PersonalDictionaryDatabase
+Failed to delete unapplied theme file
+Failed to encode recent theme data
+Failed to enqueue emoji kitchen data cleanup work
+Failed to enroll local dictionary 
+Failed to export entries from source dictionary
+Failed to fallback to glide fetcher
+Failed to fetch frequent emojis
+Failed to fetch recent emojis
+failed to fetch suggestions
+Failed to fetch zero state suggestion
+Failed to find GeneratedAppGlideModule
+Failed to find ModelLoader for GlideUrl
+Failed to find the right enroll dictionary perf key for
+Failed to fulfill emoji command
+Failed to generate new user theme file
+Failed to get concept emojis
+Failed to get emoji kitchen url for image
+failed to get emoji predictions
+Failed to get emoji suggestions
+Failed to get emojify suggestions
+Failed to get EmojiShortcutModule
+Failed to get handwriting Ime
+Failed to get recent emoji
+Failed to get recent emoji list
+Failed to get supported emoji concepts due to error
+Failed to get the proactive emoji kitchen results
+Failed to inflate mic effects popup view
+Failed to initialize dictionary
+Failed to initialize emoji kitchen database
+Failed to initialize EmojiKitchenOnDeviceScamEngine
+Failed to insert raw composing text into user dictionary
+Failed to inspect active emoji font via TextRunShaper
+Failed to instantiate handwriting Ime
+Failed to load context privacy config catalog
+Failed to load emoji native library
+Failed to load emoji NLU handler 
+Failed to load emoji variation data
+Failed to load existing user dictionary storage
+Failed to load image by Glide
+Failed to load meta data for user dictionary
+Failed to load mutable dictionary
+Failed to load newly created zip theme package
+Failed to load property payload for user dictionary
+Failed to load system zip theme package
+Failed to load the user dictionary
+Failed to load zip theme package
+Failed to move backup file to the clipboard image file
+Failed to open a dictionary file from image
+Failed to open the user dictionary
+Failed to parse clipboard backup data file
+Failed to parse context privacy config catalog
+Failed to parse emoji scale setting
+Failed to parse emoji search response
+Failed to parse EmojiSearchRequest
+Failed to parse glide modules
+Failed to parse handwriting promo enabled language tag list
+failed to parse http response for emoji kitchen search request
+failed to parse http response for emoji search request
+Failed to parse the emoji entity mapping file
+Failed to parse the emoji mapping file
+Failed to parse translate response
+Failed to parse version for emoji kitchen data cleanup work
+Failed to prune animated emoji usage history older than 
+Failed to prune emoji filters history older than 
+Failed to prune emoji shares history older than 
+Failed to query emojis from Gboard
+Failed to read the dictionary chunk
+Failed to resize 
+Failed to resize input tensor
+Failed to resize input tensor named 
+Failed to resize input tensors
+Failed to resize or convert segments for result match
+Failed to resize tensor
+Failed to resize tflite tensor
+Failed to retrieve concept emojis from Gboard
+Failed to retrieve grammar suggestions
+Failed to retrieve predicted emojis from Gboard
+Failed to save dictionary
+Failed to save user theme
+Failed to search emoji
+Failed to search emoji kitchen images from search engine
+Failed to search emojis
+Failed to serialize EmojiSearchResponse
+Failed to set emoji concept preference in Gboard
+Failed to set emoji preference 
+Failed to set property chunk for new dictionary
+Failed to set user emoji preference for concept
+Failed to show focus highlight popup window
+failed to start handwriting status 
+Failed to switch to handwriting keyboard for 
+Failed to write user dictionary to temp file
+Faka ama-emoji ajabulisayo
+Fant ingen emoji
+fast_access_bar_default_emojis
+FAST_ACCESS_BAR_FETCH_FREQUENT_EMOJIS
+fast_access_bar_package_name_emojis_map
+Fast-access row para sa emoji
+Faster voice typing
+Faster voice typing has been installed 
+Faster voice typing is enabled
+Faster voice typing now available
+Favori emoji
+favorite_emoji_kitchen_metadata
+favoriteEmojiKitchenDao
+FavoriteEmojiKitchenMetadata
+favoriteEmojiKitchens
+feature dictionary is null
+feature_dictionary_
+feature_dictionary_provider
+FEATURE_SPOKEN_EMOJI
+FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead
+feature-dictionary
+feature-dictionary-provider
+FeatureDictionaryProviderExtensionRegistry
+FeatureDictionaryProviderResourceParams
+feature-dictionary-provider-resource-utils
+FeatureDictionarySessionResourceParams
+feature-dictionary-session-resource-utils
+Fechar painel de emojis
+Fela emoji-lyklabor
+Fela Translate
+Fermer le panneau des emoji
+FETCH_SUGGESTIONS
+FetchAnimateEmoji
+fetchContentForMixedEmojisInternal
+FetchEmojiContext
+FetchFrequentEmojis
+Fetching frequent emojis is cancelled
+Fetching zero state suggestions
+fetchResultsFromEmojiKitchenSearchEngine
+fetchSuggestion
+fetchSuggestions
+fetchSuggestions-time
+fetchZeroStateSuggestions
+FFAdded to dictionary
+FFailed to get the width of the proactive suggestion view holder in 
+FFGboard needs access to the microphone in order to enable voice typing
+ffnen der Emoji-Tastatur in der Symbolleiste der Tastat
+ffnen der Emoji-Tastatur in der Tastatur-Symbolleiste a
+ffShow a button on the keyboard toolbar to open emoji keyboard
+FFSinusundan ng laki ng font ng emoji at keyboard ang setting ng system
+FFStop voice typing and close the mic
+FFSustituye palabras por emojis relacionados sugeridos con un solo toq
+ffToegang tot de emoji-toets met een speciale toets
+FgetModifierSetsForSkintoneAndGenderEmoji
+fGoogle Translate 
+fica de acceso aos emojis
+fica para acceder a los emojis
+Ficha kibodi ya emoji
+Fihla ikhibhodi ye-emoji
+Fikia Emoji
+Fikia emoji unazopenda papo hapo
+Fikia kitufe cha emoji ukitumia kitufe maalum
+Fila de emojis
+fillBadWordInfoOnSuggestions
+final suggestions
+find dine yndlingsemojis med det samme
+Find emojis
+Find null ModelLoader for GlideUrl
+findNextEmojiProvider
+Finestra popup
+Finish restore downloadable themes
+finishAndBuildTheme
+finishConnectionlessStylusHandwriting
+finishConnectionlessStylusHandwriting with text 
+Finished importUserDictionary
+Finished loading emoji shortcuts
+finishStylusHandwriting
+Finyelela I-emoji
+Finyelela kuma-emoji akho ayintandokazi ngokushesha
+fire emoji
+fire emoji 
+First text after language switch 
+First time education not shown as handwriting started
+FixedSizeEmojiListHolder
+Fiziksel klavyede emoji
+Fjern raden for rask tilgang til emojier
+fjerne emoji-forslaget
+fjerne emojiraden n
+Flag enable_delete_user_dictionary_typos is disabled
+Flag enable_delete_user_dictionary_typos is enabled
+FlagUpdate-HandwritingSuperpacksTask
+Fleiri emoji
+Fler emojis
+Flere emojier
+Flere emojis
+floating__land_keyboard_resize_keyboard_custom_body_height_ratio
+floating__land_keyboard_resize_keyboard_custom_body_size
+floating__land_keyboard_resize_keyboard_left_margin_ratio
+floating__land_keyboard_resize_keyboard_padding_bottom
+floating__land_keyboard_resize_keyboard_width_ratio
+FLOATING_AUTO_CORRECTION_SUGGESTION
+floating_desk__land_keyboard_resize_keyboard_custom_body_size
+floating_desk__land_keyboard_resize_keyboard_left_margin_ratio
+floating_desk__land_keyboard_resize_keyboard_padding_bottom
+floating_desk__land_keyboard_resize_keyboard_width_ratio
+floating_keyboard_resize_keyboard_custom_body_height_ratio
+floating_keyboard_resize_keyboard_custom_body_size
+floating_keyboard_resize_keyboard_left_margin_ratio
+floating_keyboard_resize_keyboard_padding_bottom
+floating_keyboard_resize_keyboard_width_ratio
+FLOATING_REVERT_AUTO_CORRECTION_SUGGESTION
+floatingUsageDictionaryWindowDelay
+FN4absl8StatusOrINSt6__ndk110unique_ptrIN6speech7context8features25FeatureDictionaryProviderINS3_6common18RecognitionContext
+FNot showing banner because is currently in floating mode editing view
+font_size_emoji_scaling_banner_shown_times
+for incognito request returned no suggestions
+for-action-popup
+Force de la vibration 
+Force de la vibration de chaque touche
+Forelsket ansikt-emoji
+for-emoji-popup
+forward_token_dictionary
+ForwardTokenDictionary
+ForwardTokenDictionaryMetaData
+Found unsupported data source for emoji kitchen search
+FPN10i18n_input6engine3hmm26DictionaryBuilderInterfaceEvE
+FPN20research_handwriting11ModelRunnerEvE
+FPN20research_handwriting14TfGraphDecoderEvE
+FPN20research_handwriting17ResponseProcessorERKNS_21ResponseProce
+FPN20research_handwriting18AbstractRecognizerEvE
+FPN20research_handwriting28AbstractInkPreprocessingStepERKNS_24In
+Fpref_key_inline_suggestion_swipe_on_space_animation_only_last_show
+FProactiveSuggestionsHolderManager
+free_cursor_haptic_min_interval_millisec
+FreeListIN10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator11MatchedNodeEE
+FreeListIN10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator11MatchedNodeEE
+FreeListIN10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator14MatchedKeyNod
+FROM animated_emoji_images
+FROM animated_emoji_images WHERE id 
+FROM emoji_kitchen_images
+FROM emoji_kitchen_images WHERE 
+FROM emoji_kitchen_images WHERE concepts LIKE 
+FROM emoji_kitchen_images WHERE id 
+FROM emoji_kitchen_images WHERE id IN 
+FROM emoji_kitchen_images WHERE id LIKE 
+FROM emoji_kitchen_images WHERE is_curated ORDER B
+FROM emoji_kitchen_images WHERE rowid IN 
+FROM emoji_shares
+from favorite_emoji_kitchen_metadata ORDER BY createdAt DES
+full screen handwriting is not supported
+full screen handwriting is not supported in tabletop mode
+FULL_SCREEN_TRANSLATE_DISABLED
+FULL_SCREEN_TRANSLATE_ENABLED
+fullscreen_handwriting_
+FullscreenHandwritingMotionEventHandler
+funciona bem sem adicionar emojis
+Funga kidirisha cha emoji
+Funga utangulizi wa safu mlalo ya kufikia emoji haraka
+Fungua kidirisha cha emoji
+Fungua mipangilio ya Emoji Kitchen
+funkcji Emoji Kitchen
+g efter Emoji Mix
+g efter emojis
+Ga naar het Privacybeleid van Google
+Ga naar het Privacybeleid van Google voor meer informatie o
+Gagal bersambung dengan pelayan Google Translate
+Gamitin ang toolbar para sa madaling voice typing
+Gboard Dictionary format
+Gboard Dictionary version
+gboard_clipboard
+GBOARD_SUGGESTION_PRESS
+GboardBundledEmojiMemoryModuleProvider
+GboardEmojiVariantsController
+GboardGlide
+GboardPersonalDictionaryWordEditFragment
+GBundled emoji data superpack has no enough informatio
+ge ein paar freundliche Emojis hinzu
+ge i Emoji Mix p
+Gebruik geavanceerde spraakopdrachten om onder meer tekst te bewerken en emoji
+gedata for Emoji Mix
+Geen emoji
+Geen emoji-suggesties beschikbaar
+Geen overeenkomende emoji
+Geen zoekgegevens voor emoji
+Gehitu emoji alai batzuk
+Gehitu emojiak
+Gemini shows you personalised suggestions right when you need them
+Gemini shows you personalized suggestions right when you need them
+Gemini vous montre des suggestions personnalis
+gemma_embedding_emoji_kitchen_ranker_mdd_data_file_group
+GENAI_EMOJI_SELECTED
+GENAI_EMOJI_SHOWN
+GENAI_EMOJI_TRIGGERED
+GenAiEmojiHelper
+GenAiEmojiPicked
+GenAiEmojiShown
+GenAiEmojiTriggered
+Gendan emojiforslag
+Generate suggestions that naturally extend
+generateAfterCommandUiSuggestions
+GeneratedAppGlideModule
+GeneratedAppGlideModuleImpl
+GeneratedAppGlideModuleImpl is implemented incorrectly
+generateIdleUiSuggestions
+generateNewUserThemeFile
+generateStartDictatingUiSuggestions
+generateSuggestions
+ger eller seneste emojis tilknyttet den ene profil med den ande
+Geser untuk menghapus baris emoji kapan saja
+Get size by version is not supported by the dictionary
+getAsrPersonalizationMetricsFile
+getAvailableEmojiKitchenKeywords
+getAvailableEmojiListData
+getConceptEmojis
+getContentSuggestionQueriesFromText
+getContextualEmojisFromShortcut
+getCurrentDictionaryVersion
+getDefaultEmojiVariantList
+getDefaultThemeFile
+getDownloadedThemeFile
+getDropDownViewTheme
+getExternalDraftSuggestion
+getFileThemePackageFile
+getInlineSuggestions
+getInlineSuggestionsRequest
+getInternalDraftSuggestion
+getKeywordFromEmojiShortcuts
+getModifierSetsForGenderOnlyEmoji
+getModifierSetsForSkintoneAndGenderDirectionalEmoji
+getModifierSetsForSkintoneAndGenderEmoji
+getModifierSetsForSkintoneOnlyEmoji
+getPersonalDictionaryAsBulletedList
+getPrefKeyboardEmojiScale
+getPrefKeySaveDictionaryTime
+getPreorderRelevantContentForContentSuggestionQueries
+getRecentThemesForRestore
+getSafeBrowsingPrivacyPolicyUrl
+getScaledHandwritingSlop
+getSmartReplyZeroStateSuggestion
+getStylusHandwritingWindow
+getSupportedHandwritingGesturePreviews
+getSupportedHandwritingGestures
+getSystemThemeItemAdapter
+getTextConversionSuggestions
+Getting category from an empty list of InlineSuggestion
+getUserThemeFiles
+getUserThemeItems
+getValidEmojiPairFromMixedEmoji
+getZeroStateSuggestion
+GFailed loading emoji nlu handler data for spoken emoji
+Gfailures_to_disable_primary_engine_in_emoji_search_with_fallback_engine
+gg till en glad emoji
+gga till emojis
+gga till emojis med mera
+GGAinda carregando dados da pesquisa de emojis
+GGApresente emojis populares e frequentemente usados no t
+GGDefine the access point icons count that shown on the suggestion strip
+gger till emojis eller ers
+GGEzarri errenkada bakoitzean erakusten diren emojien tamaina eta kopurua
+GGfloating_keyboard_mode_foldable_keyboard_resize_keyboard_padding_bottom
+GGHakuna kibandiko cha Emoji Kitchen kinachopatikana kwa mchanganyik
+ggisiphakamiso se-emoji sisetshenzisiwe
+ggNagbibigay-daan sa iyo ang Clipboard na i-access ang iyong kamakailang histo
+GGone_handed_mode_new_uikeyboard_resize_keyboard_custom_body_height_ratio
+gGoogle Translate 
+GGsplit_keyboard_mode_foldable__land_keyboard_resize_keyboard_width_ratio
+GGsplit_keyboard_mode_foldable_keyboard_resize_keyboard_left_margin_ratio
+GGUse your stylus and your handwriting is automatically converted to text
+GGWelcome to Gboard clipboard
+GHLes suggestions personnalis
+GIF category suggestions
+GInline suggestions disabled in stylus mode or vertical PK
+GJImpossible de rechercher dans Emoji
+gjUklonite red za brzi pristup emoji sli
+GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+global_theme_key
+GlobalPersonalizationMetric
+GmailSuggestionsProvider
+gn fyrir emoji ekki tilt
+good_ignored_auto_correction_by_suggestion_ratio
+Google Dark Theme
+Google Light Theme
+Google Privacy Policy
+Google Translate
+Google Translate-
+Google Translate 
+Google Translate erabiltzea
+Google Translate gebruiken
+Google Translate-ren zerbitzarira konektatzen
+GoogleTranslate
+Got invalid emoji kitchen data
+GpersonalizationToggle is null when PersonalizationIcon icon is clicked
+gra glada emojis
+GRAMMAR_CHECK_SELECT_SUGGESTION
+GRAMMAR_CHECK_SELECT_SUGGESTION received with bad key data
+grands emoji
+Great time wink emoji
+Green Theme
+Grootte van emoji
+GROUP BY animated_emoji
+GROUP BY base_variant_emoji ORDER BY total_shares DESC
+GROUP BY emoji
+GSending keyboard language switch event over oration stream delayed 
+GSPELL_CHECK_SUGGESTIONS received with unexpected NULL suggestions list
+Gtrying to show proactive suggestions via KeyboardViewController failed
+Gumagamit ng Google Translate
+Gumamit ng voice typing
+Gumb za emojije
+Gusa ili uvinjari emoji mseto
+Gusa mara mbili ili uondoe pendekezo la emoji
+Gusa mara mbili ili utumie pendekezo linalofuata la emoji
+ha actualitzat el cos de font dels emojis i del teclat
+ha actualitzat la mida dels emojis
+ha trobat cap emoji
+Haikupata emoji yoyote
+Hakuna emoji inayolingana
+Hakuna emoji zinazopatikana
+Hakuna mapendekezo ya emoji yanayopatikana
+halds emoji-t
+hamingju-emoji
+Hanapin ang emoji kitchen
+Handitu emojien tamaina
+Handle KeyboardUiSuggestions updated
+handleEmojifyRequest
+handleEmojiSearch
+handleKeyboardUiSuggestions
+handleLaunchVoice - Enhanced voice typing is disabled
+handleLaunchVoice - incognito mode
+handleThemeBuilderResult
+Handling language switch
+Hanuz birorta emoji ishlatmagansiz
+Hap panelin e emoji-ve
+Happy face emoji
+Hapus baris akses cepat emoji
+Hardware keyboard suggestions
+Hart-emoji
+Hartjesogen-emoji
+has pending suggestions to show
+has_user_swiped_writing_tools_suggestions
+Hasil Carian Emoji
+Hasil Emoji
+Hautatu emoji bat
+HCLIPBOARD_SUGGESTION_SELECT_VIEW_BY_PK_ENTER received with b
+Heart emoji
+Heart eyes emoji
+Hech qanday emoji mavjud emas
+Help improve voice typing
+Hemojify_max_shortcut_emojis_to_insert_in_one_position_for_append_p
+hequr rreshtin me emoji n
+Her er emojir
+Herzaugen-Emoji
+Herz-Emoji
+hFailed to show popup menu
+hGoogle Translate 
+HHAsosiy klaviaturada mashhur va muntazam ishlatiladigan emojini chiqarish
+HHErakutsi botoi bat teklatuaren tresna-barran emojien teklatua irekitzeko
+HHIngen emojimikser-klistremerker er tilgjengelige fo
+HHMagpakita ng mga sikat at madalas gamiting emoji sa pangunahing keyboard
+HHnormal_keyboard_mode_foldable__land_keyboard_resize_keyboard_width_ratio
+HHnormal_keyboard_mode_foldable_keyboard_resize_keyboard_left_margin_ratio
+HHSimpleng word-for-word na voice typing
+HHSostituisci le parole con le emoji correlate suggerite con un solo tocco
+HHStopped import due to unsupported dictionary version in 
+HHZa tu kombinaciju nije dostupna nijedna naljepnica iz kuhinje za emojije
+HHZoekgegevens voor emoji
+HIDDEN_INCOGNITO_MODE
+Hide clipboard
+Hide emoji keyboard
+Hide suggestions
+Hide Translate
+Hide your keyboard while voice typing
+HIDE_FULLSCREEN_HANDWRITING_PANEL
+hide_suggestions_in_opa
+hiding popup floating keyboard 
+Hiermee wordt de emoji-toets verborgen
+higher_ranked_emoji_candidates_at_end
+highLightSelectedEmojiStatus
+Higit pang emoji
+Hindi available ang data sa paghahanap ng emoji
+Hindi available ang paghahanap ng emoji
+Hindi gumagana ang paghahanap ng emoji para sa wika
+Hindi mahanap ang Emoji Kitchen sa napiling wika
+Hindi makakonekta sa server ng Google Translate
+Hindi ma-load ang sticker ng Emoji Kitchen
+Hindi mo pa ginagamit ang anumang mga emoji
+Hindi pa sinusuportahan sa device na ito ang handwriting to text
+Hindi sinusuportahan ang mga command para sa pag-translate
+Hindi sinusuportahan ang voice typing para sa mga email address
+Hindi sinusuportahan ng kasalukuyang keyboard ang pag-resize
+Hindi sinusuportahan ng text field na ito ang clipboard
+Hizkuntza honetan ezin dira bilatu emojiak
+hiztegiak edo azkenaldiko emojiak
+Hjarta-emoji
+Hjerte-emoji
+HJNu este disponibil niciun sticker Studio emoji pentru aceast
+hliche Emojis hinzu
+HManual language switch
+hnen-Emoji
+HNShfaq emoji t
+hold to see how suggestions are generated
+Holo Blue Theme
+Holo White Theme
+Hortzak erakutsiz irribarrez ari den aurpegiaren emojia
+HPAz emojikeres
+HProactiveSuggestionsHolderManager
+HprocessResultEmojiForRectangleLayout
+Hsupported_languages_for_emoji_kitchen_gemma_search_engine_for_context
+htegi Emojik
+Huilende emoji
+Huminto ang voice typing
+HUNKED_UPLOAD_FAILEDHTTP_COMPOUND_BROTLI_DECODER_FAILEDHTTP_COMPOUND_BROTLI_LOAD_DICTIONARY_FAILEDHTTP_COMPOUND_BROTLI_LOAD_DICTION
+Hurrengo emoji-iradokizuna
+Hurrengo emoji-iradokizuna aplikatzeko
+Huweka emoji au kuondoa baadhi ya maneno na kuweka emoji
+Huwezi kutafuta emoji katika lugha hii
+Hwriting_tools_v2_enable_zero_state_instruction_suggestion_loading_status
+Hwriting_tools_v2_enabled_smart_reply_zero_state_suggestion_language_tags
+HybridHandwritingImeWrapper
+i gumb na alatnoj traci tipkovnice za otvaranje tipkovnice s emojima
+i prijedlog emojija
+I-access ang clipboard
+I-access ang Emoji
+I-access ang key ng emoji gamit ang nakalaang key
+I-access ang Voice Typing
+I-auto commit ang glide input
+Ibonisa isethulo somugqa sokufinyelela okusheshayo se-emoji
+IBRARY_FAILEDHTTP_COMPOUND_BROTLI_LOAD_LIBRARY_TIMEOUTHTTP_COMPOUND_BROTLI_WRONG_DICTIONARY_FINGERPRINTHTTP_COMPOUND_BROTLI_WRONG_D
+icon_key_emoji
+Icons count on suggestions strip
+Idatha yosesho lwe-emoji ayitholakali
+I-dismiss ang popup menu
+I-double tap ang mic para magpatuloy sa voice typing hanggang sa i-tap mo ito ulit
+I-edit ang clipboard
+if auto_resize is true
+If the default keyboard height is set
+If the spoken audio deviates from the provided dictionary string
+If you intend to use emoji2-bundled
+IFail to parse EmojiNluResponse from byte
+Igeuze iwe emoji
+Ignore empty suggestion on index 
+ignored_auto_correction_by_suggestion_num
+ignored_auto_correction_by_suggestion_ratio
+ignored_bad_auto_correction_by_suggestion_num
+ignored_good_auto_correction_by_suggestion_num
+ignored_invalid_auto_correction_by_suggestion_num
+ignoreInitialEmojiKitchenStickers
+ignoring handleKeyboardUiSuggestions 
+I-hide ang clipboard
+I-hide ang emoji keyboard
+Ihinto ang voice typing
+ii detaliate pentru un element de clipboard
+IIfloating_keyboard_mode_foldable_keyboard_resize_keyboard_custom_body_size
+IIHindi available sa ngayon ang voice typing na may mga advanced na feature
+IIMagpakita ng button sa toolbar ng keyboard para buksan ang emoji keyboard
+IKEgyes szavakhoz emojit ad hozz
+Ikhibhodi ye-Emoji
+Ikhibhodi Yokubhrawuza Imboni ye-Emoji
+ikki tomonlama emoji almashtirgich
+Ikusi emoji gehiago
+Il tasto delle emoji 
+Il tasto fisico ALT mostra la tastiera delle emoji
+Ilayisha isitika Semboni ye-Emoji
+iloinen emoji
+Image from Gboard clipboard
+Imagine din clipboardul Gboard
+Imboni ye-emoji
+IME_HANDLE_EMOJI_SEARCH
+IME_WAIT_FOR_FETCH_SUGGESTION_RESPONSE
+Imesasisha ukubwa wa emoji
+Imesasisha ukubwa wa fonti ya emoji na kibodi
+Imeshindwa kupakia kibandiko cha Emoji Kitchen
+Imeshindwa kutafuta Emoji Mseto kwa lugha uliyochagua
+Imiphumela Ye-Emoji
+importDictionary
+importUserDictionary
+Impossible de charger les suggestions
+Imposta la dimensione e il numero di emoji mostrate in una riga
+Improve Gboard and voice typing
+Improve typing and voice typing based on your Gboard usage patterns and
+Improve voice typing with more accurate name spelling
+In Emoji Kitchen mit Text oder Emoji suchen
+In Emoji Kitchen nach Emojis suchen
+In love face emoji
+In your AppGlideModule and LibraryGlideModules
+IN_APP_PERSONALIZATION_REQUESTED_BUT_DISABLED
+IN_APP_TRAINING_PERSONALIZATION_METRICS_PUBLISH_ERROR
+Inaonyesha emoji 
+Inaonyesha utangulizi wa safu mlalo ya kufikia emoji haraka
+Inapakia kibandiko cha Emoji Kitchen
+Increase emoji size
+Index exceeded the dictionary size
+inflateSetDictionary
+Inga emojier tillg
+Ingen emoji hittades
+Ingen emojier er tilgjengelige
+Ingen emoji-forslag er tilgjengelige
+Ingen matchande emoji
+Ingen matchende emoji
+Ingeza noma ishintshanisa amanye amagama nge-emoji
+initial_suggestion_picked_counts
+initializeInlineSuggestionViews
+Initializing the Emoji Kitchen SQLite database for version
+initPackageNameEmojisMap
+iniz zaman emoji sat
+Inkinobho ye-Emoji
+Inline suggestion candidate has already been set
+Inline suggestion candidate pointer is nullptr
+Inline suggestion has already set
+Inline suggestion pointer is nullptr
+inline suggestion select key code is invalid
+inline suggestion views are not defined
+Inline suggestions disabled because GMS version is too ol
+Inline suggestions disabled because of initialization pro
+Inline suggestions disabled since talkback is on
+inline_suggestion
+inline_suggestion_app_to_right_boundary_ratio
+inline_suggestion_dismiss_tooltip_delay_time_millis
+inline_suggestion_experiment_version
+inline_suggestion_metrics_plugin
+inline_suggestion_min_chip_display_duration_millis
+INLINE_SUGGESTION_PROPOSED
+INLINE_SUGGESTION_SELECT
+INLINE_SUGGESTION_SELECT_BY_CLICK
+INLINE_SUGGESTION_SELECT_BY_SWIPE
+INLINE_SUGGESTION_SELECT_BY_SWIPE_ON_SPACEBAR
+INLINE_SUGGESTION_SELECT_BY_TAB_PK
+INLINE_SUGGESTION_SELECT_BY_TAB_VK
+inline_suggestion_space_tooltip_max_num_shown
+inline_suggestion_tooltip
+INLINE_SUGGESTION_TOOLTIP_V2
+inline_suggestion_update_keyboard_shown_delay_time_millis
+inlinesuggestion
+InlineSuggestionCandidateViewController
+InlineSuggestionCounts
+InlineSuggestionInfo
+InlineSuggestionMatchedCount
+InlineSuggestionMetricKey
+InlineSuggestionMetricsProcessorHelper
+InlineSuggestionMetricsProcessorProvider
+InlineSuggestionParams
+InlineSuggestionPickedCount
+InlineSuggestionProposedCount
+InlineSuggestionRevertedCount
+InlineSuggestionScrubSpaceMotionEventHandler
+InlineSuggestionSpec
+InlineSuggestionsRequest
+InlineSuggestionsResponse
+Innledningen til raden for rask tilgang til emojier er lukket
+INPUT_FIELD_CLICKED_AFTER_EMOJIFIED
+INPUT_MODALITY_HANDWRITING
+INPUT_TEXT_EMPTY_AFTER_EMOJIFIED
+INPUT_TEXT_NOT_END_WITH_EMOJI
+INPUT_TEXT_SELECTED_AFTER_EMOJIFIED
+input_to_resized_bias-
+input_to_resized_bias 
+input_to_resized_weights 
+input-map-feature-dictionary
+InputSuggestionPattern
+insert_emoji_into_search_box_in_emoji_kitchen_browse_search
+instantaneu emoji-urile preferate
+intent_extra_key_deleted_theme_file_name
+intent_extra_key_new_theme_file_name
+Interpreter tensor resize failed for input tensor 
+Interrupted while waiting for save dictionary task
+Introducing the emoji row
+Introductie van snelle toegangsrij voor emoji
+inu birtir emoji-lyklabor
+inu i broj emojija prikazanih u retku
+inut din clipboard
+invalid dictionary
+Invalid dictionary file magic
+invalid dictionary file magic 
+Invalid emoji symbol file
+Invalid inline suggestion event
+Invalid inline suggestion from picked event
+Invalid input emoji1
+Invalid one handed mode
+invalid popup state change 
+Invalid theme
+Invalid theme value type
+Invalid underlying trie type for compacted dictionary
+invalid_ignored_auto_correction_by_suggestion_ratio
+inVariantsPopup
+I-off ang clipboard
+I-on ang Clipboard
+ional de emojiuri
+ionare sau emojiuri recente asociate celuilalt profil
+Ipakita ang clipboard
+Ipakita ang emoji
+Ipakita ang emoji keyboard
+I-pause ang voice typing
+Iphaneli ye-Emoji
+Ipinapakita ang panimula ng fast-access row para sa emoji
+Ipinapakita ng pisikal na Alt key ang keyboard ng emoji
+IProactiveSuggestionsHolder
+Ireki Emoji Kitchen-en ezarpenak
+Ireki emojien panela
+I-revert ang suhestyong emoji
+irm with users that they have agreed to donate their audio input to help improve voice typing
+is an AppCompat widget that can only be used with a Theme
+is missing in THEME_NAME_TO_OVERLAY
+is not async emoji kitchen sticker
+is_last_tap_emoji
+is_light_theme
+is_primary_for_emoji_1
+is_primary_for_emoji_2
+isAllEmoji
+Isara ang banner ng voice typing
+Isara ang panel ng emoji
+Isara ang panimula sa fast-access row para sa emoji
+isAutoHandwritingEnabled
+I-save ang mga kamakailang screenshot sa clipboard
+iSELECT emoji
+Isethulo somugqa ofinyeleleka ngokushesha se-emoji sivaliwe
+Isikhathi se-Double-space
+isikhethi esihlukile se-emoji
+Isiphakamiso se-emoji esilandelayo
+Isiphakamiso se-emoji sisusiwe
+isishintshi se-emoji ye-bidirectional
+Isitika Semboni ye-Emoji
+isPrimaryForEmoji1
+isPrimaryForEmoji2
+Isso oculta a tecla de emojis
+isSuppressedByPopup
+isSystemMonochromaticTheme
+isTextSuggestionSelected
+istoricul clipboardului timp de
+isUserCustomizedVibrationDuration
+isValidThemePackageName
+it will automatically enable voice typing
+Itago ang keyboard mo habang nagsasagawa ng voice typing
+Itakda ang laki at bilang ng emoji na ipinapakita sa isang row
+itao con emojis
+i-tap ang I-minimize sa iyong keyboard habang ginagamit ang voice typing
+i-tap ang MINIMIZE icon na i-minimize sa iyong keyboard habang gumagamit ng voice typing
+itavanje emoji sli
+itavanje emojija
+itavanje naljepnice iz kuhinje za emojije
+itavanje naljepnice iz kuhinje za emojije nije uspjelo
+ite kuhinju za emojije
+ite kuhinju za emojije pomo
+ite opcije nakon dodira na tipku za emojije
+Itinatago nito ang key ng emoji
+Itxi emojiak bizkor atzitzeko errenkadari buruzko 
+Itxi emojien panela
+I-type dito para i-translate
+iune pentru a crea un emoji nou
+iunile la atingerea tastei pentru emoji
+ivanja emojija nisu dostupni
+ivanje emoji sli
+ivanje emojija ne funkcionira za taj jezik
+ivanje emojija nije dostupno
+ivanje kuhinje za emojije nije mogu
+ivanju emojija jo
+Ixhuma kuseva ye-Google Translate
+Iziphakamiso zama-emoji ezitholakalayo
+Izitika Zemboni ye-Emoji ziyatholakala
+j en glad emoji
+j nogle glade emojis
+j til emoji
+ja_enable_smart_emoji_nwp
+jandi emoji
+JapaneseFloatingCandidatesViewController
+JapaneseHandwritingIme
+JAppCompat does not support the current theme features
+Jaribu chaguo tofauti kutayarisha emoji mpya
+JarvisPromptMoreMenuPopupView
+JarvisPromptNoticePopup
+Java_com_google_android_apps_inputmethod_libs_expression_emojify_impl_EmojifyModelApi_nativeHandleEmojifyRequest
+Java_com_google_android_apps_inputmethod_libs_expression_emojify_impl_EmojifyModelApi_nativeLoadEmojifyEngine
+Java_com_google_android_apps_inputmethod_libs_expression_emojify_impl_EmojifyModelApi_nativeUnloadEmojifyEngine
+Java_com_google_android_apps_inputmethod_libs_expression_emojisearch_EmojiSearchJniImpl_nativeInit
+Java_com_google_android_apps_inputmethod_libs_expression_emojisearch_EmojiSearchJniImpl_nativeLoadData
+Java_com_google_android_apps_inputmethod_libs_expression_emojisearch_EmojiSearchJniImpl_nativeSearch
+Java_com_google_android_apps_inputmethod_libs_expression_emojisearch_EmojiSearchJniImpl_nativeUnloadData
+Java_com_google_android_apps_inputmethod_libs_search_emoji_blocklist_SafetyViolationCheckerJni_nat
+Java_com_google_android_apps_inputmethod_libs_search_emojikitchenranker_EmojiKitchenRankerJni_nativeHandleRequest
+Java_com_google_android_apps_inputmethod_libs_search_emojikitchenranker_EmojiKitchenRankerJni_nativeLoadEngine
+Java_com_google_android_apps_inputmethod_libs_search_emojikitchenranker_EmojiKitchenRankerJni_nativeUnloadEngine
+Java_com_google_android_apps_inputmethod_libs_trainingcache_personalization_languagemodel_NeuralRescoringModelPacka
+Java_com_google_android_libraries_handwriting_classifiers_LSTMRecognizerJNI_deinitJNI
+Java_com_google_android_libraries_handwriting_classifiers_LSTMRecognizerJNI_initJNIFr
+Java_com_google_android_libraries_handwriting_classifiers_LSTMRecognizerJNI_recognize
+Java_com_google_android_libraries_handwriting_classifiers_ScribeRecognizerJNI_callNat
+Java_com_google_android_libraries_handwriting_classifiers_ScribeRecognizerJNI_deinitN
+Java_com_google_android_libraries_handwriting_classifiers_ScribeRecognizerJNI_initNat
+Je hebt nog geen emoji
+Je tekst werkt al het beste zonder emoji
+jelse af emojis
+jer eller erstatter nogle ord med emojis
+Jismoniy klaviaturada emoji
+Jismoniy klaviaturadagi Alt tugmasi emojilarni ochadi
+JJAccess emoji key with a dedicated key
+jjAlisin ang fast-access row para sa emoji
+JJEz dago Emoji Kitchen-eko eranskailurik erabilgarri k
+JJfloating_keyboard_mode_foldable__land_keyboard_resize_keyboard_width_ratio
+JJfloating_keyboard_mode_foldable_keyboard_resize_keyboard_left_margin_ratio
+JJImpossibile eseguire una ricerca in Emoji Kitchen nella lingua selezionata
+JJNext time you need to use Gboard it will automatically enable voice typing
+jjOndoa safu mlalo ya kufikia emoji haraka
+JJsplit_keyboard_mode__land_keyboard_resize_keyboard_custom_input_area_width
+JJsplit_keyboard_mode_foldable__land_keyboard_resize_keyboard_padding_bottom
+JJToon een knop op de toetsenbordwerkbalk om het emoji-toetsenbord te openen
+JJTunjukkan emoji yang popular dan sering digunakan pada 
+JNI_decodeForHandwritingNative
+JNI_decodeForHandwritingWithHandleNative
+JNI_loadEmojiShortcutMapNative
+JNI_loadEmojiShortcutMapWithHandleNative
+JNI_nativeConceptPredictionRankedEmojiPrediction
+JNI_onSuggestionPressNative
+JNI_onSuggestionPressWithHandleNative
+JREQUEST_EMOJI_SEARCH_SUGGESTIONS received in non-EmojiDisplay keyboard
+JSAz emojik m
+jyutping_mutable_dictionary_accessor_setting_scheme
+k efter emoji
+k efter emojis
+k etter emoji
+k etter emojier
+k etter emojimikseren
+k i Emoji Kitchen med text eller emojis
+k i emojimikseren med tekst eller emojier
+k110__function6__funcIZN4mozc10prediction12_GLOBAL__N_115FindKeyAndValueERKNS2_10dictionary19DictionaryInterfaceERKNS2_17Conversion
+k110__function6__funcIZN6speech7context8features49CreateRecognitionContextFeatureDictionaryProviderEvE3
+ka i Emoji Kitchen p
+ka tipka Alt prikazuje tastaturu s emoji sli
+ka tipka Alt prikazuje tipkovnicu emojija
+Kailangag i-update ang voice typing para magamit ang mga advanced na featur
+Kalp emojisi
+Kamakailang Emoji
+kamus atau emoji terkini yang dikaitkan dengan profil la
+kamusi au emoji za hivi karibuni zinazohusiana na wasif
+Kan nie Emojimenger in die gekose taal deursoek nie
+Kan niet verbinden met Google Translate-server
+Kan niet zoeken in Emoji-mixer in de geselecteerde taal
+kapag ginagamit mo ang voice typing ng Assistant
+Kargatzen ari den emojia
+Kasalukuyang hindi available ang Voice Typing sa 
+ke i emojimikseren p
+kedata for emojier
+Keep clipboard history for
+Keep suggestion 
+keep_loaded_emoji_kitchen_scam_index_in_memory
+Kein Emoji gefunden
+Kein passendes Emoji vorhanden
+Keine Emojis verf
+Keine Emoji-Vorschl
+Kekunci Alt fizikal menunjukkan papan kekunci emoji
+Kekunci emoji
+Kekunci emoji mengganggu anda
+kelimeleri emojiyle de
+Kendu emojiak bizkor atzitzeko errenkada
+ker eller nylige emojier som er knyttet til den andre profilen
+Ketik dua kali untuk mengalih keluar cadangan emoji
+Ketik dua kali untuk menggunakan cadangan emoji seterusnya
+Ketik untuk menyemak imbas dapur emoji
+Ketuk dua kali untuk menerapkan saran emoji berikutnya
+Ketuk dua kali untuk menghapus saran emoji
+Ketuk untuk menjelajahi dapur emoji
+Key ng emoji
+Key release haptic feedback cutoff
+Key release haptic feedback will not be performed if touch
+Key tap vibration
+key_pos_clipboard_back_to_clipboard
+key_pos_clipboard_back_to_default
+key_pos_clipboard_back_to_prime
+key_pos_clipboard_batch_delete
+key_pos_clipboard_batch_pin
+key_pos_clipboard_batch_pin_no_optin
+key_pos_clipboard_edit
+key_pos_clipboard_edit_and_add
+key_pos_clipboard_icons
+key_pos_proactive_suggestions
+key_pos_proactive_suggestions_strip
+key_pos_translate_back
+key_pos_translate_back_wrapper
+Keyboard emoji
+Keyboard ng emoji
+Keyboard Penjelajahan Dapur Emoji
+Keyboard resize is disabled in tabletop mode
+Keyboard sa Pag-browse ng Emoji Kitchen
+Keyboard vibration
+keyboard_emoji_scale_setting
+KEYBOARD_FROM_CLIPBOARD
+keyboard_height_theme_list
+keyboard_mode_foldable_one_handed_mode
+keyboard_resize
+keyboard_resize_
+KEYBOARD_SWITCHED_AFTER_EMOJIFIED
+keyboard_vibration_enabled
+keyboard_vibration_intensity
+KEYBOARD_VIBRATION_SETTINGS
+keyboard-clipboard-entity
+keyboard-clipboard-item
+keyboard-clipboard-popup
+keyboard-clipboard-tooltip
+KeyboardHeightThemeHelper
+keyboardSuggestionIsDisplayed
+keyboardSuggestionIsSpeakable
+KeyboardSuggestionMetadata
+KeyboardThemeProvider
+KeyboardUiSuggestion
+keyboardUiSuggestions
+KEYCODE_FOCUS_NAV_SUGGESTION_LEFT
+KEYCODE_FOCUS_NAV_SUGGESTION_RIGHT
+KEYFEATURE_TYPE_SERVICE_NAMEFEATURE_TYPE_SPEAKER_ID_VERIFIEDFEATURE_TYPE_SPOKEN_EMOJI_ENABLEDFEATURE_TYPE_SPOKEN_LANGUAGEFEAT
+Keyingi emoji taklifi
+Keyingi emoji tavsiyasini qo
+keywordsForMixedEmojiMaxCount
+keywordsFromEmojiSearchMaxCount
+kFound null emojiKitchenDataMddDownloader
+Khetha i-emoji
+Khombisa umugqa wama-emoji asanda kusetshenziswa
+Khulisa usayizi we-emoji
+kibadilishaji cha emoji cha pande mbili
+Kibandiko cha Emoji Kitchen
+Kibandiko cha Emoji Mseto cha emoji ya 
+Kibodi ya emoji
+Kibodi ya Kuvinjari Emoji Mseto
+Kidirisha cha emoji
+Kipengele cha kutafuta emoji hakipatikani
+Kissing emoji
+Kitchen avec du texte ou des emoji
+kiteuzi cha kibadala cha emoji
+Kitufe cha emoji
+kitufe cha emoji kinakuzuia
+Kitufe halisi cha ALT huonyesha kibodi ya emoji
+Kjo fsheh tastin e emoji-ve
+KKAplikatu da emoji-iradokizuna
+kke med emojis
+kke til emojis
+kken til emojis
+kken til emojis blev lukket
+KKHindi sinusuportahan ang handwriting to text kapag aktibo ang screen reader
+kkMagiging available ang mga advanced na feature ng voice typing kapag nakumpleto na ang pag-download ng
+KKnormal_keyboard_mode_foldable__land_keyboard_resize_keyboard_padding_bottom
+KKPresentamos a barra de emojis
+KKTe presentamos la fila de emojis
+klenmekte olan emoji
+klere veya son emojilere eri
+Klistremerke fra emojimikseren for emojien 
+KMObtenez des suggestions de formulation pr
+Knap til emojis
+KNPoista emojien pikak
+Kokeile toista vaihtoehtoa luodaksesi uuden emojin
+Kon nie Emojimenger-plakker laai nie
+Kongsi Pelekat Dapur Emoji
+Koppintson az Emojikever
+korean_sm_token_dictionary
+korean_token_dictionary
+KoreanDoubleSpaceProcessor
+KoreanSMTokenDictionary
+KoreanSMTokenDictionaryMetaData
+KoreanTokenDictionary
+ko-t-i0-und_contacts_dictionary_accessor
+ko-t-i0-und_new_words_dictionary_accessor
+ko-t-i0-und_shortcuts_dictionary_accessor
+ko-t-i0-und_user_dictionary_accessor
+Krijg direct toegang tot je favoriete emoji
+KTAvaa emojin
+Kuhinja za emojije
+Kulgich va emojilar
+Kumoa emojiehdotus
+Kumokonekta sa server ng Google Translate
+Kunne ikke laste inn emojimikser-klistremerket
+Kurangkan saiz emoji
+Kuss-Emoji
+Kussende emoji
+kuweka emoji na zaidi
+Kwenze kube i-emoji
+Kwriting_tools_v2_enable_zero_state_instruction_suggestion_multi_status_item
+Kynning emoji-fl
+kynnum emoji-l
+KYou need to use a Theme
+Kyssandi emoji
+Kysseemoji
+Kysse-emoji
+kyvien emojien koko ja m
+La mida dels emojis segueix la configuraci
+La ricerca di emoji non funziona con questa lingua
+la sugerencia de emoji
+La tecla emoji est
+La touche Emoji vous g
+Laai tans Emojimenger-plakker
+labilir emoji yok
+Laboratori i Emoji
+Laboratorin e Emoji
+Lachende emoji met tanden
+Lad fingeren glide fra bogstav til bogstav
+Ladataan Emoji Kitchen 
+lage en ny emoji
+Lagi emoji
+Lagyan ng ilang masayang emoji
+Laki ng emoji
+lama emojisi
+lamaq emojisi
+LANG_ID_POSTED_SUGGESTION_NOTICE
+LANGUAGE_DOWNLOAD_POPUP_ACCEPTED
+LANGUAGE_DOWNLOAD_POPUP_DISMISSED_LATER_BUTTON
+LANGUAGE_DOWNLOAD_POPUP_DISMISSED_TOUCH_OUTSIDE
+LANGUAGE_DOWNLOAD_POPUP_LEARN_MORE_PRESSED
+LANGUAGE_DOWNLOAD_POPUP_SHOWN
+Larawan mula sa Clipboard sa Gboard
+Laster inn emojimikser-klistremerket
+lastKnownEmojiSearchResultCandidates
+lata elrejti az emojibillenty
+latest_emoji_share_from_emoji_kb_timestamp
+latin_handwriting
+latin_pk_auto_capitalize
+LatinDictionarySettingsFragment
+LatinHandwritingPrimeKeyboard
+LatinSyncDictionarySettings
+LatticeTraverseArbiterIN10i18n_input6engine3hmm9InputEdgeEPNS2_23TokenDictionaryIteratorEE
+LaunchDictionaryTool
+launchThemeBuilder
+launchThemeEditor
+launchThemeSelector
+layout_height must be provided on the EmojiPickerStyleHeaderIconContainer style
+layout_theme
+layoutSpecificTheme
+layoutSpecificThemeId
+lbig5han compat direct ducet emoji eor phonetic pinyin reformed search sea
+lbrosandi emoji
+learn more in the documentation for BundledEmojiCompatConfig
+lectionner des suggestions
+lectionner une suggestion
+lectionner une suggestion dans la barre d
+left_alt_emoji_shortcut_allowlist
+Legg til emojier
+Legg til en glad emoji
+legg til noen glade emojier
+legge til emojier med mer
+Legger til eller erstatter enkelte ord med emojier
+legum emoji
+legum emoji er ekki deilt 
+Lentosuukkoemoji
+lepka Emoji Kitchen
+lepka Emoji Kitchen pre emod
+lepku Emoji Kitchen se nepoda
+lepky Emoji Kitchen
+Leret untuk mengalih keluar baris emoji pada bila-bila masa
+lFailed loading emoji nlu handler because the spoken emoji patterns file could not be opened
+lger for emojivariant
+LGoogle Translate 
+lib7lattice7LatticeINS1_9InputEdgeENS1_20ScoredEdgeComparatorELb1EEEPNS1_23TokenDictionaryIteratorEE8DelegateE
+light mode is not supported by theme or in current SDK
+Light Pink Theme
+LIGHT_THEME
+Lihat emoji lainnya
+Lihat lagi emoji
+limit_gif_search_query_suggestion
+Linha de emojis
+listDivider was not set in the theme used for this DividerItemDecoration
+LITE_EMOJI_PRED
+lite_emoji_prediction_min_supported_version
+lite_emoji_prediction_superpacks_manifest_url
+lite_emoji_prediction_superpacks_manifest_version
+lite_emoji_prediction_supported_language_tags
+lite_emoji_predictor
+LITE_EMOJI_PREDICTOR_MODEL_LOADED
+LITE_EMOJI_PREDICTOR_MODEL_SYNC
+lite-emoji-pred-engine
+ljare av emoji-varianter
+ljer emojitangenten
+LLBonisa inkinobho kubha yamathuluzi yekhibhodi ukuze uvule ikhibhodi ye-emoji
+LLEzagutu emoji-errenkada berria
+llFaster voice typing has been installed 
+LLIpinapakilala ang emoji row
+llm_pc_enable_personalization_filter
+LLM_RESPOND_SUCCESS_TEXT_STYLE_EMOJIFY
+LLM_RESPOND_TEXT_STYLE_EMOJIFY
+LLMaak kennis met de emoji-rij
+LLMenampilkan emoji populer dan yang baru-baru ini digunaka
+LLMengganti kata dengan emoji terkait yang disarankan hanya dalam sek
+llnak Emoji Kitchen-matric
+llnak emojijavaslatok
+LLSaran emoji dihapus
+LLSethula umugqa we-emoji
+LMEl cos de font dels emojis i del teclat segueix la configuraci
+load_emoji_kitchen_scam_index_on_demand
+load_emoji_kitchen_scam_partitions_in_parallel
+LOAD_EMOJI_SHORTCUT_MAP
+Loaded IME is not a HandwritingIme
+Loading Emoji Kitchen sticker
+Loading emoji nlu handler for 
+loading emojis
+LOADING_INSTRUCTION_SUGGESTIONS
+loadSpokenEmojiPatterns
+log_spell_checker_suggestion_language
+Loka emoji-sv
+Lokhu kufihla ukhiye we-emoji
+Long Clicked view is not EmojiView or CustomImageView
+los diccionarios ni los emojis recientes asociados al otro perfil
+Lost the char dictionary
+LowLatencyHandwritingOverlayView
+lp af tekst eller emojis
+lt az Emoji Kitchen-matrica bet
+LTrying to activate Emojify extension 
+Lukk emojipanelet
+Lukk innledningen til raden for rask tilgang til emojier
+LVAz emojibillenty
+lyAz emojik gyors hozz
+Ma-access kaagad ang iyong mga paboritong emoji
+Maak Emojimenger-instellings oop
+Maganda na ang iyong text nang walang dagdag na emoji
+Magbahagi ng Emoji Kitchen Sticker
+magdagdag ng emoji
+Magdagdag ng ilang masayang emoji
+Magdagdag ng mga emoji
+Magdagdag ng mga screenshot sa iyong clipboard sa Gboard para sa mas madaling pag-past
+Mag-double tap para alisin ang suhestyong emoji
+Mag-double tap para i-apply ang susunod na suhestyong emoji
+Mag-drag dito para umalis sa floating mode
+Maghanap ng emoji
+Maghanap sa clipboard
+Maghanap sa Emoji Kitchen sa pamamagitan ng text o emoji
+Maghanap sa mga emoji
+Magpakita ng nakalaang key para i-access ang emoji
+Magpakita ng row ng kamakailang ginamit na emoji
+Mag-swipe para alisin ang emoji row anumang oras
+Mag-tap para i-browse ang emoji kitchen
+Mai multe emoji
+Mais emojis
+Maiteminduta dagoen aurpegiaren emojia
+Make voice typing better for everyone
+malaking emoji
+Malformed entry in serialized emoji variant preferences
+Manage personalization
+Manage when your keyboard shows suggestions
+mandatory_emoji_kitchen_mix_loading_duration_ms
+Map every spoken emoji directly to its exact natural Unicode s
+Mapendekezo ya emoji yanapatikana
+Mas pahusayin ang voice typing para sa lahat
+Masih memuat data penelusuran Emoji
+Masih memuatkan data carian Emoji
+Masquer le clavier emoji
+Material Dark Theme
+Material Light Theme
+MaterialPopupView
+MaterialRectangularPopupView
+Matndan emoji yaratish sozlamalari
+Matningiz emojilarsiz ham ta
+Matokeo ya Emoji
+max_count_of_items_for_no_selected_emoji_in_browse
+max_count_of_recent_emojis_as_primary_to_fill_browse_home
+max_grammar_suggestion_number
+max_keyword_count_from_emoji_search_for_emoji_kitchen_search
+max_keyword_count_from_mixed_emojis_for_emoji_kitchen_search
+max_num_contextual_emoji_kitchen_results
+max_num_curated_emoji_kitchen_results
+max_num_fetched_primary_content_suggestions
+max_num_rendered_content_suggestions
+max_time_interval_for_tapped_key_on_suggestion_bar
+max_total_keyword_count_for_emoji_kitchen_search
+Maximum icons on suggestions strip
+maximum_result_count_for_emoji_gemma_search_engine_for_search
+May mga available na sticker ng Emoji Kitchen
+maybeApplyPhysicalHeightTheme
+maybeCancelOngoingZeroStateSuggestionFuture
+maybeDisplaySuggestions
+maybeFetchZeroStateSuggestions
+maybeFillPersonalizationInfo
+maybeFilterSuggestions
+maybeImportUserDictionary
+maybeShowPendingSuggestions
+maybeShowRecentEmojis
+maybeShowTranslate
+maybeUnloadDictionary
+Mbinu hii huficha kitufe cha emoji
+Mbyll panelin e emoji-ve
+MDictation is not enabled in incognito mode input session
+me tekst ose emoji
+Meer emoji
+mellor sen emojis
+Memuat stiker Dapur Emoji
+Memuatkan pelekat Dapur Emoji
+Menambah atau mengganti beberapa kata dengan emoji
+menambahkan emoji
+menambahkan emoji dan banyak lagi
+Menampilkan baris emoji yang baru-baru ini digunakan
+Menampilkan emoji
+Menampilkan emoji 
+Menampilkan pengantar baris akses cepat emoji
+Menampilkan tombol khusus untuk mengakses emoji
+Menggunakan Google Translate
+Menunjukkan pengenalan baris akses pantas emoji
+Menyambung dengan pelayan Google Translate
+mergeImageToEmojiGroup
+mero de emojis apresentados numa linha
+mero de emojis mostrados em uma linha
+mero de emojis que se mostrar
+mero de emojis que se muestran en una fila
+Met de fysieke Alt-toets wordt het emoji-toetsenbord getoond
+Metinden emojiye d
+Metniniz emoji eklemeden de olmas
+Mfails to show because the same suggestions is shown with the same priority 
+Mga opsyon sa text-to-emoji
+Mga Resulta ng Emoji
+Mga salitang natutunan mula sa voice typing ng Rambler
+mGoogle Translate
+Mida dels emojis
+migrate_theme_color_tokens
+min_chars_for_emoji_shortcut_secondary_key_lookup
+min_lm_score_for_tapped_key_on_suggestion_bar
+Mini keyboard height
+Minimise toolbar and hide suggestions
+Minimize toolbar and hide suggestions
+Minnka emoji
+Minska emojistorleken
+Miselela amagama nge-emoji ehlobene ngokuthepha okukodwa
+Missing data id in dictionary setting
+Missing FeatureDictionarySessionResourceParams
+Missing view element to theme tag 
+mitin ang mga pagbabagong gagawin nila sa text para mapahusay ang mga feature ng voice typing para sa paggamit nila
+MIXED_EMOJIS
+MMCadangan emoji digunakan
+mmFaster Voice Typing has been installed 
+MMfloating_keyboard_mode_foldable__land_keyboard_resize_keyboard_padding_bottom
+MMGantikan perkataan dengan emoji berkaitan yang dicadangkan dalam satu k
+MMIakma ang Gboard sa iyong mga pattern ng paggamit ng pag-type at voice typing
+MMLes suggestions de remplissage automatique sont mainte
+MMPendekezo la emoji limetumika
+MMsplit_keyboard_mode_foldable__land_keyboard_resize_keyboard_left_margin_ratio
+MMsplit_keyboard_mode_foldable_keyboard_resize_keyboard_custom_input_area_width
+MNDie Daten der Emoji-Suche werden noch geladen
+MOO tamanho da fonte do teclado e dos emojis segue as configura
+moPour obtenir de meilleures suggestions d
+More emojis
+More menu popup dismissed
+More menu popup show
+most relevant follow-up suggestions each enclosed in 
+Mostra adesivi ed esplora le opzioni toccando il tasto emoji
+Mostra els emojis
+Mostra emoji
+Mostra riga di emoji usate di recente
+Mostra tastiera emoji
+Mostra tastiera floating
+Mostra un tasto dedicato per accedere alle emoji
+Mostra unha fila de emojis usados hai pouco
+Mostrando emoji 
+Mostrando emoji de 
+Mostrar emoji
+Mostrar emojis
+Mostrar linha de emojis usados recentemente
+Mostrar mais emojis
+Mostrar no teclado principal os emojis mais usados
+Mostrar o teclado de emojis
+Mostrar pegatinas y ver opciones al tocar la tecla de emojis
+Mostrar teclado de emojis
+Mostrar uma tecla dedicada para acessar os emojis
+motako emojiak
+Motion easing theme attribute must be an 
+mozc_dictionary should not be empty
+mozc_dictionary_version
+mozc_enable_search_query_suggestion_learning
+mozc_handwriting_conversion_candidate_cost_offset
+mozc_user_history_max_suggestion_trial
+MozcUserDictionaryImporter
+mseme emojisi
+MSpellCheckerSuggestionNotification
+mtrl_popupmenu_overlay_color
+Muestra una fila de emojis usados recientemente
+Muestra una fila de los emojis usados recientemente
+MultiLabelPopupView
+Must have at least one inline suggestion
+Must have at least one suggestion
+Musu ematearen emojia
+mutable_dictionary
+mutable_dictionary_accessor
+mutable_dictionary_accessor_setting_scheme
+mutable_dictionary_builder
+MutableDictionary
+MutableDictionaryAccessor
+MutableDictionaryAccessorImpl
+MutableDictionaryAccessorSetting
+MutableDictionaryBuilder
+MutableDictionaryMetaData
+mutlu emoji ekle
+Muuta se emojimuotoon
+n az emojijavaslat elt
+n bara de instrumente a tastaturii pentru a deschide tastatura emoji
+n cargando os datos de busca de emojis
+n de emoji
+n de emoji dispo
+n de emojis
+n de emojis con texto o emojis
+n de emojis disponible para esta combinaci
+n de emojis disponibles
+n de emojis en el idioma seleccionado
+n de emojis para el emoji 
+n de texto a emoji
+n diferente para crear un emoji novo
+n en la barra de herramientas del teclado para abrir el teclado de emojis
+n Google Translate
+n me emoji
+n mo sa dini-dictate na text para mapahusay ang iyong paggamit ng mga feature ng voice typing
+n modul incognito
+n na barra de ferramentas do teclado para abrir o panel de emojis
+n na barra de ferramentas do teclado para abrir o teclado de emojis
+n para crear un emoji
+n para crear un emoji nuevo
+n Studio emoji
+n Studio emoji 
+n Studio emoji folosind text sau emoji
+n tik door voorgestelde gerelateerde emoji
+n vaxt emoji s
+N10i18n_input6engine3hmm12_GLOBAL__N_118MergedIteratorBaseINS1_26TokenDictionaryBFSIteratorEEE
+N10i18n_input6engine3hmm12_GLOBAL__N_125DictionaryIteratorWrapperE
+N10i18n_input6engine3hmm12_GLOBAL__N_128DictionaryBFSIteratorWrapperE
+N10i18n_input6engine3hmm14UserDictionary11KeyIteratorINS2_15BFSIteratorBaseEEE
+N10i18n_input6engine3hmm14UserDictionary11KeyIteratorINS2_15DFSIteratorBaseEEE
+N10i18n_input6engine3hmm14UserDictionary12IteratorBaseINS1_19DictionaryInterface11BFSIteratorEEE
+N10i18n_input6engine3hmm14UserDictionary12IteratorBaseINS1_19DictionaryInterface8IteratorEEE
+N10i18n_input6engine3hmm14UserDictionary13ValueIteratorINS2_15DFSIteratorBaseEEE
+N10i18n_input6engine3hmm14UserDictionary15BFSIteratorBaseE
+N10i18n_input6engine3hmm14UserDictionary15DFSIteratorBaseE
+N10i18n_input6engine3hmm14UserDictionary28TraverseByEntryValueIteratorE
+N10i18n_input6engine3hmm14UserDictionaryE
+N10i18n_input6engine3hmm15TokenDictionary8IteratorE
+N10i18n_input6engine3hmm15TokenDictionaryE
+N10i18n_input6engine3hmm16StaticDictionary11KeyIteratorE
+N10i18n_input6engine3hmm16StaticDictionary13ValueIteratorE
+N10i18n_input6engine3hmm16StaticDictionary14BFSKeyIteratorE
+N10i18n_input6engine3hmm16StaticDictionary16BFSValueIteratorE
+N10i18n_input6engine3hmm16StaticDictionaryE
+N10i18n_input6engine3hmm17MutableDictionary10EditorImplE
+N10i18n_input6engine3hmm17MutableDictionary14CommonIteratorINS1_13TrieInterface11BF
+N10i18n_input6engine3hmm17MutableDictionary14CommonIteratorINS1_13TrieInterface8Ite
+N10i18n_input6engine3hmm17MutableDictionary15BFSIteratorBaseE
+N10i18n_input6engine3hmm17MutableDictionary15DFSIteratorBaseE
+N10i18n_input6engine3hmm17MutableDictionary15KeyIteratorImplINS2_15BFSIteratorBaseE
+N10i18n_input6engine3hmm17MutableDictionary15KeyIteratorImplINS2_15DFSIteratorBaseE
+N10i18n_input6engine3hmm17MutableDictionary17ValueIteratorImplINS2_15DFSIteratorBas
+N10i18n_input6engine3hmm17MutableDictionary22TraversableLexiconImplE
+N10i18n_input6engine3hmm17MutableDictionaryE
+N10i18n_input6engine3hmm19DictionaryInterface11BFSIteratorE
+N10i18n_input6engine3hmm19DictionaryInterface6EditorE
+N10i18n_input6engine3hmm19DictionaryInterface8IteratorE
+N10i18n_input6engine3hmm19DictionaryInterfaceE
+N10i18n_input6engine3hmm20AnnotationDictionaryE
+N10i18n_input6engine3hmm21DirectTokenDictionary11BFSIteratorE
+N10i18n_input6engine3hmm21DirectTokenDictionary8IteratorE
+N10i18n_input6engine3hmm21DirectTokenDictionaryE
+N10i18n_input6engine3hmm21KoreanTokenDictionary11BFSIteratorE
+N10i18n_input6engine3hmm21KoreanTokenDictionary8IteratorE
+N10i18n_input6engine3hmm21KoreanTokenDictionaryE
+N10i18n_input6engine3hmm22DictionaryStateDecoder27TokenLatticeMatcherDelegat
+N10i18n_input6engine3hmm22DictionaryStateDecoderE
+N10i18n_input6engine3hmm22ForwardTokenDictionary11BFSIteratorE
+N10i18n_input6engine3hmm22ForwardTokenDictionary11DFSIteratorE
+N10i18n_input6engine3hmm22ForwardTokenDictionary12IteratorBaseINS1_13TrieInterface11BFSI
+N10i18n_input6engine3hmm22ForwardTokenDictionary12IteratorBaseINS1_13TrieInterface8Itera
+N10i18n_input6engine3hmm22ForwardTokenDictionary22TraversableLexiconImplE
+N10i18n_input6engine3hmm22ForwardTokenDictionaryE
+N10i18n_input6engine3hmm22TokenDictionaryManagerE
+N10i18n_input6engine3hmm23KoreanSMTokenDictionary11BFSIteratorE
+N10i18n_input6engine3hmm23KoreanSMTokenDictionaryE
+N10i18n_input6engine3hmm23StaticDictionaryBuilder11BuilderBaseE
+N10i18n_input6engine3hmm23StaticDictionaryBuilder12BasicBuilderE
+N10i18n_input6engine3hmm23StaticDictionaryBuilder14CompactBuilderE
+N10i18n_input6engine3hmm23StaticDictionaryBuilderE
+N10i18n_input6engine3hmm23TokenDictionaryIteratorE
+N10i18n_input6engine3hmm24DoubleTrieUserDictionaryE
+N10i18n_input6engine3hmm24MutableDictionaryBuilderE
+N10i18n_input6engine3hmm24SingleTrieUserDictionaryE
+N10i18n_input6engine3hmm24TokenDictionaryInterfaceE
+N10i18n_input6engine3hmm25BFSDictionaryStateDecoder20PathBasedStatePrunerE
+N10i18n_input6engine3hmm25BFSDictionaryStateDecoder23LazyDecodingPathArbiterE
+N10i18n_input6engine3hmm25BFSDictionaryStateDecoder24PinyinInitialPathArbiterE
+N10i18n_input6engine3hmm25BFSDictionaryStateDecoder25NormalDecodingPathArbiterE
+N10i18n_input6engine3hmm25BFSDictionaryStateDecoderE
+N10i18n_input6engine3hmm25MutableDictionaryAccessorE
+N10i18n_input6engine3hmm26DictionaryBuilderInterfaceE
+N10i18n_input6engine3hmm26MutableDictionaryInterface12IteratorBaseE
+N10i18n_input6engine3hmm26MutableDictionaryInterfaceE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionary11KeyIteratorE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionary13ValueIteratorE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIteratorE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionary16BFSValueIteratorE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionary22TraversableLexiconImplE
+N10i18n_input6engine3hmm26SingleTrieStaticDictionaryE
+N10i18n_input6engine3hmm26T13nDictionaryStateDecoderE
+N10i18n_input6engine3hmm26TokenDictionaryBFSIteratorE
+N10i18n_input6engine3hmm27BasePolyphoneWordDictionaryE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary10EditorImplE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary14CommonIteratorINS1_13TrieInterface11BF
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary14CommonIteratorINS1_13TrieInterface8Ite
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary15BFSIteratorBaseE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary15DFSIteratorBaseE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary15KeyIteratorImplINS2_15BFSIteratorBaseE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary15KeyIteratorImplINS2_15DFSIteratorBaseE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary17ValueIteratorImplINS2_15DFSIteratorBas
+N10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIteratorE
+N10i18n_input6engine3hmm27SingleTrieMutableDictionaryE
+N10i18n_input6engine3hmm28SimpleMappingTokenDictionary11BFSIteratorE
+N10i18n_input6engine3hmm28SimpleMappingTokenDictionary8IteratorE
+N10i18n_input6engine3hmm28SimpleMappingTokenDictionaryE
+N10i18n_input6engine3hmm32PolyphoneWordDictionaryInterfaceE
+N10i18n_input6engine3hmm33EncodedSingleTrieStaticDictionaryE
+N10i18n_input6engine3hmm33SingleTrieStaticDictionaryBuilder11BuilderBaseE
+N10i18n_input6engine3hmm33SingleTrieStaticDictionaryBuilder12BasicBuilderE
+N10i18n_input6engine3hmm33SingleTrieStaticDictionaryBuilder14CompactBuilderE
+N10i18n_input6engine3hmm33SingleTrieStaticDictionaryBuilderE
+N10i18n_input6engine3hmm34MutableDictionaryAccessorInterfaceE
+N10i18n_input6engine3hmm34SingleTrieMutableDictionaryBuilderE
+N10i18n_input6engine7gesture14LexiconWrapperINS0_3hmm19DictionaryInterfaceEEE
+N10i18n_input6engine7gesture14LexiconWrapperINS0_3hmm24TokenDictionaryInterfaceEEE
+N20research_handwriting10FstDecoderE
+N20research_handwriting11ModelRunnerE
+N20research_handwriting12_GLOBAL__N_128LessGenericTfLiteModelRu
+N20research_handwriting12TfRecognizerE
+N20research_handwriting12WordRewriterE
+N20research_handwriting13ArgmaxDecoderE
+N20research_handwriting13EmojiRewriterE
+N20research_handwriting13LabelRewriterE
+N20research_handwriting14TfGraphDecoderE
+N20research_handwriting15TfInkRecognizerE
+N20research_handwriting16GraphemeRewriterE
+N20research_handwriting16ReductionDecoderE
+N20research_handwriting16ScribbleRewriterE
+N20research_handwriting16SegmenterRuntimeE
+N20research_handwriting17NetworkScoreCacheE
+N20research_handwriting17ResponseProcessorE
+N20research_handwriting17TfLiteModelRunnerE
+N20research_handwriting17UniversalRewriterE
+N20research_handwriting18AbstractRecognizerE
+N20research_handwriting18InterpreterFactoryE
+N20research_handwriting18SingleCharRewriterE
+N20research_handwriting19LabeledInkProcessorE
+N20research_handwriting21EmptyStringRecognizerE
+N20research_handwriting21NoopResponseProcessorE
+N20research_handwriting22AppendingErrorReporterE
+N20research_handwriting22CharClassesRescoringLmE
+N20research_handwriting22LabeledInkRawProcessorE
+N20research_handwriting23CustomXNNPACKOpResolverE
+N20research_handwriting23ScribeResponseProcessorE
+N20research_handwriting24GenericTfLiteModelRunnerE
+N20research_handwriting24LabeledInkCurveProcessorE
+N20research_handwriting25CircledCharactersRewriterE
+N20research_handwriting26TimeMsToSPreprocessingStepE
+N20research_handwriting27ArabicNormalizationRewriterE
+N20research_handwriting27RemoveTimePreprocessingStepE
+N20research_handwriting27ResamplingPreprocessingStepE
+N20research_handwriting28AbstractInkPreprocessingStepE
+N20research_handwriting28RemoveGuidePreprocessingStepE
+N20research_handwriting28SortStrokesPreprocessingStepE
+N20research_handwriting29ArabicToPersianDigitsRewriterE
+N20research_handwriting29PersianToArabicDigitsRewriterE
+N20research_handwriting29SanitizeTimePreprocessingStepE
+N20research_handwriting29ThreadSafeInterpreterFreeListE
+N20research_handwriting3
+N20research_handwriting30FilterStrokesPreprocessingStepE
+N20research_handwriting30MalayalamNormalizationRewriterE
+N20research_handwriting30NormalizeSizePreprocessingStepE
+N20research_handwriting30NormalizeTimePreprocessingStepE
+N20research_handwriting30PreSpaceAwareNetworkScoreCacheE
+N20research_handwriting30StartAtOriginPreprocessingStepE
+N20research_handwriting31DevanagariNormalizationRewriterE
+N20research_handwriting31RemovePressurePreprocessingStepE
+N20research_handwriting32AddPenUpStrokesPreprocessingStepE
+N20research_handwriting32HallucinateTimePreprocessingStepE
+N20research_handwriting32RamerResamplingPreprocessingStepE
+N20research_handwriting32RemoveTimeOrderPreprocessingStepE
+N20research_handwriting32SetWritingGuidePreprocessingStepE
+N20research_handwriting33ResamplingByTimePreprocessingStepE
+N20research_handwriting34RegisteredGenericTfLiteModelRunnerE
+N20research_handwriting36NormalizeSizeByTimePreprocessingStepE
+N20research_handwriting36NormalizeTimeBySizePreprocessingStepE
+N20research_handwriting37ResamplePenupStrokesPreprocessingStepE
+N20research_handwriting39NormalizeMultilineSizePreprocessingSte
+N20research_handwriting39NormalizeSizeForScribePreprocessingSte
+N20research_handwriting39ScaleShiftForRenderingPreprocessingSte
+N20research_handwriting40InkBasedSlopeCorrectionPreprocessingSt
+N20research_handwriting41NormalizeSizeFirstStrokePreprocessingS
+N20research_handwriting41RemoveGestureContextSpecificationRewri
+N20research_handwriting44DetectAndRearrangeMultiLinePreprocessi
+N20research_handwriting44ShiftInkBasedOnWritingGuidePreprocessi
+N20research_handwriting44WritingGuideFromBoundingBoxPreprocessi
+N20research_handwriting53NormalizeSizeWritingGuideFirstStrokePr
+N20research_handwriting55RandomizeInkPositionWithinWritingGuide
+N29research_handwriting_ondevice10RecognizerE
+N4mozc10dictionary12_GLOBAL__N_118CallbackWithFilterE
+N4mozc10dictionary12_GLOBAL__N_128ReverseLookupCallbackWra
+N4mozc10dictionary14DictionaryImplE
+N4mozc10dictionary14InlineCallbackE
+N4mozc10dictionary14UserDictionaryE
+N4mozc10dictionary15ValueDictionaryE
+N4mozc10dictionary16SuffixDictionaryE
+N4mozc10dictionary16SystemDictionaryE
+N4mozc10dictionary19DictionaryFileCodecE
+N4mozc10dictionary19DictionaryInterface8CallbackE
+N4mozc10dictionary19DictionaryInterfaceE
+N4mozc10dictionary21SingleKanjiDictionaryE
+N4mozc10dictionary21SystemDictionaryCodecE
+N4mozc10dictionary23UserDictionaryInterfaceE
+N4mozc10dictionary7UserPosE
+N4mozc10prediction19DictionaryPredictorE
+N4mozc13EmojiRewriterE
+N4mozc22UserDictionaryRewriterE
+N5greco19ResourceBuilderBaseIN6speech7context8features31FeatureDictionaryProviderBundleINS1_6common18RecognitionC
+N6speech7context8features17FeatureDictionary8ProviderE
+N6speech7context8features17FeatureDictionaryE
+N6speech7context8features34FeatureDictionaryProviderExtensionINS_6common18Recognitio
+N6speech7context8features57RecognitionContextFeatureDictionarySessionResourceBuilderE
+N6speech7context8features64RecognitionContextFeatureDictionaryProviderBundleResourceBuilderE
+N8keyboard12spellchecker20SuggestionAggregatorE
+N8keyboard12spellchecker29SuggestionAggregatorInterfaceE
+N8keyboard2lm5emoji24PrefixSearchTableWrapperE
+N8keyboard2lm5emoji33PrefixSearchTableWrapperInterfaceE
+N8keyboard5pc_v212post_process12_GLOBAL__N_148IsPunctuationOrSymbolOrWhitespaceOrEmojiPropertyE
+N8keyboard5pc_v212post_process32PersonalizationDataPostProcessorE
+N8keyboard7decoder12inputcontext29SuggestionDiffFilterInterfaceE
+N8keyboard7decoder14neural_decoder11GlideSearchE
+N8keyboard7decoder14neural_decoder19TranslitGlideSearchE
+N8keyboard7decoder5crank25LiteEmojiPredictionEngineE
+N8keyboard7decoder7metrics26HmmSuggestionQualityPluginE
+N8keyboard7decoder7metrics29InlineSuggestionMetricsPluginE
+N8keyboard7decoder8runtime521SuggestionTransformerE
+N8keyboard7decoder8runtime530SuggestionTransformerInterfaceE
+N8keyboard7nebulae26EmojiCandidateMaterializerE
+N8research17language_modeling17sentence_explorer8ondevice15IsEmojiPropertyE
+N9i18n_mozc10dictionary28DictionaryFileCodecInterfaceE
+N9i18n_mozc10dictionary30SystemDictionaryCodecInterfaceE
+N9i18n_mozc9tokenizer10Dictionary8CallbackE
+N9i18n_mozc9tokenizer19DictionaryFileCodecE
+N9i18n_mozc9tokenizer22ReverseDictionaryCodecE
+Na voljo so nalepke funkcije Emoji Kitchen
+Na-apply ang suhestyong emoji
+Nach Emoji suchen
+Nach Emojis
+na-dictate na audio nang real-time o ang mga ido-donate mong snippet ng audio ng voice typing sa Gboard 
+Nagbibigay-daan sa iyo ang offline mode na gamitin ang voice typing kahit na walang koneksyon sa internet
+Nagdaragdag o nagpapalit ng ilang salita gamit ang emoji
+Naglo-load ang sticker ng Emoji Kitchen
+Na-install na ang mas mabilis na voice typing 
+Naka-disable ang Pag-resize sa Keyboard sa tabletop mode
+Naka-disable ang voice typing
+Naka-disable ang voice typing sa Incognito Mode
+Nakakasagabal ang emoji key
+Nakasara ang panimula ng fast-access row para sa emoji
+Nakopya sa clipboard ang 
+Nalaganje nalepke funkcije Emoji Kitchen
+Nalepka funkcije Emoji Kitchen
+Nalepke funkcije Emoji Kitchen ni bilo mogo
+Naljepnica iz kuhinje za emojije
+Naljepnica iz kuhinje za emojije za emoji 
+napoi la clipboard
+Nascondi tastiera emoji
+nativeBulkInputWithHandwritingLatticeNativePointer
+nativeConceptPredictionEmojiFromConcept
+nativeConceptPredictionEmojiFromConceptWithHandleNative
+nativeConceptPredictionPredictEmojis
+nativeConceptPredictionPredictEmojisWithHandleNative
+nativeConceptPredictionRankedEmojiPrediction
+nativeConceptPredictionRankedEmojiPredictionWithHandleNative
+nativeCreateMutableDictionaryAccessor
+nativeDuplicateDictionary
+NativeEmojiNluCache
+NativeEmojiNluHandler
+NativeEmojiNluLoader
+nativeGetDictionaryCount
+nativeGetDictionarySize
+nativeHandleEmojifyRequest
+nativeLoadEmojifyEngine
+nativeMigrateUserDictionary
+nativeNewEmptyDictionary
+nativeShouldMigrateUserDictionary
+nativeUnloadEmojifyEngine
+Na-update ang laki ng emoji
+Na-update ang laki ng font ng emoji at keyboard
+nchide panoul cu emoji
+nction6__baseIFN4absl8StatusOrINS_10unique_ptrIN6speech7context8features25FeatureDictionaryProviderINS5_6common18RecognitionContext
+nd de acces rapid la emoji-uri
+nd de emojiuri
+nde metin veya emojiyle arama yap
+ndul cu emojiuri folosite recent
+ndul de acces rapid la emoji-uri
+ndul de acces rapid la emoji-uri este 
+ndul de emoji-uri
+ndul de emoji-uri oric
+Nedavni emojiji
+needsDictionary
+Negarraren emojia
+Nem lehet keresni az Emojikever
+Nema podudarnog emojija
+Nema prijedloga emojija
+Nenhum emoji correspondente
+Nenhum emoji dispon
+Nenhum emoji encontrado
+Nenhum emoji foi encontrado
+ner to let users know that changes that they make to text may be used to improve voice typing features for their use
+nerilen ilgili emojilerle de
+Nessun adesivo Emoji Kitchen disponibile per questa combinaz
+Nessun suggerimento di emoji disponibile
+Nessuna emoji corrispondente
+Nessuna emoji disponibile
+Nessuna emoji trovata
+Neste emoji-forslag
+NEVER discard or collapse sentences between emojis 
+Never hallucinate default emojis when no emoji was requested
+Never translate or Romanize non-Indic scripts 
+NEVER translate semantic meaning between languages unle
+NEVER translated
+new_words_dictionary_accessor
+next emoji provider is not available
+Next emoji suggestion
+Next suggestion
+Next-word suggestions
+ng mga snippet ng iyong audio input sa Gboard para makatulong sa pagpapahusay sa voice typing para sa lahat
+nga_enable_spoken_emoji_sticky_variant
+NgaSpokenEmojiMetrics
+ngelige Emoji Mix-m
+ngelige emojiforslag
+ngelige emojis
+nglig Emoji Kitchen-dekal f
+ngliga emojif
+nicima ili nedavnim emoji sli
+nicima ili nedavnim emojijima koji su povezani s drugim profilom
+NIgnore auto language switch because it
+Nije dostupan nijedan emoji
+Nilo-load na emoji
+nir kynningu emoji-fl
+Nire-require ng feature na screenshot ng clipboard ang buong access sa iyong mga larawan
+niste upotrebljavali emojije
+NNI-activate ang voice typing bilang default na pamamaraan ng pag-inp
+NNnormal_keyboard_mode_foldable__land_keyboard_resize_keyboard_left_margin_ratio
+NNOnyesha kitufe kwenye upau wa vidhibiti wa kibodi cha kufungua kibodi ya emoji
+NNPredstavljamo redak s emojijima
+NNsplit_keyboard_mode_foldable_keyboard_resize_keyboard_custom_body_height_ratio
+nnSusa umugqa osheshayo wokufinyelela i-emoji
+NNTunjukkan butang pada bar alat papan kekunci untuk membuka papan kekunci emoji
+nnVerwijder de snelle toegangsrij voor emoji
+No active emoji search engine to search emojis
+no bundled lm for handwriting
+No data source enabled for emoji kitchen search
+No emoji suggestions available
+No hay emojis que coincidan
+No hay sugerencias de emojis disponibles
+No height theme defined for OEM config 
+No hi ha cap emoji coincident
+No hi ha cap emoji disponible
+no invalid content suggestion queries
+No matching emoji
+No need to create new EmojiKitchenDatabase
+No recent emoji providers available
+No se puede buscar en Emoji Kitchen con el idioma seleccionado
+no use_emoji_conversion
+NO_ANIMATED_EMOJI_FOUND
+noma ama-emoji akamuva ahlobene nelinye iphrofayela
+Non hai ancora usato alcuna emoji
+Non se atoparon emojis
+NON_ELIGIBLE_KEYBOARD_INCOGNITO_MODE
+noranzko biko emoji-aldatzailea
+normal__land_keyboard_resize_keyboard_custom_body_height_ratio
+normal__land_keyboard_resize_keyboard_left_margin_ratio
+normal__land_keyboard_resize_keyboard_padding_bottom
+normal__land_keyboard_resize_keyboard_width_ratio
+normal_desk__land_keyboard_resize_keyboard_left_margin_ratio
+normal_desk__land_keyboard_resize_keyboard_padding_bottom
+normal_desk__land_keyboard_resize_keyboard_width_ratio
+normal_keyboard_resize_keyboard_custom_body_height_ratio
+normal_keyboard_resize_keyboard_left_margin_ratio
+normal_keyboard_resize_keyboard_padding_bottom
+normal_keyboard_resize_keyboard_width_ratio
+Norme sulla privacy
+Norme sulla privacy di Google
+not able to show new suggestions
+not consistent suggestions view count
+not limiting the left and right boundary of the popup view showing position
+Not supported to get available emoji kitchen keywords
+Notar Google Translate
+notifyAllThemeListeners
+NotifyGboardThemeChange
+notifyNewSuggestion-
+notifyResized
+notifySelectSuggestion-
+notifyShowSuggestion-
+notifyTransientSuggestion-
+Noto Color Emoji Compat
+NPAfficher les emoji populaires et fr
+ns de emojis dispo
+ns de toques de teclas de emojis
+NS_9allocatorIS8_EEFNS2_10dictionary19DictionaryInterface8Callback10ResultTypeEN4absl11s
+NSA_ISE_EEFNS2_10dictionary19DictionaryInterface8Callback10ResultTypeEN4absl11s
+NSkipping keyboard language switch as current keyboard contains new locale
+NSt6__ndk110__function6__baseIFbRKN20research_handwriting6StrokeES5_EEE
+NSt6__ndk110__function6__baseIFN4mozc10dictionary19DictionaryInterface8Callback10ResultTypeEN4absl11s
+NSt6__ndk110__function6__baseIFNS_4pairIffEERKN20research_handwriting6StrokeEEEE
+NSt6__ndk110__function6__baseIFPN10i18n_input6engine3hmm26DictionaryBuilderInterfaceEvEEE
+NSt6__ndk110__function6__baseIFPN20research_handwriting11ModelRunnerEvEEE
+NSt6__ndk110__function6__baseIFPN20research_handwriting13LabelRewriterEvEEE
+NSt6__ndk110__function6__baseIFPN20research_handwriting14TfGraphDecoderEvEEE
+NSt6__ndk110__function6__baseIFPN20research_handwriting17ResponseProcessorERKNS2_21ResponseProc
+NSt6__ndk110__function6__baseIFPN20research_handwriting18AbstractRecognizerEvEEE
+NSt6__ndk110__function6__baseIFPN20research_handwriting28AbstractInkPreprocessingStepERKNS2_24I
+NSt6__ndk110__function6__funcIN20research_handwriting3
+NSt6__ndk110__function6__funcIPFPN10i18n_input6engine3hmm26DictionaryBuilderInterfaceEvENS_9allocatorIS8_EES7
+NSt6__ndk110__function6__funcIPFPN20research_handwriting11ModelRunnerEvENS_9allocatorIS6_EES5_EE
+NSt6__ndk110__function6__funcIPFPN20research_handwriting14TfGraphDecoderEvENS_9allocatorIS6_EES5
+NSt6__ndk110__function6__funcIPFPN20research_handwriting17ResponseProcessorERKNS2_21ResponseProc
+NSt6__ndk110__function6__funcIPFPN20research_handwriting18AbstractRecognizerEvENS_9allocatorIS6_
+NSt6__ndk110__function6__funcIPFPN20research_handwriting28AbstractInkPreprocessingStepERKNS2_24I
+NSt6__ndk110__function6__funcIZN20research_handwriting11SortStrokesERKNS2_19StrokeOrderSetting
+NSt6__ndk110__function6__funcIZN4mozc12_GLOBAL__N_115GetExtraFormatsEPKNS2_10dictionary19DictionaryInterfaceEN4absl11string_vie
+NSt6__ndk110__function6__funcIZNK10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator19NodeIndexComparatorEvE
+NSt6__ndk110__function6__funcIZNK10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator19NodeIndexComparatorEvE
+NSt6__ndk110__function6__funcIZNK10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator19NodeIndexComp
+NSt6__ndk110__function6__funcIZNK4mozc10prediction17DictionaryDecoder15AggregatePrefixERKNS2_17Convers
+NSt6__ndk110__function6__funcIZNK4mozc10prediction18HandwritingDecoder6DecodeERKNS2_17ConversionRequest
+NSt6__ndk110__function6__funcIZNK6speech7context8features17FeatureDictionary21GetFeatureValueFutureENS4_20Parameteri
+NSt6__ndk110shared_ptrIKN6speech7context8features17FeatureDictionaryEEE
+NSt6__ndk110shared_ptrIKN6speech7context8features31FeatureDictionaryProviderBundleINS1_6common18RecognitionC
+NSt6__ndk110shared_ptrIN6speech7context8features34FeatureDictionaryProviderExtensionINS1_6common18Recogniti
+NSt6__ndk114default_deleteIKN6speech7context8features31FeatureDictionaryProviderBundleINS1_6common18RecognitionC
+NSt6__ndk114default_deleteIN6speech7context8features17FeatureDictionaryEEE
+NSt6__ndk114default_deleteIN6speech7context8features25FeatureDictionaryProviderINS1_6common18RecognitionContext
+NSt6__ndk120__shared_ptr_emplaceIN4mozc10dictionary14UserDictionary11TokensIndexENS_9allocatorIS4_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN4mozc10dictionary16SystemDictionary18ReverseLookupCacheENS_9allocatorIS4_EE
+NSt6__ndk120__shared_ptr_pointerIPKN6speech7context8features31FeatureDictionaryProviderBundleINS1_6common18RecognitionC
+NSt6__ndk120__shared_ptr_pointerIPN6speech7context8features17FeatureDictionaryENS_14default_deleteIS4_EENS_9allocatorI
+NSt6__ndk120__shared_ptr_pointerIPN6speech7context8features25FeatureDictionaryProviderINS1_6common18RecognitionContext
+nu ai folosit emojiuri
+Nu sunt disponibile emoji-uri
+Nu sunt disponibile sugestii de emoji
+Nuk ka emoji
+Nuk ka emoji q
+Null baseVariantEmoji
+Null emoji
+Null emojiContextResults
+Null emojiKitchenBrowseEntryPointContext
+Null emojiKitchenBrowseEntryPointOptions
+Null emojiKitchenSearchEngine
+Null emojiKitchenStickers
+Null emojiMappingPath
+Null emojiSuggestion
+Null emojiSymbolTablePath
+Null emojiToEntityPath
+Null floatingUsageDictionaryWindowDelay
+Null glideModel
+Null handwritingBounds
+Null popupAnchorView
+Null popupViewManager
+Null primaryEmoji
+Null suggestionChips
+num_proposed_grammar_checker_suggestion
+num_proposed_spell_checker_suggestion
+num_select_grammar_checker_suggestion
+num_select_spell_checker_suggestion
+num_show_grammar_checker_suggestion
+num_show_spell_checker_suggestion
+number_of_animated_emoji_recents_to_cache_content_for
+number_of_emoji_recents_to_cache_content_for
+Nylig brukte emojier
+o da letra dos emojis e do teclado
+o da letra dos emojis e do teclado ax
+o de emoji
+o de emoji aplicada
+o de emoji foi removida
+o de emoji removida
+o de emoji seguinte
+o de emojis
+o de emojis com texto ou emojis
+o de emojis no idioma selecionado
+o de emojis para o emoji 
+o de fuente de los emojis y del teclado actualizado
+o de fuente de los emojis y del teclado sigue la configuraci
+o de fuente de los emojis y el teclado
+o de la fuente del teclado y de los emojis usa la configuraci
+o de los emojis
+o de los emojis actualizado
+o de los emojis sigue la configuraci
+o de los emojis usa la configuraci
+o de texto em emoji
+o diferente para criar um novo emoji
+o do emoji
+o do Emoji Mix
+o dos emojis
+o dos emojis ax
+o foram encontrados emojis
+o kamakailang emoji na nauugnay sa kabilang profile
+o na barra de ferramentas do teclado para abrir o teclado de emojis
+o oculta a tecla de emojis
+o para criar um novo emoji
+O tamanho da fonte do emoji e do teclado foi atualizado
+O tamanho dos emojis segue a defini
+O tamanho dos emojis segue as configura
+O texto fica melhor sem emojis
+o usou emojis
+o utilizou emojis
+o y la cantidad de emojis que se muestran en una fila
+ObjectFactoryIN10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator11MatchedNodeEE
+ObjectFactoryIN10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator11MatchedNodeEE
+ObjectFactoryIN10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator14MatchedKeyNod
+obsolete_emoji_prefix_search_table
+Ocultar o teclado de emojis
+Ocultar teclado de emojis
+Ocultarase a tecla de emojis
+Odaberite emoji
+Odpri nastavitve funkcije Emoji Kitchen
+Offline mode lets you use voice typing even when there
+offline translate
+offline_translate
+offline-suggestion-aggregator
+og antallet af emojis
+og antallet emojier som skal vises i en rad
+ohne Emojis hinzuzuf
+OInline suggestions disabled in virtual keyboard with suggestion strip disabled
+Okungakhethwa kukho kombhalo we-emoji
+on a view Glide is targeting
+ON_DEVICE_LLM_INFERENCE_EMOJIFY
+ON_DEVICE_LLM_RESPOND_SUCCESS_TEXT_STYLE_EMOJIFY
+ON_DEVICE_LLM_RESPOND_TEXT_STYLE_EMOJIFY
+ON_DEVICE_TRANSLATOR_TRANSLATE
+onContentSuggestionImageInserted
+onCreateInlineSuggestionsRequest
+onDeleteThemeConfirmed
+Ondoa safu mlalo ya kufikia emoji haraka
+one_handed_mode__land_new_uikeyboard_resize_keyboard_width_ratio
+one_handed_mode_keyboard_mode_foldable__land_new_uikeyboard_resize_keyboard_custom_body_size
+one_handed_mode_keyboard_mode_foldable__land_new_uikeyboard_resize_keyboard_left_margin_ratio
+one_handed_mode_keyboard_mode_foldable_new_uikeyboard_resize_keyboard_custom_body_height_ratio
+one_handed_mode_new_uikeyboard_resize_keyboard_custom_body_size
+one_handed_mode_new_uikeyboard_resize_keyboard_left_margin_ratio
+one_handed_mode_new_uikeyboard_resize_keyboard_padding_bottom
+one_handed_mode_new_uikeyboard_resize_keyboard_width_ratio
+one_handed_mode_new_uiprevious_one_handed_mode
+onEditThemeButtonClicked
+onFinishHandwriting
+onFinishRestoreDownloadableTheme
+onFinishStylusHandwriting
+onGetSentenceSuggestionsMultiple
+onGetSuggestions
+onGetSuggestionsMultiple
+Ongeza ukubwa wa emoji
+onInlineSuggestionsResponse
+onInlineSuggestionsResponseInternal
+Onko emojin
+Only traverse operation is allowed on token dictionary 
+onPassiveHiddenSuggestionsReshow
+onPendingSuggestionsShowing
+onPrepareStylusHandwriting
+onStartConnectionlessStylusHandwriting
+onStartStylusHandwriting
+onStylusHandwritingMotionEvent
+onSurfaceTextureSizeChanged
+Onyesha emoji
+Onyesha kibodi ya emoji
+Onyesha kitufe kwenye upau wa vidhibiti wa kibodi cha kufungua kibodi ya emoji
+Onyesha kitufe maalum cha kufikia emoji
+Onyesha safu mlalo ya emoji uliyotumia hivi majuzi
+Onyesha vibandiko na upekue chaguo unapogusa kitufe cha emoji
+OOfloating_keyboard_mode_foldable__land_keyboard_resize_keyboard_custom_body_size
+OONa-apply ang suhestyong emoji
+OOnormal_keyboard_mode_foldable_keyboard_resize_keyboard_custom_body_height_ratio
+OOReemplaza palabras por emojis relacionados sugeridos con solo presio
+OOSaran emoji diterapkan
+OOWelcome sa clipboard ng Gboard
+OPCaricamento dei dati di ricerca delle emoji ancora in corso
+Opcije pretvaranja teksta u emojije
+Opciones de texto a emoji
+Opciones de texto a emojis
+Opcions de text a emoji
+Open Emoji Kitchen settings
+Open emoji panel
+OPEN_CLIPBOARD_SHORTCUT
+OPEN_EMOJI_KEYBOARD
+OPEN_TRANSLATE_SHORTCUT
+OPERATION_DECODE_FOR_HANDWRITING
+OPERATION_FETCH_SUGGESTIONS
+OPERATION_LOAD_EMOJI_SHORTCUT_MAP
+OPMostra emoji pi
+Opna emoji
+opna emoji-lyklabor
+Opna emoji-sv
+Opna stillingar Emoji Kitchen
+oPrimary emoji search engine disabled due to reaching 
+Opsi ini akan menyembunyikan tombol emoji
+Opsi teks ke emoji
+Opties voor tekst-naar-emoji
+Options de texte en emoji
+opzione diversa per creare una nuova emoji
+Opzioni da testo a emoji
+oqPour obtenir de meilleures suggestions de saisie
+or in GlideBuilder
+or recent emojis associated with the other profile
+orationHasEmojiDeleted
+orationHasEmojiSpokenOrTapped
+Ordeztu hitzak iradokitako emoji erlazionatuekin
+ori pentru a elimina sugestia de emoji
+originalSuggestion
+Os dados da pesquisa de emojis n
+Os datos de busca de emojis non est
+OTry to fetch content suggestion queries related EKs when primary emoji is empty
+Otsige Emojik
+Otvori postavke kuhinje za emojije
+outils du clavier un bouton pour ouvrir le clavier emoji
+outils et masquer les suggestions
+outils et masquez les suggestions
+OUTPUT_TYPE_EMOJIFY
+Ouvrir le panneau des emoji
+OverrideGlideThreadPriority experiment is not enabled
+Ovoliko emojija
+Ovoliko velikih emojija
+OWidgetEmojiAccessPointProviderModuleProvider
+Oxirgi emoji
+Oxirgi ishlatilgan emoji qatorini chiqarish
+P13nMaterializerFeatureNamessuggested_height_ratiohandedness_typeemoji_mistap_ratio
+pa shtuar emoji
+PackagedThemes
+PackagedThemesMegapacksManager
+PageableEmojiListHolderView
+pageHasUsageDictionary
+Pag-type nang pa-glide
+Pahusayin ang Gboard at voice typing
+Pahusayin ang voice typing na mas tumpak mag-spell ng pangalan
+Painel de emojis
+Palakihin ang emoji
+Paliitin ang emoji
+palkissa oleva painike emojin
+Panatilihin ang history ng clipboard nang
+Panel de emojis
+Panel emoji
+Panel ng emoji
+Paneli i emoji-ve
+Panneau des emoji
+Panou cu emoji
+Papan kekunci emoji
+Papan Kekunci Semak Imbas Dapur Emoji
+parseEmojiKitchenSearchResponse
+parseEmojiSearchResponse
+parseKeyboardHeightThemeListFromFlag
+parseThemeId
+parseThemeIndexFromFile
+Parsing annotation dictionary setting failed
+Parsing emoji dictionary setting failed
+Partager des autocollants Emoji Kitchen
+Partager un autocollant Emoji
+Partekatu Emoji Kitchen-eko eranskailua
+Pasar o dedo en calquera momento para quitar a barra de emojis
+Paste from clipboard
+Patakaran sa Privacy
+Patakaran sa Privacy ng Google
+Pause voice typing
+Pechar o panel de emojis
+Pelekat Dapur Emoji
+Pelekat Dapur Emoji tersedia
+Pelekat Dapur Emoji untuk emoji 
+pemilih varian emoji
+Pendekezo la emoji limeondolewa
+Pendekezo linalofuata la emoji
+Penelusuran emoji tidak berfungsi untuk bahasa ini
+Penelusuran emoji tidak tersedia
+pengalih emoji dua arah
+Pengantar baris akses cepat emoji ditutup
+Pengenalan baris akses pantas emoji ditutup
+pentru a accesa emoji
+penukar dwiarah emoji
+per crear un emoji nou
+Perbesar ukuran emoji
+performHandwritingGesture
+performHapticFeedback
+performHapticTextHandleEffect
+Performing keyboard language switch directly 
+Performing keyboard language switch using RUN_ON_IME_IDLE 
+Perkecil ukuran emoji
+Personal dictionary
+PERSONAL DICTIONARY BIASING 
+PERSONAL_DICTIONARY
+PERSONAL_DICTIONARY_BULLETS
+personal_dictionary_context
+PERSONAL_DICTIONARY_OPEN
+PERSONAL_DICTIONARY_UPDATE
+personalContextActionSuggestion
+personalContextMotionEffectSuggestion
+personalContextTextPiiSuggestion
+personalContextTextSuggestion
+personaldictionary
+PersonalDictionary-
+personal-dictionary
+PersonalDictionaryBackupDataProviderModule
+PersonalDictionaryContent 
+PersonalDictionaryContents
+PersonalDictionaryDatabase
+PersonalDictionaryDatabaseManager
+PersonalDictionaryDatabaseV2
+PersonalDictionaryDataHandler
+PersonalDictionaryExportFileCreator
+PersonalDictionaryFragment
+PersonalDictionaryFragmentHelper
+PersonalDictionaryImporter
+PersonalDictionaryPreference
+PersonalDictionaryWordsAdapter
+PersonalDictionaryWordsFragment
+PersonalDictionaryWordsFragment is invalid state
+Personalised suggestions
+Personalised suggestions are unavailable at this time
+Personalised suggestions are unavailable for this app
+Personalized suggestions
+Personalized suggestions are unavailable at this time
+Personalized suggestions are unavailable for this app
+Pesquisa de emojis indispon
+Pesquisar emoji
+Pesquisar emojis
+Pesquisar no Emoji Mix
+Pesquise emojis
+Pesquise no Emoji Mix
+Pesquise no Emoji Mix usando texto ou emoji
+peukkuemoji
+PFN4absl8StatusOrINSt6__ndk110unique_ptrIN6speech7context8features25FeatureDictionaryProviderINS3_6common18RecognitionContext
+PFPN10i18n_input6engine3hmm26DictionaryBuilderInterfaceEvE
+PFPN20research_handwriting11ModelRunnerEvE
+PFPN20research_handwriting14TfGraphDecoderEvE
+PFPN20research_handwriting17ResponseProcessorERKNS_21ResponseProce
+PFPN20research_handwriting18AbstractRecognizerEvE
+PFPN20research_handwriting28AbstractInkPreprocessingStepERKNS_24In
+Phenotype keyboard height theme list is empty or invalid
+Physical Alt key shows the emoji keyboard
+PI_INFERENCE_EMOJIFY
+Pick emoji
+picked_emoji_index
+pid als emojis
+pid als emojis est
+pido a emojis
+pido a emojis est
+pido a emojis foi fechada
+pido aos emojis
+pido aos emojis est
+pido de emojis
+Piilota emojin
+piilottaa emojin
+Pilih emoji
+Pilihan teks kepada emoji
+Pink Theme
+pinyin_handwriting_setting_scheme
+pinyin_mutable_dictionary_accessor_setting_scheme
+pinyin_mutable_dictionary_accessor_setting_scheme_secondary
+PinyinHardFloatingKeyboard
+pixel_bundle_backup_theme
+Please call EmojiCompat
+pne innstillingene for emojimikser
+Podijelite naljepnicu iz kuhinje za emojije
+Poista emojiehdotus kaksoisnapauttamalla
+Poista emojien pikak
+PolyphoneWordDictionaryMetaData
+pon un emoji
+Postag is not supported by AndroidDictionaryWordEditor
+power_key_emoji_mistap_hint
+Pozik dagoen aurpegiaren emojia
+PPEnable voice toolbar and start voice typing automatically when keyboard is shown
+PPfloating_keyboard_mode_foldable__land_keyboard_resize_keyboard_left_margin_ratio
+PPMagpakita ng mga sticker at mag-explore ng mga opsyon sa pag-tap sa key ng emoji
+ppna Emoji Kitchen-inst
+ppna emojipanelen
+ppna emojis
+ppna emoji-tangentbordet
+ppna emoji-tangentbordet p
+PPNilo-load pa ang data sa paghahanap ng Emoji
+ppTampilkan tombol di toolbar keyboard untuk membuka keyboard emoji
+PRAppuyer ou faire un geste de balayage sur la suggestion int
+predictedEmoji
+predictEmojis
+PREF_EMOJI_BAR
+pref_emoji_kitchen_data_version
+pref_emoji_kitchen_data_versions_to_delete
+PREF_EMOJI_TO_EXPRESSION_KITCHEN
+PREF_ENABLE_EMOJI_SUGGESTION
+pref_key_active_emoji_recent_category
+pref_key_contacts_suggestion_notice_posted
+pref_key_contacts_suggestion_notice_wait_start_time
+pref_key_emoji_simplified_header_state
+pref_key_enable_emoji_suggestion
+pref_key_enable_inline_suggestion
+pref_key_inline_suggestion_experiment_version
+pref_key_inline_suggestion_last_shown_ms
+pref_key_inline_suggestion_rejected_count
+pref_key_inline_suggestion_selected_by_space
+pref_key_inline_suggestion_tooltip_shown_count
+pref_key_muse_name_dictionary
+pref_key_one_handed_mode has invalid value 
+pref_key_recent_emoji
+pref_key_translate_accepted_term
+pref_key_translate_all_sources
+pref_key_translate_all_targets
+pref_key_translate_recent_source_languages
+pref_key_translate_recent_target_languages
+pref_key_translate_source_language
+pref_key_translate_target_language
+PREF_SHOW_EMOJI_SWITCH_KEY
+pref_show_recent_emoji_in_symbol_keyboard
+PREF_THEME
+Presentamos la fila de emojis
+Presiona dos veces para aplicar la siguiente sugerencia de emoji
+Presiona dos veces para quitar la sugerencia de emoji
+Presiona para explorar Emoji Kitchen
+Pretvori u emoji
+PreviewableHandwritingGesture
+previewHandwritingGesture
+previewTheme
+Previous suggestion
+previous_one_handed_mode
+previous_primary_emoji_to_search_with
+Prevucite da uklonite red s emoji sli
+Prikaz namjenske tipke za pristup emojijima
+Prikaz tastature emoji sli
+Prikazivanje tipkovnice s emojijima
+Prikazuje se emoji 
+Prikazuje se emoji sli
+Prikazuje se predstavljanje retka za brzi pristup emojijima
+PRIMARY_EMOJI_QUERY
+primaryEmoji
+primaryEmojiCategoryIndex
+PrimitiveClickVibrationEffect
+printAsrPersonalizationMetrics
+Pristup emoji sli
+Pristup emojijima
+Pristupite svojim omiljenim emojijima u trenu
+Pristupite tipki za emojije pomo
+PRO tamanho do tipo de letra do teclado e dos emojis segue a defini
+PROACTIVE_EMOJI_KITCHEN
+proactive_emoji_kitchen_blocklist_init_delay_ms
+proactive_emoji_kitchen_blocklist_superpacks_manifest_u
+proactive_emoji_kitchen_blocklist_superpacks_manifest_v
+ProactiveEmojiKitchenSupplier
+proactivesuggestion
+ProactiveSuggestions
+proactiveSuggestions 
+ProactiveSuggestionsClippableHolderView
+ProactiveSuggestionsHolder
+proactive-suggestions-holder-border
+ProactiveSuggestionsHolderManager
+ProactiveSuggestionsHolderView
+ProactiveSuggestionsHolderView should host only one direct 
+ProactiveSuggestionsWrapper
+Probatu emojiak sortzeko beste aukera bat
+Probeer een andere optie om een nieuwe emoji te maken
+processCommitSuggestion
+processHandwritingOperation
+processProactiveSuggestionSelectSuggestion
+processResultEmojiForRectangleLayout
+processSearchEmojiDataError
+processSearchEmojiDataError called with no valid error
+ProcessSuggestionPress
+profiling_freq_ms_fetch_suggestions
+PROMOTED_COMMAND_EMOJIFY
+ProofreadingSuggestion
+Protect Privacy
+provideZeroStateSuggestion
+PThe pinned action cannot fit and is skipped since there is no other suggestions
+ptObtenez des suggestions de coordonn
+Pulsante Emoji
+Pumili ng emoji
+PUNCTUATION_CORRECTION_CHIP_REPLACED_BY_OTHER_SUGGESTIONS
+PUNCTUATION_SUGGESTION
+Punguza ukubwa wa emoji
+PWidgetEmojiAccessPointProviderModuleProvider
+Qasu tek emoji
+QgetModifierSetsForSkintoneAndGenderDirectionalEmoji
+QGoogle Translate 
+QQApresentamos a linha de emojis
+QQAtzitu emojiak berariazko tekla batekin
+QQfloating_keyboard_mode_foldable_keyboard_resize_keyboard_custom_body_height_ratio
+QQFor better typing suggestions
+QQKailangan ng Gboard ng access sa iyong mikropono para ma-enable ang voice typing
+QQone_handed_mode_keyboard_mode_foldable_new_uikeyboard_resize_keyboard_width_ratio
+QQPalitan ang mga salita ng iminumungkahing nauugnay na emoji sa isang pag-tap lang
+QRAccede aos emojis cunha tecla espec
+QRBun venit la clipboardul Gboard
+QS_EMOJI_SUGGESTION
+QS_KEYBOARD_RESIZE
+QSpellCheckerSuggestionNotification
+Questa impostazione nasconde il tasto emoji
+Quick emoji row
+Quvnoq emojilar qo
+Qwriting_tools_v2_enable_zero_state_instruction_suggestion_animated_loading_status
+r att skapa en ny emoji
+r att ta bort emojif
+r att ta bort emoji-raden
+r die Emoji-Gr
+r die Umwandlung von Text in Emojis
+r diese Kombination ist kein Emoji Kitchen-Sticker verf
+r qasjen tek emoji-t
+r schnellen Zugriff auf deine Lieblings-Emojis
+r text till emoji
+r utan emojis
+Rad for rask tilgang til emojier
+Rahmat emojisi
+Rakastunut emoji
+Rambler dictionary
+Rambler voice typing
+rambler_dictionary
+randomize_order_of_curated_emoji_kitchen_results
+RankedEmoji
+ranker_additional_weight_intercept_emoji
+ranker_additional_weight_slope_emoji
+rbache a tecla de emojis
+rca stickerul Studio emoji
+re og hyppig brukte emojier p
+re og ofte brugte emojis p
+re using Assistant voice typing
+re using Glide v4
+re using the provided Registry rather calling glide
+reactivating signboard popup
+Reading emoji list failed
+readRecentThemes
+Recent emoji
+recent_content_suggestion_share_max_count
+recent_content_suggestion_shared
+recent_key_popup_layout
+recent_theme_spec_json_array
+Recente emoji
+recentEmojiProvider
+recentEmojiProviders
+recentKeyPopupLayoutId
+RecentThemeUtil
+Recevez des suggestions de mots align
+Rechercher dans Emoji
+Rechercher dans Emoji Kitchen
+Rechercher dans les emoji
+Rechercher des emoji
+Rechercher des emoji dans Emoji
+Rechercher Emoji Kitchen
+Rechercher un emoji
+Recherchez dans Emoji
+recognition-context-feature-dictionary-provider
+RecognitionContextFeatureDictionaryProviderBundle
+RecognitionContextFeatureDictionaryProviderBundleResourceBuilder
+recognition-context-feature-dictionary-session-resource
+RecognitionContextFeatureDictionarySessionResourceBuilder
+recompile dictionary
+Recover isolated non-Indic phonetic glitches ONLY if they match an English dictionary name or number format 
+RectangularPopupView
+Red za brzi pristup emoji sli
+Redak s emojijima
+Redak s emojijima uvijek mo
+Redak za brzi pristup emojijima
+reDownloadThemes
+Reducer emojist
+Redueix la mida dels emojis
+Registering Emoji Kitchen Ranker for download
+Rejesha pendekezo la emoji
+Remove emoji fast-access row
+Remove suggestion
+Remove suggestion 
+removeInvalidThemePreferences
+Removing a theme preference
+Remplace certains mots par des emoji ou en ajoute
+renderable_emojis
+Replace words with suggested related emoji in one tap
+replace_emoji_group
+replaceEmojiGroup
+report popup view is null
+REQUEST_EMOJI_SEARCH_SUGGESTIONS
+requestEmojiSearchSuggestions
+Requesting to show proactive suggestions
+requestThemePackage
+require zlib headers with preset dictionary
+require_device_idle_for_emoji_kitchen_data_cleanup
+rer des suggestions
+rer quand votre clavier affiche des suggestions
+research_handwriting
+Reset keyboard theme
+reset_auto_show_translate
+reslagna relaterade emojis med ett tryck
+Resultados de emojis
+Retain Intermediate Content Between Multiple Emojis
+retain_emoji_shortcut_candidates_on_selection
+retry_restore_download_theme_times
+retryToDownloadRestoredTheme
+returns no suggestions
+Revert emoji suggestion
+Revertir la sugerencia de emoji
+REWRITE_TYPE_EMOJIFY
+RewritingSuggestion
+Rezultate cu emojiuri
+Rezultatet e emoji-ve
+Rezultati emojija
+RGoogle Translate 
+rhet kedvenc emojijaihoz
+rib sevib qolgan emoji
+Ricerca di emoji non disponibile
+RICH_CONTENT_SUGGESTION_IMAGES_LOADED
+RICH_CONTENT_SUGGESTION_IMPRESSION
+RICH_CONTENT_SUGGESTION_REQUEST
+Riduci dimensioni emoji
+rifier les suggestions avant de partager des renseignements p
+rifiez les suggestions avant de partager des informations per
+Riga di emoji
+Rij met recent gebruikte emoji
+Rikthe sugjerimin e emoji-t
+rile Studio emoji
+rimea emojiurilor 
+rimea emojiurilor a fost schimbat
+rimea emojiurilor se bazeaz
+Rimuovi la barra di accesso rapido alle emoji
+rios ou aos emojis recentes associados ao outro perfil
+rios ou os emojis recentes associados ao outro
+Ripristina suggerimento di emoji
+Riquadro delle emoji
+Risultati emoji
+rkat for emojis 
+ro de la suggestion pour la s
+rocket emoji
+ROne handed mode is not set correctly before activating one handed mode controller
+Row ng Emoji
+RPersonalDictionaryWordsFragment
+RRBadilisha maneno yawe emoji inayopendekezwa ambayo inahusiana kwa k
+rrelsen for tastaturet og emojist
+Rreshti i emoji-ve
+rreshtin e emoji
+RRHapus baris akses cepat emoji
+RRI-auto commit ang kasalukuyang text sa pag-compose bago ang susunod na glide input
+rrTo create suggestions
+rsatiladigan emoji hajmi va sonini belgilang
+RSpellCheckerSuggestionNotification
+RSPrikaz dugmeta na alatnoj traci tastature za otvaranje tastature s emoji sli
+rstyring via glidende bev
+RTAcesse os emojis com uma tecla dedicada
+rter durch vorgeschlagene passende Emojis mit einem Fingertipp ersetzen
+rter werden durch Emojis ersetzt oder erg
+RTPredstavljamo red s emoji sli
+rul de emoji afi
+rzlich verwendeten Emojis des jeweils anderen Profils zugreifen
+rzlich verwendeter Emojis anzeigen
+s adapter is not an EmojiPickerBodyAdapter
+s Assistant voice typing setting is disabled
+s attribute to be set in your app theme
+s aux emoji
+s aux suggestions
+s az Emojikever
+s az emojikhoz
+s because there is a list of suggestion is showing with higher priority 
+s camera to capture video of you signing and translates it using an AI model
+s converted text into user dictionary
+s dan emoji 
+s dans la barre de suggestions
+s de suggestions et d
+s dhe emoji-n 
+s e o emoji 
+s emoji uchun Emoji Studiya stikeri
+s emojiak konbinatzen dituen Emoji Kitchen-eko eranskailua
+s en de emoji 
+s failed to load zero state suggestions
+s for Emoji Kitchen image
+s for emoji prediction
+s from popup ime window
+s in popup ime window at position 
+s kanye ne-emoji ye-
+s les suggestions
+s na emoji
+s obscured by other popup views
+s og emojien 
+s rapide aux emoji
+s rapide aux emoji est ferm
+s rapide aux emojis
+s should extends AbstractPopupViewManager
+s supported and detected by advanced voice typing features
+s toe aan of vervangt sommige woorden door emoji
+s turkumidagi emoji
+s y el emoji 
+sa device na na-save ng Gboard para mapahusay ang iyong karanasan sa pag-type at voice typing
+sa in Emoji Kitchen-dekalen
+Saadaval on Emojik
+safetyLabelBlockedEmojisMap
+Safu Mlalo ya Emoji
+Safu mlalo ya kufikia emoji haraka
+Saiz emoji
+Saiz emoji dikemaskinikan
+Saiz emoji mengikut tetapan sistem
+Saiz fon emoji dan papan kekunci dikemaskinikan
+Saiz fon emoji dan papan kekunci mengikut tetapan sist
+Sakatu Emoji Kitchen arakatzeko
+Sakrivanje tastature emoji sli
+Salamat sa pagpapahusay ng voice typing
+Sampling rate should be a floating number 
+Sand Theme
+Saran emoji berikutnya
+Saran emoji tersedia
+Saran emoji tidak tersedia
+Save recent screenshots in clipboard
+SAVED_NEWLY_BUILT_USER_THEME_FILE_NAME
+SaveUserDictionaryModuleProvider
+SC_IGNORE_SUGGESTION
+SC_REJECT_SUGGESTION
+SC_SELECT_SUGGESTION
+SC_SHOW_SUGGESTION
+scaledHandwritingSlop
+Scan for spoken emoji commands and substitute them with exact
+Scheduling emoji kitchen data cleanup work
+Scorri per rimuovere la barra delle emoji in qualsiasi momento
+ScribeHandwritingRecognizerWrapper
+Scroll listener not attached to EmojiPickerBodyRecyclerView
+scrollToInitialEmojiOption
+se az emoji gombra koppint
+se az emojikhoz val
+Se flere emojier
+Se flere emojis
+Se muestran emoji de 
+Seamless na voice typing
+Seamless voice typing
+Seamless voice typing is not available in this input field
+Search clipboard
+Search emoji
+Search emoji kitchen
+Search Emoji Kitchen with text or emoji
+Search emojis
+Search for emoji
+Search for emoji kitchen
+SEARCH_EMOJI_DATA_ERROR
+SEARCH_EMOJI_EXTENSION_VIEW_ACTIVATED
+searchEmoji
+searchEmojiAsyncInternal
+SearchEmojiExtension
+searchEmojiKitchenImages
+searchEmojis
+SearchKeyboardEmojiSpecializerM2
+Secondary emoji is absent
+secondary_emoji_shortcut_candidates_score
+secondaryEmoji
+Selaa Emoji Kitcheni
+Selecionar emoji
+SELECT 1 FROM favorite_emoji_kitchen_metadata where id 
+SELECT animated_emoji
+SELECT base_variant_emoji
+SELECT emoji
+Select suggestion on the toolbar
+selected_candidate_mixed_emojis
+selected_emoji
+selected_emoji_type
+selectedEmoji
+selectInlineSuggestion
+selector bidireccional de emojis
+selector de variante de emoji
+selector de variantes de emojis
+selector ng variant ng emoji
+selectSuggestion
+selectSuggestionViewByIndex
+selectTextCandidateOrInlineSuggestion
+selectTheme
+seletor bidirecional de emojis
+seletor de variante do emoji
+seletor de variantes de emojis
+selettore bidirezionale di emoji
+Selettore variante emoji
+Seleziona emoji
+semantic_emoji_for_search_threshold
+semantic_emoji_max_sentence_word_num
+semantic_emoji_threshold
+semanticEmojiForSearchThreshold
+semanticEmojiThreshold
+Sembunyikan keyboard emoji
+Sembunyikan papan kekunci emoji
+Sembunyikan Translate
+Senaste emojin
+Sending keyboard language switch event over oration stream 
+Seneste emojis
+SentenceSuggestionsInfo
+ser in Emoji Kitchen-dekalen
+Sesha ama-emoji
+Sesha i-emoji
+Sesha imboni ye-emoji
+Sesha Imboni ye-Emoji ngombhalo noma nge-emoji
+Seshela i-emoji
+set default keyboard height to 33 mm
+set default keyboard height to 35 mm
+set default keyboard height to 37 mm
+set default keyboard height to 39 mm
+set default keyboard height to 47 mm
+set default keyboard height to 48 mm
+set default keyboard height to 49 mm
+set default keyboard height to 52 mm
+set dhe eksploro opsionet kur troket tastin e emoji-ve
+Set max keyboard height
+Set the size and number of emoji shown in a row
+setDropDownViewTheme
+Setha usayizi nenombolo ye-emoji eboniswe emgqeni
+setInlineSuggestionProposedMetadata
+setMaxSuggestionCount
+setRawCompressionDictionary
+setTextConversionSuggestions
+setTextSuggestionSelected
+setting_clipboard
+setting_dictionary
+setting_emoji_kitchen_category_key_expression_setting
+setting_personal_dictionary_key
+setting_physical_keyboard_suggestions_category_key
+setting_privacy
+setting_privacy_voice_category_key
+setting_suggestions_category_key
+setting_suggestions_category_key_expression_settings
+setting_translate
+setting_user_dictionary_category_key
+settings_header_clipboard
+settings_header_dictionary
+settings_header_personal_dictionary
+settings_header_privacy
+settings_header_theme
+settings_header_translate
+SettingsTheme
+SettingsThemeHelper
+Seuraava emojiehdotus
+Sevib qolgan emoji
+Sevimli emojil
+Sevimli emojilaringizga darhol kirish mumkin
+sfoi Studio emoji
+SGoogle Translate 
+Share Emoji Kitchen sticker
+shares FROM emoji_shares
+Shfaq emoji-t
+Shfaq rreshtin me emoji-t e p
+Shiko emoji t
+shortcuts_dictionary_accessor
+shortcuts_mutable_dictionary_accessor_setting_scheme
+shortcuts_token_dictionary
+should call EmojiKitchenDatabaseManager
+should call EmojiKitchenDataMddDownloader
+should never be called on a closed NativeEmojiNluHandler
+shouldDisplayContentSuggestions
+shouldShowSuggestions
+Show a button on the keyboard toolbar to open emoji keyboard
+Show a dedicated key to access emoji
+Show clipboard
+Show emoji
+Show emoji keyboard
+Show in suggestion strip
+Show popular and frequently used emoji on the main keyboard
+Show recently copied text and images in suggestions bar
+Show recently copied text and images in the suggestions bar
+Show row of recently used emoji
+Show stickers and explore options on emoji key tap
+show suggestions
+Show suggestions and access features
+Show translate
+Show writing tools icon in suggestion strip while typing
+show_all_popup_views_in_popupwindow
+show_animated_emoji_in_expression_moment
+show_auto_correction_floating_candidates_delay_ms
+show_contextual_emoji_kitchen_in_expression_moment
+show_emoji_button_on_toolbar
+show_emoji_kitchen_mix_in_expression_moment
+show_emoji_switch_key
+show_emoji_variant_candidate_allowlist
+show_error_status_for_emoji_search_gemma_error
+show_error_status_for_emoji_search_server_error
+show_floating_auto_correction_suggestions_on_pk
+SHOW_ONE_HANDED_MODE_SWITCH
+show_revert_auto_correction_floating_candidates_delay_ms
+show_suggestion_strip
+show_suggestions
+show_suggestions_for_selected_text_while_dictating
+SHOW_SWITCH_TO_HANDWRITING_BUTTON
+show_voice_reconversion_suggestion_as_chip
+ShowAccessoryFloatingCandidatesDelayPreference
+showAddToDictionaryNotice
+ShowAnimateEmoji
+Showing emoji fast-access row introduction
+Showing floating keyboard
+Showing onboarding popup
+showing popup floating keyboard 
+SHOWING_FLOATING_CANDIDATE_AT_CURSOR
+showMergedDefaultAndFrequentEmojis
+showMicEffectsPopup
+showNonEmojiContextResults
+showPiiSuggestionTooltip
+showProofreadSuggestion
+showRecentlyPickedEmojis
+showReportContentPopup
+shto disa emoji q
+Shto disa emoji t
+Shto emoji
+Shtoji emoji
+shtuar emoji etj
+SHUTDOWN_HANDWRITING_IME_ON_DEACTIVATE
+sia e emoji-ve
+sia e emoji-ve dhe e fontit t
+sia e emoji-ve dhe e fontit tastier
+sia e emoji-ve ndjek cil
+sia e emoji-ve u p
+sica Alt apresenta o teclado de emoji
+sica Alt mostra o teclado de emojis
+sica Alt muestra el teclado de emojis
+sica muestra el teclado de emoji
+SignboardPopup
+SignboardPopup created
+SignboardPopup destroyed
+SignboardSuggestionsHandler
+Siguiente sugerencia de emoji
+SilkRectangularPopupView
+Simge klavyesindeki emoji
+Simple word-for-word voice typing
+simple_mapping_token_dictionary
+SimpleMappingTokenDictionary
+SimpleThemeSpecProvider
+Simulan ang voice typing
+sinasalita mo kung sinusuportahan at na-detect ito ng mga advanced na feature ng voice typing
+SinceLastEmoji
+single_kanji_dictionary_ is null
+single_trie_mutable_dictionary
+single_trie_mutable_dictionary_builder
+single_trie_static_dictionary
+single_trie_static_dictionary_builder
+SingleTrieMutableDictionary
+SingleTrieMutableDictionaryBuilder
+SingleTrieStaticDictionary
+SingleTrieStaticDictionaryBuilder
+SingleTrieUserDictionary
+sinu af emojiunum 
+Sinusunod ng laki ng emoji ang setting ng system
+Size of animated emoji keyword allowlist 
+Size of contextual emoji kitchen keyword allowlist 
+Size of emoji kitchen keyword allowlist 
+Size of emoji kitchen mapping 
+skip_content_suggestion_height_limit_check
+Skipped dispatching query since this ContentSuggestionQueriesDispatcher has been deactivated
+skipping popup
+Skjul emojitastatur
+Skjul emoji-tastaturet
+Skrivanje tipkovnice s emojima
+sleepy Zs floating upward
+Sletning via glidende bev
+SMART_DICTATION_EMOJI_PROCESSING_ERROR
+SMART_DICTATION_EMOJI_SUGGESTIONS_CONCEPT_PREFERENCE_SET
+SMART_DICTATION_EMOJI_SUGGESTIONS_DISPLAYED
+SMART_DICTATION_EMOJI_SUGGESTIONS_SPOKEN
+SMART_DICTATION_EMOJI_SUGGESTIONS_TAPPED
+SMART_DICTATION_SPOKEN_EMOJI
+SMART_DICTATION_SUGGESTION_CHIPS_DISPLAYED
+SMART_DICTATION_UNRECOGNIZED_SPOKEN_EMOJI
+SmartReplySuggestionFetcher
+Smeta li vam tipka emojija
+Smilefjes-emoji
+Smiler med tennene-emoji
+Smiling with teeth emoji
+Snelle toegangsrij voor emoji
+Soek Emojimenger
+Soek na Emojimenger
+Sonraki emoji 
+SOURCE_CLIPBOARD
+SP_bundled_emoji
+SpeechPersonalizationMetric
+SpeechPersonalizationMetricValue
+spell_check_add_to_dictionary
+SPELL_CHECK_SELECT_SUGGESTION
+SPELL_CHECK_SUGGESTIONS
+SPELL_CHECK_SUGGESTIONS received with bad key data
+SPELL_CHECK_UNDO_ADD_TO_DICTIONARY
+SPELL_CHECKER_SELECT_SUGGESTION
+spellchecker_max_suggestion_count
+SpellCheckerSuggestionHandler
+SpellCheckerSuggestionNotification
+spelling suggestions
+split__land_keyboard_resize_keyboard_custom_body_height_ratio
+split__land_keyboard_resize_keyboard_custom_input_area_width
+split__land_keyboard_resize_keyboard_left_margin_ratio
+split__land_keyboard_resize_keyboard_padding_bottom
+split__land_keyboard_resize_keyboard_width_ratio
+split_desk__land_keyboard_resize_keyboard_left_margin_ratio
+split_desk__land_keyboard_resize_keyboard_padding_bottom
+split_desk__land_keyboard_resize_keyboard_width_ratio
+split_keyboard_resize_keyboard_custom_body_height_ratio
+split_keyboard_resize_keyboard_custom_input_area_width
+split_keyboard_resize_keyboard_left_margin_ratio
+split_keyboard_resize_keyboard_padding_bottom
+split_keyboard_resize_keyboard_width_ratio
+spoken emoji patterns
+spoken emoji patterns 
+spoken_emojis_patterns
+SpokenOrTappedEmoji
+Spraakgestuurd typen staat uit in de incognitomodus
+squeda de emojis
+squeda de emojis no disponible
+squeda de emojis no disponibles
+squeda de emojis no es compatible con el idioma
+squeda de emojis no est
+SSDe grootte van emoji
+ssNous sommes encore en apprentissage et ne pouvons pas afficher de suggestions pour cela
+SSPromo na nagpapaalam sa mga user na makakatulong silang mapahusay ang voice typing
+SSsplit_keyboard_mode_foldable__land_keyboard_resize_keyboard_custom_input_area_width
+Staat de emoji-toets in de weg
+Standard na voice typing
+Standard voice typing
+StandardMenuPopup cannot be used without an anchor
+Start handwriting in 
+Start importUserDictionary
+Start voice typing
+Start voice typing automatically when keyboard is displaye
+startEmojiInput
+Starting emoji kitchen data cleanup work
+startStylusHandwriting
+startStylusHandwritingInternal
+state are not defined in ClipboardStateType
+static_dictionary
+static_dictionary_builder
+StaticDictionary
+StaticDictionaryBuilder
+StaticThemeOverlay
+Steminvoer is gedeaktiveer in Incognitomodus
+sterilen emoji boyutunu ve say
+stfanginn emoji
+Sticker aus Emoji Kitchen teilen
+Sticker ng Emoji Kitchen
+Sticker ng Emoji Kitchen para sa 
+Sticker Studio emoji
+Sticker Studio emoji pentru emojiul 
+Sticker suggestions
+Sticker van Emoji-mixer delen
+Sticker van Emoji-mixer voor de emoji 
+StickerGlideModule
+StickerLightTheme
+Stickers tonen en opties verkennen als je op de emoji-toets tikt
+stickerul Studio emoji
+Stiker Dapur Emoji
+Stiker Dapur Emoji tersedia
+Stiker Dapur Emoji untuk emoji 
+Still loading Emoji search data
+STLes suggestions de la saisie automatique s
+stop downloading themes
+stop sign emoji
+stop sign emoji 
+Stop voice typing
+store emojier
+Streaming suggestion is canned
+STRONG_PRIVACY_AND_INTEGRITY
+Studio emoji
+style_sheet_dynamic_compatible_themes_color_rules
+StyledKeyboardTheme
+StyledKeyboardThemeBuilder
+Stylus Handwriting
+Stylus handwriting for 
+Stylus handwriting is not enabled
+Stylus_Handwriting
+STYLUS_HANDWRITING_COMMIT
+stylus_handwriting_enabled
+STYLUS_HANDWRITING_FINISHED
+STYLUS_HANDWRITING_STARTED
+StylusEducationPopupDialog
+submitInlineSuggestion
+substituir palavras por emojis relacionados sugeridos
+Subukan ang Clipboard
+Successfully deleted emoji kitchen database version
+Successfully enqueued emoji kitchen data cleanup work
+Successfully initialized emoji kitchen database
+Successfully prune animated emoji usage history older than 
+Successfully prune emoji filters history older than 
+Successfully prune emoji shares history older than 
+Suffix dictionary data is broken
+suffix_dictionary
+suffix_dictionary_ is null
+Sugerencia de emoji aplicada
+Sugerencias de emojis disponibles
+sugestia de emoji
+Suggerimenti di emoji disponibili
+Suggerimento di emoji successivo
+SUGGEST_EMOJI
+suggest_emoji_args
+SuggestEmojiClientOpArgs
+SUGGESTION_VIEW_PII_SUGGESTION_TOOLTIP
+Suggestionemoji
+Sulje emojien pikak
+Sulje emojipaneeli
+sultats emoji
+Sumubok ng ibang opsyon para gumawa ng bagong emoji
+Sunt disponibile stickere Studio emoji
+Sunt disponibile sugestii de emoji
+super_insert_clipboard_promo
+super_insert_clipboard_promo_shown
+super_insert_clipboard_query_results
+super_insert_expression_emoji_suggestion_default_list
+supported_language_tags_for_gemma_embedding_emoji_kitchen_ranker
+supported_languages_for_emoji_embedding_index
+supported_languages_for_emoji_gemma_search_engine_for_search
+supported_languages_for_emoji_kitchen_browse
+supported_languages_for_emoji_kitchen_scam_index
+supported_languages_for_emoji_kitchen_search_in_browse
+supported_languages_for_emoji_kitchen_server_search_engine
+supported_languages_for_emoji_search_from_server
+supported_languages_for_proactive_emoji_kitchen_blocklist
+supportProofreadSuggestion
+supports_inline_suggestion
+supports_one_handed_mode
+supportsEmojiSuggestions
+supportsInlineSuggestion
+supportsOneHandedMode
+Suppressing idle UI update with identical suggestions
+Supprimer la suggestion
+Supprimer la suggestion 
+Susa umugqa osheshayo wokufinyelela i-emoji
+Susunod na suhestyong emoji
+Suurenna emojien kokoa
+Swayipha ukuze ususe umugqa we-emoji noma nini
+Swipe om de emoji-rij te verwijderen
+Swipe to remove the emoji row at any time
+Switch to dark theme in battery saver
+Switch to full screen handwriting
+Switch to fullscreen handwriting
+Switch to half screen handwriting
+SWITCH_TO_CORRESPONDING_HANDWRITING_KEYBOARD
+SWITCH_TO_ONE_HANDED_MODE
+switcher bidirecional de emojis
+switchToFloatingKeyboardMode
+switchToOneHandedMode
+Symbol dictionary data is broken
+System theme 
+System theme directory is not available
+SYSTEM_CLIPBOARD
+system_dictionary
+system_dictionary_
+system_haptic_settings
+SystemAutoThemeSpecProvider
+systemDefaultVibrationDuration
+systemHapticFeedbackEnabled
+systemKeyboardVibrationEnabled
+SystemThemeFileUtils
+SystemTranslateProvider
+szemek emoji
+Szerelmes arc emoji
+t apo emoji-t e fundit q
+t be loading status when zero state suggestion is forbidden
+t change the keyboard height
+t contain a secondary emoji
+t dina favoritemojis direkt
+t find any suggestions
+t get a success http response for emoji kitchen search request
+t get a success http response for emoji search request
+t happen when zero state suggestion is forbidden
+t have any words in the personal dictionary
+t have recent emojis placeholder
+t load suggestions
+t me emoji p
+t mmap dictionary
+t refer to the internal clipboard image
+t show suggestions for this
+t used any emoji yet
+t used any emojis yet
+Tabassumli emoji
+tablir la suggestion d
+Tafuta emoji
+Tafuta emoji mseto
+Tafuta Emoji Mseto ukitumia maandishi au emoji
+Taille de police des emoji et du clavier modifi
+Taille des emoji
+Taille des emoji modifi
+Takk-emoji
+Tamanho do emoji
+Tamanho do emoji atualizado
+Tamanho do tipo de letra do teclado e dos emojis atualizado
+Tamanho dos emojis
+Tamanho dos emojis atualizado
+Tambah emoji
+Tambahkan atau gantikan beberapa perkataan dengan emoji
+tambahkan beberapa emoji gembira
+Tambahkan emoji
+tambahkan emoji ceria
+Tambahkan emoji gembira
+Tambahkan emoji senang
+Tampilkan keyboard emoji
+tandi emoji
+Tangentbordsvibration
+tap Minimise on your keyboard while voice typing
+tap MINIMIZE minimise icon on your keyboard while voice typing
+tap MINIMIZE minimize icon on your keyboard while voice typing
+tap Minimize on your keyboard while voice typing
+Tap or swipe on the inline suggestion to accept
+Tap to browse Emoji Kitchen
+Tap to enable contact suggestions
+target user image theme file name missing
+target_emoji
+target_user_image_theme_file_name
+tarrat ja tutki vaihtoehtoja emojin
+tasta de emoji
+Tasta pentru emoji
+tasta pentru emoji este ascuns
+tasta pentru emoji folosind o tast
+tastatura cu emoji
+Tastatura de navigare prin Studio emoji
+tastatura emoji
+Tastatura s emoji sli
+tastaturet og emojist
+Tastaturet til at gennemse Emoji Mix
+Tastaturvibration
+Tastenvibration
+Tasti i emoji-ve
+Tasti i emoji-ve t
+Tastiera di emoji
+Tastiera Emoji Kitchen Browse
+Tasto emoji
+tava prijedlog emojija
+Tayari maandishi yako ni mazuri bila kuongeza emoji
+tban van az emojibillenty
+tContext theme does not provide a value for Expression
+te cuvintele cu emojiuri sugerate asociate
+te dimensiunea emoji-urilor
+Te estorba la tecla de emojis
+te unele cuvinte cu emoji
+Teal Theme
+Tecla de emoji
+Tecla de emojis
+tecla de emojis com uma tecla dedicada
+Teclado de emoji
+Teclado de emojis
+Teclado de pesquisa do Emoji de cozinha
+Teclado para explorar Emoji Kitchen
+Teklatu fisikoko Alt tekla sakatuta emojiak agertzen dira
+Teks Anda sudah bagus tanpa perlu menambahkan emoji
+Teks anda sudah cukup baik tanpa penambahan emoji
+Teksten din fungerer allerede best uten emojier
+Telezesha kidole ili uondoe safu mlalo ya emoji wakati wowote
+Telusuri dapur emoji
+Telusuri Dapur Emoji menggunakan teks atau emoji
+Telusuri emoji
+tene emojije na glavnoj tipkovnici
+tengdum emoji-t
+tengjast Google Translate 
+tenih emojija
+TENOR_GIF_SEARCH_SUGGESTION_METADATA
+TenorSearchSuggestionMetadata
+tertiaryEmoji
+Testua emoji bihurtzeko aukerak
+Testua hobeagoa izango da emojirik gehitu gabe
+Tetszik emoji
+Text to emoji
+TEXT_INVALID_SINGLE_EMOJI
+TEXT_STYLE_EMOJIFY
+text-size-emoji
+text-size-emoji-header
+Text-to-emoji options
+tflite inference failed because number of emojis returned for
+TfLite model resize input tensor error
+TFLITE_EMOJI_PRED
+TFLITE_LSTM_EMOJI
+TfLiteEmojifyModel
+tflite-emojify-model
+TfLiteEmojiKitchenRankerEngine
+tflite-emojikitchen-ranker-engine
+TfLiteEmojiKitchenRankerModel
+tflite-emojikitchen-ranker-model
+TfLiteEmojiPredEngine
+Thank you emoji
+Thanks for improving voice typing
+thatja az emojisort
+The app does not support stylus handwriting gesture here
+The default keyboard height
+The downloadable themes to restore is empty
+The file name of default dark theme in system themes directory
+The file name of default theme in system themes directory
+The helper is destroyed during theme downloading
+The initialization of emoji kitchen database is cancelled
+The manifest of emoji superpack data is not registered yet
+The mixed emoji list contains invalid mixed emoji
+The most likely cause of this error is disabling the EmojiCompatInitializer
+The number of animated emoji images is not the same as expected
+The number of emoji kitchen images is not the same as expec
+The passed attribute does not exist in context theme
+The provided suggestions must be sufficiently distinct from eac
+The style on this component requires your app theme to be 
+Then press the number of the suggestion to select it
+Thepha kabili ukuze usebenzise isiphakamiso se-emoji elandelayo
+Thepha kabili ukuze ususe isiphakamiso se-emoji
+Thepha ukuze ubhrawuze ikhishi le-emoji
+ther Cantonese characters are composed in the inline text field or in a separate floating view
+There is no clipboard backup data file
+There should not be more than one inline suggestions
+This hides the emoji key
+This hides the language switch key
+This means the feature value needs to be in the example the feature dictionary is initialized with
+This text field does not support clipboard
+This text field does not support translate
+This theme won
+thumbs up emoji
+Tiada cadangan emoji tersedia
+Tiada emoji ditemui
+Tiada emoji tersedia
+Tiada emoji yang sepadan
+Tiada pelekat Dapur Emoji tersedia untuk gabungan ini
+Tidak ada emoji yang cocok
+Tidak ada emoji yang tersedia
+Tidak ada stiker Dapur Emoji yang tersedia untuk kombinasi ini
+Tidak dapat memuat stiker Dapur Emoji
+Tidak dapat memuatkan pelekat Dapur Emoji
+Tidak dapat mencari Dapur Emoji dalam bahasa yang dipilih
+Tidak dapat menelusuri Dapur Emoji dalam bahasa yang dipilih
+Tidak ditemukan emoji
+Tik om deur Emojimenger te blaai
+Tik om in de Emoji-mixer te browsen
+Tilbakestill emoji-forslaget
+Time se skriva tipka za emojije
+Time used to initialize EmojiKitchenOnDeviceScamEngine
+Timed out while waiting for suggestion fetch request
+Tindakan ini menyembunyikan kekunci emoji
+Tipka za emojije
+Tipkovnica s emojima
+Tipkovnica za pregledavanje kuhinje za emojije
+tiren Emoji At
+tirir veya emoji ekler
+Tirjaygan emoji
+tkomst till emojis
+tkomst till emojis har st
+tniniz emoji 
+To select a suggestion
+toarea sugestie de emoji
+Toca dos veces para aplicar la siguiente sugerencia de emoji
+Toca per navegar per Emoji Kitchen
+Tocca due volte per applicare il suggerimento di emoji successivo
+Tocca due volte per rimuovere il suggerimento di emoji
+Tocca per cercare in Emoji Kitchen
+Toetsenbord voor browsen door Emoji-mixer
+Toetsenbord voor emoji
+TOGGLE_FULLSCREEN_HANDWRITING
+Token dictionary manager contains multi dictionaries 
+token_dictionary
+token_dictionary_manager
+TokenDictionary
+TokenDictionaryDataSetting
+TokenDictionaryManager
+TokenDictionaryMetaData
+Tombol Alt fisik menampilkan keyboard emoji
+Tombol emoji
+Tombol emoji mengganggu
+Tommel opp-emoji
+Toon een knop op de toetsenbordwerkbalk om het emoji-toetsenbord te openen
+toque palabras por un emoji relacionado
+Toque para procurar no Emoji Mix
+Toque para procurar o Emoji de cozinha
+torIcEEEENSA_ISC_EEEERKNS1_15ResourceManagerEPPN6speech7context8features31FeatureDictionaryProviderBundleINSK_6common18RecognitionC
+torIcEEEENSC_ISE_EEEERKNS4_15ResourceManagerEPPN6speech7context8features31FeatureDictionaryProviderBundleINSM_6common18RecognitionC
+Total number of emojis for summary and append patterns do not
+Touch and hold to see how suggestions are generated
+Touche Emoji
+Touchez deux fois pour appliquer la suggestion d
+Touchez deux fois pour retirer la suggestion d
+Touchez ou balayez la suggestion align
+Touchez pour activer les suggestions de contacts
+Touchez pour parcourir Emoji Kitchen
+toUserDictionaryEntriesWithPos
+toveisvelger for emoji
+tovejsskifter til emojis
+Trail ng pag-glide
+TRAINING_JOB_IGNORE_LEGACY_PERSONALIZATION_JOB
+transcribes and learns from your dictated audio in real time or from Gboard voice typing audio snippets that you donate
+transparent_nav_bar_in_floating
+Trenutno pristupite omiljenim emoji sli
+Tria un emoji
+TrieTokenDictionary
+Trimite un sticker Studio emoji
+TrivialFactoryIN10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator11MatchedNodeEE
+TrivialFactoryIN10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator11MatchedNodeEE
+TrivialFactoryIN10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator14MatchedKeyNod
+Try a different option to create a new emoji
+try to download theme
+Try to download themes times
+trybie incognito
+tryCreateGlideModel
+tryFetchContentSuggestions
+Tryk for at gennemse Emoji Mix
+Tryk to gange for at fjerne emojiforslaget
+tryToDownloadTheme
+TSpellCheckerSuggestionNotification
+tte relaterte emojier med ett trykk
+tter vissa ord med emojis
+TTIhinto ang voice typing at isara ang mic
+TTKendu da emoji-iradokizuna
+TTone_handed_mode_keyboard_mode_foldable_new_uikeyboard_resize_keyboard_padding_bottom
+TTRemove emoji fast-access row
+TTsplit_keyboard_mode_foldable__land_keyboard_resize_keyboard_custom_body_height_ratio
+Tu texto ya se ve mejor sin agregar emojis
+Tuma Kibandiko cha Emoji Mseto
+Tumingin ng higit pang emoji
+Tummen upp-emoji
+Tumulong na pahusayin ang voice typing
+Tunjukkan butang pada bar alat papan kekunci untuk membuka papan kekunci emoji
+Tunjukkan emoji
+Tunjukkan kekunci khusus untuk mengakses emoji
+Tunjukkan papan kekunci emoji
+Tunjukkan pelekat dan terokai pilihan pada ketikan kekunci emoji
+Tunjukkan sebaris emoji yang digunakan baru-baru ini
+Turn off clipboard
+Turn on Clipboard
+Tutup panel emoji
+Tutup pengantar baris akses cepat emoji
+Tutup pengenalan baris akses pantas emoji
+Tutup saran emoji
+Txikitu emojien tamaina
+Type here to translate
+TYPING_STARTED_AFTER_EMOJIFIED
+TZOpna emoji-lykil me
+u teksta ili emojija
+UCalling decodeForHandwriting
+ufig verwendete Emojis auf der Haupttastatur anzeigen
+Ukhiye ophathekayo we-Alt ubonisa ikhibhodi ye-emoji
+Ukhiye we-emoji
+Ukhiye we-Emoji usendleleni
+Uklonite red za brzi pristup emoji sli
+Uklonite redak za brzi pristup emojijima
+Ukubwa wa emoji
+Ukubwa wa emoji unafuata mipangilio ya mfumo
+Ukubwa wa fonti ya emoji na kibodi unafuata mipangilio ya mfumo
+Ukufaka ama-emoji
+Ukumoyizela nge-emoji yamazinyo
+Ukuran emoji
+Ukuran emoji dan font keyboard diperbarui
+Ukuran emoji dan font keyboard mengikuti setelan sis
+Ukuran emoji diperbarui
+Ukuran emoji mengikuti setelan sistem
+Ukusebenzisa i-Google Translate
+Ukuthayipha ngezwi kukhutshaziwe Kumodi ye-Incognito
+um adesivo do Emoji Mix dispon
+um den Emoji-Vorschlag zu entfernen
+um einen neuen Emoji zu erstellen
+umall upp-emoji
+umiddelbar tilgang til favorittemojiene dine
+Umugqa We-emoji
+Umugqa wokufinyelela i-emoji ngokushesha
+un pulsante sulla barra degli strumenti della tastiera per aprire la tastiera di emoji
+Unable to find GlideModule implementation
+Unable to get token dictionary data setting
+Unable to instantiate GlideModule implementation for 
+Unable to parse dictionary setting string
+Unable to search Emoji Kitchen in selected language
+Unable to update emoji shortcut candidates
+undaki emojiler
+UNDO_SOURCE_CLIPBOARD_CHIP
+UNDO_TEXT_REASON_EXTENSION_CLIPBOARD_EXTENSION
+undoAddToDictionary
+unexpected emoji result row size
+Unexpected exception thrown by non-Glide code
+Unexpected exception while loading emoji data
+Unexpected exception while unloading emoji data
+ungeze i-emoji
+Unknown context type in privacy config
+Unknown dictionary kind
+Unknown theme spec provider type
+Unknown token dictionary data id 
+UNKNOWN_ANIMATED_EMOJI_ERROR
+UNKNOWN_SUGGESTION_TYPE
+unloadDictionaryNative
+Unrecognized SuggestionChipData
+unSelectCurrentSelectedEmojis
+Unsupported command in suggestion bar
+Unsupported dictionary size 
+Update emoji list contains unsupported Item input
+UPDATE OR IGNORE animated_emoji_usage SET usage 
+UPDATE OR IGNORE emoji_filters SET last_event_millis 
+UPDATE OR IGNORE emoji_shares SET shares 
+Update your app theme to inherit from Theme
+UPDATE_THEMED_CONTEXT_ON_START_INPUT_VIEW
+updateCroppingRectOfThemeV1
+updateEmojiKitchenImageFavorite
+updateEmojis
+updateEmojiSearchResultsForQuery
+updateEnableInlineSuggestionsOnDecoderSideFlags
+updateInlineSuggestionCandidate
+updatePopupView
+updateUserDictionaryFile
+updateVibrationPreference
+ur fyrir emoji
+Usage dictionary
+Usage dictionary icon
+Usage dictionary is not provided
+usage FROM animated_emoji_usage
+usageDictionary
+usageDictionaryIconWidth
+Usayizi we-emoji
+Usayizi we-emoji ubuyekeziwe
+Usayizi we-emoji ulandela amasethingi esistimu
+Usayizi wefonti ye-emoji nekhibhodi ubuyekeziwe
+Use previous context to make suggestions
+Use the toolbar for easy voice typing
+Use this suggestion
+use_default_display_size_theme
+use_local_index_for_content_suggestion_only
+User dictionary loading is canceled
+User dictionary of Google Japanese Input can be exporte
+user na available na ngayon para sa kanila ang isang mas mabilis na karanasan sa voice typing
+user starts handwriting
+user stops handwriting and strokes faded out
+USER_ACTION_TO_POPUP_HIDDEN
+USER_ACTION_TO_POPUP_SHOWN
+user_dictionary
+user_dictionary_ is null
+user_dictionary_accessor
+user_dictionary_accessor_for_ime
+user_dictionary_typo_handler
+user_dictionary_typos
+user_dictionary_util
+USER_SELECTED_EMOJI
+user_theme_
+userhistorydictionary
+UserImageThemeBuilder
+Usesho lwe-emoji alusebenzi kulimi
+Usesho lwe-emoji alutholakali
+useViewLayoutParamsOnPopupWindow
+Using Google Translate
+Utangulizi wa safu mlalo ya kufikia emoji haraka umefungwa
+utare pentru emoji
+utare pentru emoji nu sunt disponibile
+utarea de emoji nu func
+utarea de emojiuri nu este disponibil
+Utiliser cette suggestion
+UUCadangan emoji digunakan
+UUFinyelela ukhiye we-emoji ngokhiye onikelwe
+UUMag-delete ng mga salita sa pamamagitan ng pag-glide pakaliwa mula sa key na 
+UUnormal_keyboard_mode_foldable__land_keyboard_resize_keyboard_custom_body_height_ratio
+uvijek niste iskoristili nijednu emoji sli
+UVS-a aplicat sugestia de emoji
+v en anden mulighed for at oprette en ny emoji
+VAD and LangId processors are needed for STS auto language switch
+vagy egyes szavakat emojival helyettes
+Vala iphaneli ye-emoji
+Vala isethulo somugqa osheshayo yokufinyelela i-emoji
+Valgmuligheder for tekst til emoji
+validateEmojiKitchenDatabase
+Valitse seuraava emojiehdotus kaksoisnapauttamalla
+value_dictionary_
+VARIANT_POPUP
+varijanti emoji sli
+vAutofill smart reply suggestions skipped because user consent has been 
+ve corrected when voice typing with Rambler
+ve previously set up and used at least 2 languages that support advanced voice typing features
+veget emojiv
+veggel vagy emojival
+vel carregar o adesivo do Emoji Mix
+vel carregar o autocolante de Emoji Kitchen
+vel pesquisar no Emoji Mix no idioma selecionado
+Veldu emoji
+Velg emoji
+velger for emojivariant
+Ver mais emojis
+Verbinding maken met Google Translate-server
+verifyHandleOnehandedMode
+Verliebtes-Gesicht-Emoji
+Verliefdgezicht-emoji
+Vezi mai multe emoji
+Vibandiko vya Emoji Kitchen vinapatikana
+View more emojis
+Viimeaikaiset emojit
+Vis en rad med nylig brukte emojier
+Vis ordforslag ved glidende indtastning
+Visa emoji
+Visa emoji-tangentbord
+Visa fler emojis
+Viser emojier for 
+Viser emojis af typen 
+Viser innledningen til raden for rask tilgang til emojier
+vises emojitastaturet
+visit the Google Privacy Policy
+Visualizza altre emoji
+visualizzata la presentazione della barra di accesso rapido alle emoji
+voeg een paar vrolijke emoji
+Voeg vrolijke emoji
+Voegt emoji
+Voice input should be ignored in suggestion showtimes
+Voice typing is disabled in Incognito mode
+VOICE_INPUT_STARTED_AFTER_EMOJIFIED
+VOICE_SPOKEN_EMOJI
+VOICE_SPOKEN_EMOJI_FORMATTER_REGEX
+VOICE_SPOKEN_EMOJI_FULFILLMENT_CONCEPT
+VOICE_SPOKEN_EMOJI_FULFILLMENT_INDEX
+VOICE_SPOKEN_EMOJI_FULFILLMENT_REGEX
+VOICE_SPOKEN_EMOJI_FULFILLMENT_SEARCH
+VOICE_TAPPED_EMOJI
+VoiceSuggestionChipViewBuilder
+Voit poistaa emojirivin milloin tahansa pyyhk
+Volgende emoji-suggestie
+Vorige emoji-suggestie
+votre clavier affiche des suggestions
+Vula amasethingi esitika Semboni ye-Emoji
+Vula iphaneli ye-emoji
+VVone_handed_mode_keyboard_mode_foldable_new_uikeyboard_resize_keyboard_custom_body_size
+VYLa taille de police des emoji et du clavier correspond 
+WAIT_FOR_FETCH_SUGGESTIONS
+WAIT_FOR_FETCH_SUGGESTIONS_MORE
+Waiting for the handwriting support to download
+Walang available na mga emoji
+Walang available na suhestyong emoji
+Walang laman ang Clipboard
+Walang laman ang iyong clipboard
+Walang nahanap na emoji
+Walang tumutugmang emoji
+We should hang out again heart emoji
+Weinen-Emoji
+Weitere Emojis
+Weitere Emojis ansehen
+Weka emoji
+Weka emoji kadhaa za furaha
+weka emoji za furaha
+Weka ukubwa na idadi ya emoji zinazoonyeshwa katika safu mlalo
+WERROR when creating MutableDictionaryAccessorInterface
+WGoogle Translate 
+When messages using Live Translate detect the languages below
+When multiple emoji commands occur across sentences or clau
+WHERE animated_emoji 
+WHERE emoji 
+Whether to show key borders
+Whether to show the Handwriting icon in the feature menu
+Whether to show the Theme icon in the feature menu
+WIDGET_POPUP_MENU
+widget_popup_menu_item_highlight_color
+WidgetPopupMenuContentWrapper
+widget-popup-menu-entry-end-icon
+widget-popup-menu-entry-header-label
+widget-popup-menu-entry-label
+widget-popup-menu-entry-shortcuts-key
+widget-popup-menu-item
+WidgetPopupMenuRecyclerView
+WidgetPopupMenuViewContainer
+windowIsFloating
+wink emoji
+with canonical dictionary spellings 
+with-popup
+woordenboeken of recente emoji
+Word suggestion
+Word suggestions
+Words learned from Rambler voice typing
+Work dictionary
+writeRecentThemes
+WRITING_TOOL_SHOW_SUGGESTION_CARD
+writing_tools_extend_emoji_suggestion
+writing_tools_pi_suggestion_animation_scale
+writing_tools_skip_suggestion_animation
+writing_tools_smart_reply_zero_state_suggestion_v2_top_k
+writing_tools_smart_reply_zero_state_suggestion_v2_top_p
+writing_tools_v2_display_instruction_suggestions_in_zero_state
+writing_tools_v2_enabled_smart_reply_suggestion_debug_toast
+writing_tools_v2_smart_reply_zero_state_suggestion_temperature
+WritingToolsSuggestionMetrics
+WritingToolsSuggestionMetricsKey
+Wrong nextEmojifiedIndex
+WSpellCheckerSuggestionNotification
+WWAdvanced voice typing features will be available once the lan
+WWAlamin at gamitin ang mga salitang iwinasto mo kapag nag-voice typing gamit ang Rambler
+WWAplikatu da emoji-iradokizuna
+WWEnable floating keyboard automatically by default when 
+WWfloating_keyboard_mode_foldable__land_keyboard_resize_keyboard_custom_body_height_ratio
+WWisiphakamiso se-emoji sisetshenzisiwe
+wwMagpakita ng button sa toolbar ng keyboard para buksan ang emoji keyboard
+WWone_handed_mode_keyboard_mode_foldable__land_new_uikeyboard_resize_keyboard_width_ratio
+WWone_handed_mode_keyboard_mode_foldable_new_uikeyboard_resize_keyboard_left_margin_ratio
+WWPrimijenjen je prijedlog emojija
+WXAfficher automatiquement des suggestions de mots lorsque vous saisissez du text
+WYAucune suggestion trouv
+XGoogle Translate 
+XNNPack delegate failed to get resize output tensor
+XShould display emoji kitchen browse
+XSwitching to floating keyboard mode
+XThe number of emoji kitchen images is not the same as expec
+xxAdd screenshots to your Gboard clipboard for easier pasting
+XXAlohida tugma orqali emoji panelini ochish
+XXKendu emojiak bizkor atzitzeko errenkada
+xxRimuovi la barra di accesso rapido alle emoji
+XXSuggerimento di emoji applicato
+xyPrikazuje gumb na alatnoj traci tipkovnice za otvaranje tipkovnice s emojijima
+ya son emojil
+Yabelana Ngesitikha Semboni ye-Emoji
+yale_mutable_dictionary_accessor_setting_scheme
+Yangi emoji yaratish uchun boshqa variantni sinang
+Yehlisa usayizi we-emoji
+Yeni bir emoji olu
+Yeni emoji yaratmaq 
+YGoogle Translate 
+yon silang mag-donate ng kanilang audio input para makatulong sa pagpapahusay ng voice typing
+You are an assistant for a keyboard voice typing system
+You are generating suggestions for the User to send 
+you are not expecting to initialize EmojiCompat manually in your application
+You can either set the attribute in your theme or update your theme to inherit from Theme
+You must initialize EmojiCompat prior to referencing the EmojiCompat instance
+you MUST overwrite it with the dictionary
+you must strictly ignore this personal dictionary and must not output or match any of the
+you or one of your dependencies may be including Glide v3 even though you
+Your application does not include emoji2-bundled
+your audio input on Gboard will be sent to and stored by Google to help improve voice typing for everyone
+Your clipboard is empty
+Your handwriting will be converted to text that you can 
+Your text already works best without adding emojis
+Your text works better without adding emojis
+YThe number of animated emoji images is not the same as expected
+yue_hant_t_i0_cpinyin_android_fuzzy_expansion_dictionary
+yue_hant_t_i0_jyutping_android_fuzzy_expansion_dictionary
+yue_hant_t_i0_und_android_english_token_dictionary
+yue_hant_t_i0_und_android_system_english_dictionary
+yue_hant_t_i0_yale_android_fuzzy_expansion_dictionary
+yue-hant_i0_contacts_dictionary_accessor
+yue-hant_i0_new_words_dictionary_accessor
+yue-hant_i0_shortcuts_dictionary_accessor
+yue-hant_i0_user_dictionary_accessor
+yue-hant-t-i0-handwriting
+Yurak emojisi
+YYAkses tombol emoji dengan tombol khusus
+YYCadangan emoji dialih keluar
+yyChanges you make to dictated text may be used to improve your use of voice typing features
+YYInalis ang suhestyong emoji
+yyOffline mode lets you use voice typing even when there
+YYPendekezo la emoji limetumika
+Zaljubljeni emoji
+Zama okungakhethwa kukho okuhlukile ukuze uvule i-emoji entsha
+ZaQasu te tasti i emoji-ve me nj
+Zatvoreno je predstavljanje retka za brzi pristup emojijima
+Zatvorite predstavljanje reda za brzi pristup emoji sli
+Zatvorite predstavljanje retka za brzi pristup emojijima
+Zero state suggestion timed out
+ZERO_FOR_NO_SUGGESTION_ERROR
+ZERO_STATE_SUGGESTION_SMART_REPLY
+ZeroQuerySuggestion
+ZeroStateSuggestion
+zettel az emojikever
+Zgjidh emoji-n
+ZGoogle Translate 
+zh_hant_t_i0_bopomofo_android_english_token_dictionary
+zh_hant_t_i0_bopomofo_android_system_english_dictionary
+zh_t_i0_pinyin_android_an_ang_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_c_ch_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_digits_token_dictionary
+zh_t_i0_pinyin_android_en_eng_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_english_token_dictionary
+zh_t_i0_pinyin_android_f_h_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_ian_iang_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_in_ing_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_k_g_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_l_n_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_r_l_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_s_sh_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_system_digits_dictionary
+zh_t_i0_pinyin_android_system_emoji_dictionary
+zh_t_i0_pinyin_android_system_english_dictionary
+zh_t_i0_pinyin_android_token_dictionary
+zh_t_i0_pinyin_android_uan_uang_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_android_z_zh_fuzzy_expansion_dictionary
+zh_t_i0_pinyin_contacts_dictionary_accessor
+zh_t_i0_pinyin_new_words_dictionary_accessor
+zh_t_i0_pinyin_shortcuts_dictionary_accessor
+zh_t_i0_pinyin_user_dictionary_accessor
+zh_t_i0_shuangpin_abc_android_token_dictionary
+zh_t_i0_shuangpin_flypy_android_token_dictionary
+zh_t_i0_shuangpin_jiajia_android_token_dictionary
+zh_t_i0_shuangpin_ms_android_token_dictionary
+zh_t_i0_shuangpin_ziguang_android_token_dictionary
+zh_t_i0_shuangpin_ziranma_android_token_dictionary
+zh_tw_contacts_dictionary_pinyin_accessor
+zh_tw_contacts_dictionary_zhuyin_accessor
+zh_tw_shortcut_dictionary_pinyin_accessor
+zh_tw_shortcut_dictionary_zhuyin_accessor
+zh_tw_user_dictionary_pinyin_accessor
+zh_tw_user_dictionary_zhuyin_accessor
+zh-hant-t-i0-und-x-i0-handwriting
+zh-t-i0-handwriting
+zlarni emoji bilan qo
+zlarni tegishli emoji tavsiyasiga almashtirish
+zler emojisi
+ZN20research_handwriting11SortStrokesERKNS_19StrokeOrderSettings
+ZN20research_handwriting27UTF8ReplaceControlWithSpaceEPNSt6__ndk
+ZN4mozc10prediction12_GLOBAL__N_115FindKeyAndValueERKNS_10dictionary19DictionaryInterfaceERKNS_17ConversionRequestEN4abs
+ZN4mozc12_GLOBAL__N_115GetExtraFormatsEPKNS_10dictionary19DictionaryInterfaceEN4absl11string_viewEE3
+ZN6speech7context8features49CreateRecognitionContextFeatureDictionaryProviderEvE3
+ZNK10i18n_input6engine3hmm16StaticDictionary14BFSKeyIterator19NodeIndexComparatorEvE
+ZNK10i18n_input6engine3hmm26SingleTrieStaticDictionary14BFSKeyIterator19NodeIndexComparatorEvE
+ZNK10i18n_input6engine3hmm27SingleTrieMutableDictionary23BFSKeyMergeSortIterator19NodeIndexComp
+ZNK4mozc10prediction17DictionaryDecoder15AggregatePrefixERKNS_17Conversi
+ZNK4mozc10prediction18HandwritingDecoder6DecodeERKNS_17ConversionRequestE
+ZNK6speech7context8features17FeatureDictionary21GetFeatureValueFutureENS1_20Parameteri
+Zoek in Emoji-mixer met tekst of emoji
+Zoek naar emoji
+Zoeken in Emoji-mixer
+Zoeken naar emoji
+Zoeken naar Emoji-mixer
+Zuletzt verwendete Emojis
+ZZA promo to let users know that a faster voice typing experience is now available for them
+ZZone_handed_mode_keyboard_mode_foldable__land_new_uikeyboard_resize_keyboard_padding_bottom
+ZZSugerencia de emoji quitada
+ZZUtiliza comandos de voz avanzados para editar texto ou engadir emojis

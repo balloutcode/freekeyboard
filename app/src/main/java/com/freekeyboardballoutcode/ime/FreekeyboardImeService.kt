@@ -1,5 +1,6 @@
 package com.freekeyboardballoutcode.ime
 
+import android.content.ClipboardManager
 import android.graphics.drawable.ColorDrawable
 import android.inputmethodservice.InputMethodService
 import android.view.View
@@ -14,6 +15,8 @@ import androidx.core.view.WindowCompat
 import androidx.lifecycle.setViewTreeLifecycleOwner
 import androidx.lifecycle.setViewTreeViewModelStoreOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
+import com.freekeyboardballoutcode.data.ClipboardHistoryStore
+import com.freekeyboardballoutcode.data.RejectedSuggestionsStore
 import com.freekeyboardballoutcode.data.ThemePreference
 import com.freekeyboardballoutcode.data.UserPreferencesRepository
 import com.freekeyboardballoutcode.ime.input.InputConnectionFacade
@@ -29,6 +32,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 class FreekeyboardImeService : InputMethodService() {
@@ -37,14 +41,19 @@ class FreekeyboardImeService : InputMethodService() {
     private val serviceScope = CoroutineScope(serviceJob + Dispatchers.Main.immediate)
 
     private lateinit var prefs: UserPreferencesRepository
+    private lateinit var clipboardStore: ClipboardHistoryStore
+    private lateinit var rejectedStore: RejectedSuggestionsStore
     private lateinit var controller: KeyboardController
     private var prefsJob: Job? = null
     private var keyboardRoot: FrameLayout? = null
+    private var clipboardListener: ClipboardManager.OnPrimaryClipChangedListener? = null
 
     override fun onCreate() {
         super.onCreate()
         owners.onCreate()
         prefs = UserPreferencesRepository(applicationContext)
+        clipboardStore = ClipboardHistoryStore(applicationContext)
+        rejectedStore = RejectedSuggestionsStore(applicationContext)
         val input = InputConnectionFacade(
             connectionProvider = { currentInputConnection },
             editorInfoProvider = { currentInputEditorInfo },
@@ -56,6 +65,13 @@ class FreekeyboardImeService : InputMethodService() {
                 keyboardRoot?.let { root -> applyImeNavChrome(root, it.theme) }
             }
         }
+        serviceScope.launch {
+            rejectedStore.rejected.collectLatest { controller.applyRejectedSuggestions(it) }
+        }
+        serviceScope.launch {
+            clipboardStore.entries.collectLatest { controller.applyClipboardEntries(it) }
+        }
+        installClipboardCapture()
         installViewTreeOwners(window?.window?.decorView)
         configureImeWindow()
     }
@@ -86,6 +102,14 @@ class FreekeyboardImeService : InputMethodService() {
                     scope = serviceScope,
                     onPersistLanguage = { prefs.setLastActiveLanguage(it) },
                     onPersistEmoji = { prefs.recordEmoji(it) },
+                    onPersistTheme = { prefs.setTheme(it) },
+                    onPersistOneHanded = { enabled, side ->
+                        prefs.setThemeAndOneHanded(oneHanded = enabled, side = side)
+                    },
+                    onRejectSuggestion = { rejectedStore.reject(it) },
+                    onPinClipboard = { entry ->
+                        clipboardStore.setPinned(entry.id, !entry.pinned)
+                    },
                 )
             }
         }
@@ -140,6 +164,10 @@ class FreekeyboardImeService : InputMethodService() {
         installViewTreeOwners(keyboardRoot)
         keyboardRoot?.let { applyImeNavChrome(it, controller.state.value.theme) }
         owners.onResume()
+        // DataStore is authoritative for one-hand/theme/etc. Re-sync when the keyboard
+        // becomes visible so Settings toggles win over any stale in-memory runtime state
+        // (e.g. Features menu enabled one-hand but a later Settings OFF must undock).
+        syncPreferencesFromStore()
         super.onStartInputView(info, restarting)
         controller.onStartInput()
     }
@@ -171,7 +199,16 @@ class FreekeyboardImeService : InputMethodService() {
         installViewTreeOwners(keyboardRoot)
         keyboardRoot?.let { applyImeNavChrome(it, controller.state.value.theme) }
         owners.onResume()
+        syncPreferencesFromStore()
         super.onWindowShown()
+    }
+
+    /** Pull the latest prefs snapshot into the controller (single source of truth). */
+    private fun syncPreferencesFromStore() {
+        if (!::prefs.isInitialized || !::controller.isInitialized) return
+        serviceScope.launch {
+            runCatching { controller.applyPreferences(prefs.preferences.first()) }
+        }
     }
 
     override fun onFinishInputView(finishingInput: Boolean) {
@@ -194,11 +231,35 @@ class FreekeyboardImeService : InputMethodService() {
     }
 
     override fun onDestroy() {
+        clipboardListener?.let { listener ->
+            val cm = getSystemService(CLIPBOARD_SERVICE) as? ClipboardManager
+            cm?.removePrimaryClipChangedListener(listener)
+        }
+        clipboardListener = null
         prefsJob?.cancel()
         serviceScope.cancel()
         keyboardRoot = null
         owners.onDestroy()
         super.onDestroy()
+    }
+
+    private fun installClipboardCapture() {
+        val cm = getSystemService(CLIPBOARD_SERVICE) as? ClipboardManager ?: return
+        val listener = ClipboardManager.OnPrimaryClipChangedListener {
+            if (!controller.state.value.clipboardHistoryEnabled) return@OnPrimaryClipChangedListener
+            if (controller.state.value.incognito) return@OnPrimaryClipChangedListener
+            val text = cm.primaryClip
+                ?.takeIf { it.itemCount > 0 }
+                ?.getItemAt(0)
+                ?.coerceToText(this)
+                ?.toString()
+                .orEmpty()
+            if (text.isNotBlank()) {
+                serviceScope.launch { clipboardStore.capture(text) }
+            }
+        }
+        clipboardListener = listener
+        cm.addPrimaryClipChangedListener(listener)
     }
 
     /**

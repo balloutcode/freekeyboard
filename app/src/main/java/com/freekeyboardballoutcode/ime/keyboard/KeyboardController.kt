@@ -1,8 +1,10 @@
 package com.freekeyboardballoutcode.ime.keyboard
 
 import android.os.SystemClock
+import com.freekeyboardballoutcode.data.ClipboardEntry
 import com.freekeyboardballoutcode.data.InputLanguage
 import com.freekeyboardballoutcode.data.KeyboardLayer
+import com.freekeyboardballoutcode.data.OneHandedSide
 import com.freekeyboardballoutcode.data.ShiftMode
 import com.freekeyboardballoutcode.data.ThemePreference
 import com.freekeyboardballoutcode.data.UserPreferences
@@ -10,7 +12,9 @@ import com.freekeyboardballoutcode.ime.input.AutoCapitalizer
 import com.freekeyboardballoutcode.ime.input.EditorInfoInterpreter
 import com.freekeyboardballoutcode.ime.input.EnterKeyStyle
 import com.freekeyboardballoutcode.ime.input.InputConnectionFacade
+import com.freekeyboardballoutcode.ime.input.LearningPolicy
 import com.freekeyboardballoutcode.ime.keyboard.layouts.EnQwerty
+import com.freekeyboardballoutcode.ime.keyboard.layouts.NumberPad
 import com.freekeyboardballoutcode.ime.keyboard.layouts.RuJcuiken
 import com.freekeyboardballoutcode.ime.keyboard.layouts.Symbols
 import com.freekeyboardballoutcode.ime.suggest.SuggestionEngine
@@ -28,10 +32,13 @@ data class KeyboardUiState(
     val shift: ShiftMode = ShiftMode.OFF,
     val symbolsAlt: Boolean = false,
     val showLanguagePicker: Boolean = false,
+    val showFeaturesMenu: Boolean = false,
+    val showClipboardPanel: Boolean = false,
     val recentEmoji: List<String> = emptyList(),
     val suggestions: List<String> = emptyList(),
     val enterStyle: EnterKeyStyle = EnterKeyStyle.ENTER,
     val numberRow: Boolean = false,
+    val numberRowForPasswords: Boolean = false,
     val showEmojiKey: Boolean = true,
     val soundOnKeypress: Boolean = false,
     val hapticOnKeypress: Boolean = true,
@@ -43,7 +50,28 @@ data class KeyboardUiState(
     val blockOffensiveWords: Boolean = true,
     val autoCapitalization: Boolean = true,
     val doubleSpacePeriod: Boolean = true,
+    val oneHandedMode: Boolean = false,
+    val oneHandedSide: OneHandedSide = OneHandedSide.RIGHT,
+    val clipboardHistoryEnabled: Boolean = true,
+    val clipboardEntries: List<ClipboardEntry> = emptyList(),
+    val rejectedSuggestions: Set<String> = emptySet(),
+    val isPasswordField: Boolean = false,
+    val prefersNumberPad: Boolean = false,
+    val isPhoneField: Boolean = false,
+    val isNumberPassword: Boolean = false,
+    val numberAllowsDecimal: Boolean = false,
+    val numberAllowsSigned: Boolean = false,
+    val incognito: Boolean = false,
+    /** When true, suggestion/toolbar strip must not mount (password/email/URI/…). */
+    val suppressSuggestions: Boolean = false,
+    val soundVolume: Float = 1f,
+    val hapticStrength: Float = 1f,
+    val emojiFontScale: Float = 1f,
+    val autocorrectEnabled: Boolean = false,
 ) {
+    val effectiveNumberRow: Boolean
+        get() = numberRow || (numberRowForPasswords && isPasswordField)
+
     val lettersLayout: KeyboardLayout
         get() {
             val base = when (language) {
@@ -52,7 +80,7 @@ data class KeyboardUiState(
             }
             return LayoutOptions.apply(
                 base,
-                numberRow = numberRow,
+                numberRow = effectiveNumberRow,
                 showEmojiKey = showEmojiKey,
                 longPressForSymbols = longPressForSymbols,
                 showLanguageKey = enabledLanguages.size >= 2,
@@ -73,6 +101,23 @@ data class KeyboardUiState(
                 )
             }
             KeyboardLayer.EMOJI -> lettersLayout
+            KeyboardLayer.NUMBER -> {
+                val base = when {
+                    isPhoneField -> NumberPad.phoneLayout
+                    else -> NumberPad.numberLayout(
+                        allowDecimal = numberAllowsDecimal,
+                        allowSigned = numberAllowsSigned,
+                        pinStyle = isNumberPassword,
+                    )
+                }
+                LayoutOptions.apply(
+                    base,
+                    numberRow = false,
+                    showEmojiKey = false,
+                    longPressForSymbols = longPressForSymbols,
+                    showLanguageKey = false,
+                )
+            }
         }
 
     val isCaps: Boolean
@@ -103,6 +148,7 @@ class KeyboardController(
                 enabledLanguages = enabled,
                 recentEmoji = prefs.recentEmoji,
                 numberRow = prefs.numberRow,
+                numberRowForPasswords = prefs.numberRowForPasswords,
                 showEmojiKey = prefs.showEmojiKey,
                 soundOnKeypress = prefs.soundOnKeypress,
                 hapticOnKeypress = prefs.hapticOnKeypress,
@@ -114,19 +160,49 @@ class KeyboardController(
                 blockOffensiveWords = prefs.blockOffensiveWords,
                 autoCapitalization = prefs.autoCapitalization,
                 doubleSpacePeriod = prefs.doubleSpacePeriod,
+                oneHandedMode = prefs.oneHandedMode,
+                oneHandedSide = prefs.oneHandedSide,
+                clipboardHistoryEnabled = prefs.clipboardHistoryEnabled,
+                soundVolume = prefs.soundVolume.coerceIn(0f, 1f),
+                hapticStrength = prefs.hapticStrength.coerceIn(0.25f, 1f),
+                emojiFontScale = prefs.emojiFontScale.coerceIn(0.8f, 1.4f),
+                autocorrectEnabled = prefs.autocorrectEnabled,
             )
         }
+        SuggestionEngine.setPersonalWords(prefs.personalDictionary)
+    }
+
+    fun applyRejectedSuggestions(rejected: Set<String>) {
+        _state.update { it.copy(rejectedSuggestions = rejected.map { w -> w.lowercase() }.toSet()) }
+        refreshAfterEdit(consumeOnce = false)
+    }
+
+    fun applyClipboardEntries(entries: List<ClipboardEntry>) {
+        _state.update { it.copy(clipboardEntries = entries) }
     }
 
     fun onStartInput() {
-        // New field / restart: leave Symbols/Emoji so the next editor always opens on letters.
+        val interpreter = EditorInfoInterpreter()
+        val info = input.editorInfo()
+        val numberPad = interpreter.prefersNumberPad(info)
+        // New field / restart: leave Symbols/Emoji; number/phone fields open on digit pad.
         _state.update {
             it.copy(
                 enterStyle = input.enterKeyStyle(),
                 shift = ShiftMode.OFF,
-                layer = KeyboardLayer.LETTERS,
+                layer = if (numberPad) KeyboardLayer.NUMBER else KeyboardLayer.LETTERS,
                 symbolsAlt = false,
                 showLanguagePicker = false,
+                showFeaturesMenu = false,
+                showClipboardPanel = false,
+                isPasswordField = interpreter.isPassword(info),
+                prefersNumberPad = numberPad,
+                isPhoneField = interpreter.isPhoneField(info),
+                isNumberPassword = interpreter.isNumberPassword(info),
+                numberAllowsDecimal = interpreter.numberAllowsDecimal(info),
+                numberAllowsSigned = interpreter.numberAllowsSigned(info),
+                incognito = interpreter.isIncognito(info),
+                suppressSuggestions = interpreter.suppressSuggestions(info),
             )
         }
         refreshAfterEdit(consumeOnce = false)
@@ -163,13 +239,39 @@ class KeyboardController(
                 }
                 refreshAfterEdit(consumeOnce = false)
             }
-            KeyAction.EMOJI -> _state.update { it.copy(layer = KeyboardLayer.EMOJI) }
+            KeyAction.EMOJI -> _state.update {
+                it.copy(layer = KeyboardLayer.EMOJI, showFeaturesMenu = false, showClipboardPanel = false)
+            }
             KeyAction.LANGUAGE -> toggleOrPickLanguage()
         }
     }
 
     fun onBackspace(byWord: Boolean = false) {
+        val original = lastAutocorrectOriginal
+        if (!byWord && original != null) {
+            // Undo last autocorrect: delete corrected token + space, restore original.
+            val before = input.textBeforeCursor()?.toString().orEmpty()
+            if (before.endsWith(" ")) {
+                val withoutSpace = before.dropLast(1)
+                val token = SuggestionEngine.currentPrefix(withoutSpace)
+                if (token.isNotEmpty()) {
+                    input.deleteBeforeCursor(token.codePointCount(0, token.length) + 1)
+                    input.commitText(original)
+                    lastAutocorrectOriginal = null
+                    refreshAfterEdit(consumeOnce = false)
+                    return
+                }
+            }
+        }
+        lastAutocorrectOriginal = null
         if (byWord) input.deleteWordBackward() else input.deleteBackward()
+        refreshAfterEdit(consumeOnce = false)
+    }
+
+    /** Spacebar horizontal swipe: move caret without inserting space (Gboard). */
+    fun onSpaceCursorSwipe(delta: Int) {
+        if (delta == 0) return
+        input.moveCursorBy(delta)
         refreshAfterEdit(consumeOnce = false)
     }
 
@@ -197,13 +299,96 @@ class KeyboardController(
         refreshAfterEdit(consumeOnce = true)
     }
 
+    fun rejectSuggestion(word: String) {
+        val normalized = word.lowercase()
+        _state.update {
+            it.copy(
+                rejectedSuggestions = it.rejectedSuggestions + normalized,
+                suggestions = it.suggestions.filterNot { s -> s.equals(word, ignoreCase = true) },
+            )
+        }
+    }
+
     fun closeEmoji() {
-        _state.update { it.copy(layer = KeyboardLayer.LETTERS) }
+        _state.update {
+            it.copy(
+                layer = if (it.prefersNumberPad) KeyboardLayer.NUMBER else KeyboardLayer.LETTERS,
+            )
+        }
         refreshAfterEdit(consumeOnce = false)
     }
 
     fun dismissLanguagePicker() {
         _state.update { it.copy(showLanguagePicker = false) }
+    }
+
+    fun toggleFeaturesMenu() {
+        _state.update {
+            it.copy(
+                showFeaturesMenu = !it.showFeaturesMenu,
+                showClipboardPanel = false,
+                showLanguagePicker = false,
+            )
+        }
+    }
+
+    fun dismissFeaturesMenu() {
+        _state.update { it.copy(showFeaturesMenu = false) }
+    }
+
+    fun openClipboardPanel() {
+        if (!_state.value.clipboardHistoryEnabled) return
+        _state.update {
+            it.copy(showClipboardPanel = true, showFeaturesMenu = false, layer = KeyboardLayer.LETTERS)
+        }
+    }
+
+    fun dismissClipboardPanel() {
+        _state.update { it.copy(showClipboardPanel = false) }
+    }
+
+    fun pasteClipboardEntry(text: String) {
+        input.commitText(text)
+        _state.update { it.copy(showClipboardPanel = false) }
+        refreshAfterEdit(consumeOnce = true)
+    }
+
+    fun setOneHandedMode(enabled: Boolean, side: OneHandedSide? = null) {
+        _state.update {
+            it.copy(
+                oneHandedMode = enabled,
+                oneHandedSide = side ?: it.oneHandedSide,
+                showFeaturesMenu = false,
+            )
+        }
+    }
+
+    fun flipOneHandedSide() {
+        _state.update {
+            it.copy(
+                oneHandedSide = when (it.oneHandedSide) {
+                    OneHandedSide.LEFT -> OneHandedSide.RIGHT
+                    OneHandedSide.RIGHT -> OneHandedSide.LEFT
+                },
+            )
+        }
+    }
+
+    fun openEmojiFromMenu() {
+        _state.update {
+            it.copy(layer = KeyboardLayer.EMOJI, showFeaturesMenu = false, showClipboardPanel = false)
+        }
+    }
+
+    fun cycleTheme() {
+        _state.update {
+            val next = when (it.theme) {
+                ThemePreference.LIGHT -> ThemePreference.DARK
+                ThemePreference.DARK -> ThemePreference.OLED_DARK
+                ThemePreference.OLED_DARK -> ThemePreference.LIGHT
+            }
+            it.copy(theme = next, showFeaturesMenu = false)
+        }
     }
 
     fun selectLanguage(language: InputLanguage) {
@@ -216,14 +401,39 @@ class KeyboardController(
 
     fun currentLanguage(): InputLanguage = _state.value.language
 
+    private var lastAutocorrectOriginal: String? = null
+
     private fun onSpace() {
         val prefs = _state.value
+        val info = input.editorInfo()
         if (prefs.doubleSpacePeriod && shouldInsertPeriodOnDoubleSpace(input.textBeforeCursor())) {
             input.deleteBeforeCursor(1)
             input.commitText(". ")
+            lastAutocorrectOriginal = null
             refreshAfterEdit(consumeOnce = true)
             return
         }
+        val before = input.textBeforeCursor()
+        val prefix = SuggestionEngine.currentPrefix(before)
+        if (prefs.autocorrectEnabled && prefix.isNotEmpty()) {
+            val correction = SuggestionEngine.autocorrectCandidate(
+                prefix = prefix,
+                language = prefs.language,
+                rejected = prefs.rejectedSuggestions,
+            )
+            if (correction != null && !correction.equals(prefix, ignoreCase = true)) {
+                input.deleteBeforeCursor(prefix.codePointCount(0, prefix.length))
+                input.commitText("$correction ")
+                lastAutocorrectOriginal = prefix
+                LearningPolicy.recordTypedToken(correction, info)
+                refreshAfterEdit(consumeOnce = true)
+                return
+            }
+        }
+        if (prefix.isNotEmpty()) {
+            LearningPolicy.recordTypedToken(prefix, info)
+        }
+        lastAutocorrectOriginal = null
         input.commitText(" ")
         refreshAfterEdit(consumeOnce = true)
     }
@@ -282,10 +492,11 @@ class KeyboardController(
         val st = _state.value
         val interpreter = EditorInfoInterpreter()
         val wantCaps = st.autoCapitalization && AutoCapitalizer.shouldCapitalize(before, info)
+        val suppress = interpreter.suppressSuggestions(info)
         val suggestions = if (
             !st.showSuggestionStrip ||
             st.layer != KeyboardLayer.LETTERS ||
-            interpreter.suppressSuggestions(info)
+            suppress
         ) {
             emptyList()
         } else {
@@ -296,6 +507,7 @@ class KeyboardController(
                 nextWordEnabled = st.nextWordSuggestions,
                 blockOffensive = st.blockOffensiveWords,
                 capitalizeNext = wantCaps,
+                rejected = st.rejectedSuggestions,
             )
         }
 
@@ -311,6 +523,9 @@ class KeyboardController(
                 shift = shift,
                 suggestions = suggestions,
                 enterStyle = input.enterKeyStyle(),
+                suppressSuggestions = suppress,
+                isPasswordField = interpreter.isPassword(info),
+                incognito = interpreter.isIncognito(info),
             )
         }
     }
@@ -328,7 +543,13 @@ class KeyboardController(
 
     fun requestLanguagePicker() {
         if (_state.value.enabledLanguages.size < 2) return
-        _state.update { it.copy(showLanguagePicker = true) }
+        _state.update {
+            it.copy(
+                showLanguagePicker = true,
+                showFeaturesMenu = false,
+                showClipboardPanel = false,
+            )
+        }
     }
 
     companion object {

@@ -9,22 +9,27 @@ import android.os.VibratorManager
 import android.view.SoundEffectConstants
 import android.view.View
 
-/** Gboard-like keypress sound / haptic feedback. */
+/** Gboard-like keypress sound / haptic feedback with optional strength. */
 object KeyFeedback {
     fun play(
         view: View,
         sound: Boolean,
         haptic: Boolean,
+        soundVolume: Float = 1f,
+        hapticStrength: Float = 1f,
     ) {
         if (sound) {
-            view.playSoundEffect(SoundEffectConstants.CLICK)
+            // Click sound; stream volume is system-controlled — we gate by preference strength.
+            if (soundVolume > 0.05f) {
+                view.playSoundEffect(SoundEffectConstants.CLICK)
+            }
         }
-        if (haptic) {
-            vibrate(view.context)
+        if (haptic && hapticStrength > 0.05f) {
+            vibrate(view.context, hapticStrength)
         }
     }
 
-    private fun vibrate(context: Context) {
+    private fun vibrate(context: Context, strength: Float) {
         val vibrator = if (Build.VERSION.SDK_INT >= 31) {
             val mgr = context.getSystemService(VibratorManager::class.java)
             mgr?.defaultVibrator
@@ -33,11 +38,13 @@ object KeyFeedback {
             context.getSystemService(Context.VIBRATOR_SERVICE) as? Vibrator
         } ?: return
         if (!vibrator.hasVibrator()) return
+        val durationMs = (12 + 18 * strength.coerceIn(0.25f, 1f)).toLong()
+        val amplitude = (80 + 175 * strength.coerceIn(0.25f, 1f)).toInt().coerceIn(1, 255)
         if (Build.VERSION.SDK_INT >= 26) {
-            vibrator.vibrate(VibrationEffect.createOneShot(18, VibrationEffect.DEFAULT_AMPLITUDE))
+            vibrator.vibrate(VibrationEffect.createOneShot(durationMs, amplitude))
         } else {
             @Suppress("DEPRECATION")
-            vibrator.vibrate(18)
+            vibrator.vibrate(durationMs)
         }
     }
 

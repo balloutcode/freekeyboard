@@ -2,6 +2,7 @@ package com.freekeyboardballoutcode.ime.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -9,11 +10,23 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Apps
+import androidx.compose.material.icons.filled.VisibilityOff
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.semantics.CustomAccessibilityAction
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.customActions
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -21,13 +34,16 @@ import androidx.compose.ui.unit.dp
 import com.freekeyboardballoutcode.ui.theme.LocalKeyboardColors
 
 /**
- * Gboard-style candidate strip: full-width 3 slots, measured ~52dp tall.
- * No Google toolbar icons (mic / apps / GIF) — candidates only.
+ * Candidate strip with offline toolbar entry.
+ * Long-press rejects a chip (A10-007). No swipe/drag gestures.
  */
 @Composable
 fun SuggestionBar(
     suggestions: List<String>,
-    onSelect: (String) -> Unit,
+    onSelect: (String) -> Unit = {},
+    onReject: (String) -> Unit = {},
+    onOpenFeatures: () -> Unit = {},
+    incognito: Boolean = false,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalKeyboardColors.current
@@ -40,6 +56,29 @@ fun SuggestionBar(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceEvenly,
     ) {
+        Box(
+            modifier = Modifier
+                .size(GboardMetrics.suggestionBarHeight)
+                .clickable(onClick = onOpenFeatures),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = Icons.Filled.Apps,
+                contentDescription = "Функции",
+                tint = colors.onKey.copy(alpha = 0.75f),
+                modifier = Modifier.size(22.dp),
+            )
+        }
+        if (incognito) {
+            Icon(
+                imageVector = Icons.Filled.VisibilityOff,
+                contentDescription = "Инкогнито",
+                tint = colors.onKey.copy(alpha = 0.7f),
+                modifier = Modifier
+                    .padding(end = 4.dp)
+                    .size(18.dp),
+            )
+        }
         val slots = (suggestions + List(3) { "" }).take(3)
         slots.forEachIndexed { index, word ->
             if (index > 0) {
@@ -56,9 +95,32 @@ fun SuggestionBar(
                     .fillMaxHeight()
                     .then(
                         if (word.isNotEmpty()) {
-                            Modifier.clickable { onSelect(word) }
-                        } else {
                             Modifier
+                                .pointerInput(word) {
+                                    detectTapGestures(
+                                        onTap = { onSelect(word) },
+                                        onLongPress = { onReject(word) },
+                                    )
+                                }
+                                // A20-002/A10-007: TalkBack / Switch Access can accept a
+                                // chip via the click action, or reject it (same as the
+                                // touch long-press) via a custom accessibility action —
+                                // no drag/swipe gesture needed for either (A10-007 OOS).
+                                .semantics(mergeDescendants = true) {
+                                    contentDescription = "Предложение: $word"
+                                    onClick(label = "Выбрать") {
+                                        onSelect(word)
+                                        true
+                                    }
+                                    customActions = listOf(
+                                        CustomAccessibilityAction("Отклонить") {
+                                            onReject(word)
+                                            true
+                                        },
+                                    )
+                                }
+                        } else {
+                            Modifier.clearAndSetSemantics { }
                         },
                     ),
                 contentAlignment = Alignment.Center,

@@ -26,11 +26,20 @@
     <string name="settings_keys_header">Клавиши</string>
     <string name="settings_number_row">Ряд с цифрами</string>
     <string name="settings_number_row_summary">Всегда показывать цифры над буквами</string>
+    <string name="settings_number_row_passwords">Ряд цифр в паролях</string>
+    <string name="settings_number_row_passwords_summary">Показывать цифры в полях пароля, даже если общий ряд выключен</string>
+    <string name="settings_one_handed">Режим одной руки</string>
+    <string name="settings_one_handed_summary">Сжать клавиатуру к краю экрана</string>
+    <string name="settings_clipboard">История буфера обмена</string>
+    <string name="settings_clipboard_summary">Локально сохранять скопированный текст (без облака)</string>
     <string name="settings_show_emoji_key">Клавиша эмодзи</string>
     <string name="settings_show_emoji_key_summary">Отдельная клавиша для эмодзи</string>
     <string name="settings_keypress_header">Нажатие клавиш</string>
     <string name="settings_sound">Звук при нажатии</string>
+    <string name="settings_sound_volume">Громкость звука клавиш</string>
     <string name="settings_haptic">Вибрация при нажатии</string>
+    <string name="settings_haptic_strength">Сила вибрации</string>
+    <string name="settings_emoji_size">Размер эмодзи</string>
     <string name="settings_popup">Всплывающая буква</string>
     <string name="settings_long_press_symbols">Долгое нажатие для символов</string>
     <string name="settings_long_press_symbols_summary">Удержание клавиши открывает варианты</string>
@@ -46,6 +55,13 @@
     <string name="settings_auto_cap">Автозаглавные</string>
     <string name="settings_auto_cap_summary">Заглавная в начале предложения</string>
     <string name="settings_double_space">Двойной пробел → точка</string>
+    <string name="settings_autocorrect">Автоисправление</string>
+    <string name="settings_autocorrect_summary">Заменять опечатки по словарю при пробеле (офлайн)</string>
+    <string name="settings_personal_dict">Личный словарь</string>
+    <string name="settings_personal_dict_summary">Слова хранятся только на устройстве и участвуют в подсказках</string>
+    <string name="settings_personal_dict_hint">Новое слово</string>
+    <string name="settings_personal_dict_add">Добавить</string>
+    <string name="settings_personal_dict_remove">Удалить</string>
 
     <string name="settings_about">О приложении</string>
     <string name="settings_about_body">freekeyboard — свободная клавиатура с открытым исходным кодом. Без сервисов Google. Лицензия GPL-3.0.</string>

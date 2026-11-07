@@ -12,6 +12,28 @@ import android.view.KeyEvent
 object RawKeyCodes {
     data class KeyStroke(val keyCode: Int, val metaState: Int = 0)
 
+    /**
+     * What a [TYPE_NULL]-style raw-key editor should receive for one character:
+     * either a hardware key stroke, or (when no US-QWERTY keycode exists — e.g.
+     * Cyrillic, emoji) the literal Unicode text to send via a single
+     * `ACTION_MULTIPLE` / `KEYCODE_UNKNOWN` [android.view.KeyEvent] (A16-005).
+     * Callers MUST NOT fall back to `InputConnection.commitText` for raw-key
+     * editors: some TYPE_NULL hosts ignore `commitText` entirely.
+     */
+    sealed interface Action {
+        data class Stroke(val keyCode: Int, val metaState: Int = 0) : Action
+        data class Characters(val text: String) : Action
+    }
+
+    fun actionFor(char: Char): Action {
+        val stroke = strokeFor(char)
+        return if (stroke != null) {
+            Action.Stroke(stroke.keyCode, stroke.metaState)
+        } else {
+            Action.Characters(char.toString())
+        }
+    }
+
     fun strokeFor(char: Char): KeyStroke? {
         if (char in 'a'..'z') {
             return KeyStroke(KeyEvent.KEYCODE_A + (char - 'a'))

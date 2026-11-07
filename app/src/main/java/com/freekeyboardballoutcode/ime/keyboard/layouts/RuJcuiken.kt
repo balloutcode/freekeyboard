@@ -6,14 +6,27 @@ import com.freekeyboardballoutcode.ime.keyboard.KeyboardLayout
 import com.freekeyboardballoutcode.ime.keyboard.KeyboardRow
 
 object RuJcuiken {
-    /** Gboard RU: ё under е, ъ under ь; digits on first 10 top-row keys. */
+    /**
+     * Gboard-like RU long-press variants: ё/ъ plus Ukrainian/Belarusian neighbors
+     * and acute-marked vowels commonly offered on RU layouts.
+     */
     private val accents: Map<String, List<String>> = mapOf(
-        "е" to listOf("ё"),
-        "ь" to listOf("ъ"),
-        "и" to listOf("і", "ї"),
+        "а" to listOf("а́", "ӕ"),
+        "е" to listOf("ё", "е́", "є"),
+        "о" to listOf("о́"),
+        "у" to listOf("ў", "у́"),
+        "и" to listOf("і", "ї", "и́", "ы́"),
+        "ы" to listOf("ы́"),
+        "э" to listOf("є", "э́"),
+        "ю" to listOf("ю́"),
+        "я" to listOf("я́"),
         "г" to listOf("ґ"),
-        "э" to listOf("є"),
-        "у" to listOf("ў"),
+        "к" to listOf("қ"),
+        "х" to listOf("ҳ"),
+        "ж" to listOf("җ"),
+        "ш" to listOf("щ"),
+        "ь" to listOf("ъ"),
+        "й" to listOf("ј"),
     )
 
     private val topDigits = listOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
@@ -57,7 +70,7 @@ object RuJcuiken {
                     KeyDefinition("symbols", "?123", action = KeyAction.LAYER_SYMBOLS, weight = 1.25f, isSpecial = true),
                     KeyDefinition(
                         "comma", ",", output = ",", weight = 0.9f,
-                        variants = listOf(",", "‚", "«", "»"),
+                        variants = listOf(",", "‚", "«", "»", "⚙"),
                     ),
                     KeyDefinition("emoji", "☺", action = KeyAction.EMOJI, weight = 0.9f, isSpecial = true),
                     KeyDefinition("language", "🌐", action = KeyAction.LANGUAGE, weight = 0.9f, isSpecial = true),

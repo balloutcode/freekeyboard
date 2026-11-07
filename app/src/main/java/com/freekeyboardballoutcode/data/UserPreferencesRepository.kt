@@ -5,6 +5,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
@@ -32,6 +33,15 @@ class UserPreferencesRepository(private val context: Context) {
     private val blockOffensiveWordsKey = booleanPreferencesKey("block_offensive_words")
     private val autoCapitalizationKey = booleanPreferencesKey("auto_capitalization")
     private val doubleSpacePeriodKey = booleanPreferencesKey("double_space_period")
+    private val numberRowForPasswordsKey = booleanPreferencesKey("number_row_for_passwords")
+    private val oneHandedModeKey = booleanPreferencesKey("one_handed_mode")
+    private val oneHandedSideKey = stringPreferencesKey("one_handed_side")
+    private val clipboardHistoryEnabledKey = booleanPreferencesKey("clipboard_history_enabled")
+    private val soundVolumeKey = floatPreferencesKey("sound_volume")
+    private val hapticStrengthKey = floatPreferencesKey("haptic_strength")
+    private val emojiFontScaleKey = floatPreferencesKey("emoji_font_scale")
+    private val autocorrectEnabledKey = booleanPreferencesKey("autocorrect_enabled")
+    private val personalDictionaryKey = stringSetPreferencesKey("personal_dictionary")
 
     val preferences: Flow<UserPreferences> = context.dataStore.data.map { prefs ->
         val theme = prefs[themeKey]?.let {
@@ -72,6 +82,17 @@ class UserPreferencesRepository(private val context: Context) {
             blockOffensiveWords = prefs[blockOffensiveWordsKey] ?: true,
             autoCapitalization = prefs[autoCapitalizationKey] ?: true,
             doubleSpacePeriod = prefs[doubleSpacePeriodKey] ?: true,
+            numberRowForPasswords = prefs[numberRowForPasswordsKey] ?: false,
+            oneHandedMode = prefs[oneHandedModeKey] ?: false,
+            oneHandedSide = prefs[oneHandedSideKey]
+                ?.let { runCatching { OneHandedSide.valueOf(it) }.getOrNull() }
+                ?: OneHandedSide.RIGHT,
+            clipboardHistoryEnabled = prefs[clipboardHistoryEnabledKey] ?: true,
+            soundVolume = (prefs[soundVolumeKey] ?: 1f).coerceIn(0f, 1f),
+            hapticStrength = (prefs[hapticStrengthKey] ?: 1f).coerceIn(0.25f, 1f),
+            emojiFontScale = (prefs[emojiFontScaleKey] ?: 1f).coerceIn(0.8f, 1.4f),
+            autocorrectEnabled = prefs[autocorrectEnabledKey] ?: false,
+            personalDictionary = prefs[personalDictionaryKey]?.toList()?.sorted().orEmpty(),
         )
     }
 
@@ -138,12 +159,58 @@ class UserPreferencesRepository(private val context: Context) {
                 "auto_capitalization" -> prefs[autoCapitalizationKey] = value
                 "double_space_period" -> prefs[doubleSpacePeriodKey] = value
                 "key_borders" -> prefs[keyBordersKey] = value
+                "number_row_for_passwords" -> prefs[numberRowForPasswordsKey] = value
+                "one_handed_mode" -> prefs[oneHandedModeKey] = value
+                "clipboard_history_enabled" -> prefs[clipboardHistoryEnabledKey] = value
+                "autocorrect_enabled" -> prefs[autocorrectEnabledKey] = value
             }
         }
     }
 
     suspend fun setLongPressDelayMs(ms: Int) {
         context.dataStore.edit { it[longPressDelayMsKey] = ms.coerceIn(100, 700) }
+    }
+
+    suspend fun setSoundVolume(volume: Float) {
+        context.dataStore.edit { it[soundVolumeKey] = volume.coerceIn(0f, 1f) }
+    }
+
+    suspend fun setHapticStrength(strength: Float) {
+        context.dataStore.edit { it[hapticStrengthKey] = strength.coerceIn(0.25f, 1f) }
+    }
+
+    suspend fun setEmojiFontScale(scale: Float) {
+        context.dataStore.edit { it[emojiFontScaleKey] = scale.coerceIn(0.8f, 1.4f) }
+    }
+
+    suspend fun addPersonalWord(word: String) {
+        val trimmed = word.trim()
+        if (trimmed.isEmpty()) return
+        context.dataStore.edit { prefs ->
+            val cur = prefs[personalDictionaryKey]?.toMutableSet() ?: mutableSetOf()
+            cur.add(trimmed)
+            prefs[personalDictionaryKey] = cur
+        }
+    }
+
+    suspend fun removePersonalWord(word: String) {
+        context.dataStore.edit { prefs ->
+            val cur = prefs[personalDictionaryKey]?.toMutableSet() ?: return@edit
+            cur.remove(word)
+            prefs[personalDictionaryKey] = cur
+        }
+    }
+
+    suspend fun setOneHandedSide(side: OneHandedSide) {
+        context.dataStore.edit { it[oneHandedSideKey] = side.name }
+    }
+
+    suspend fun setThemeAndOneHanded(theme: ThemePreference? = null, oneHanded: Boolean? = null, side: OneHandedSide? = null) {
+        context.dataStore.edit { prefs ->
+            if (theme != null) prefs[themeKey] = theme.name
+            if (oneHanded != null) prefs[oneHandedModeKey] = oneHanded
+            if (side != null) prefs[oneHandedSideKey] = side.name
+        }
     }
 
     suspend fun recordEmoji(emoji: String, maxItems: Int = MAX_RECENT_EMOJI) {

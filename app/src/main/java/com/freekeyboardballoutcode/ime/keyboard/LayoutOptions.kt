@@ -23,7 +23,12 @@ object LayoutOptions {
                 endInsetWeight = row.endInsetWeight,
             )
         }
-        if (numberRow && layout.id != "symbols" && layout.id != "symbols_alt") {
+        if (numberRow &&
+            layout.id != "symbols" &&
+            layout.id != "symbols_alt" &&
+            layout.id != "number_pad" &&
+            layout.id != "phone_pad"
+        ) {
             // Match top letter-row key count (EN=10, RU=11) so columns line up.
             val topLetterCount = rows.firstOrNull()?.keys?.size ?: 10
             val digitLabels = listOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")

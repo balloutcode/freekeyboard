@@ -50,6 +50,45 @@ class EditorInfoInterpreter {
             )
     }
 
+    /** Number / phone / datetime fields prefer a digit pad (A16-006). */
+    fun prefersNumberPad(editorInfo: EditorInfo?): Boolean {
+        if (editorInfo == null) return false
+        val klass = editorInfo.inputType and InputType.TYPE_MASK_CLASS
+        return klass == InputType.TYPE_CLASS_NUMBER ||
+            klass == InputType.TYPE_CLASS_PHONE ||
+            klass == InputType.TYPE_CLASS_DATETIME
+    }
+
+    fun isPhoneField(editorInfo: EditorInfo?): Boolean {
+        if (editorInfo == null) return false
+        return (editorInfo.inputType and InputType.TYPE_MASK_CLASS) == InputType.TYPE_CLASS_PHONE
+    }
+
+    fun isNumberClass(editorInfo: EditorInfo?): Boolean {
+        if (editorInfo == null) return false
+        return (editorInfo.inputType and InputType.TYPE_MASK_CLASS) == InputType.TYPE_CLASS_NUMBER
+    }
+
+    /** PIN / OTP style: `numberPassword`. */
+    fun isNumberPassword(editorInfo: EditorInfo?): Boolean {
+        if (!isNumberClass(editorInfo)) return false
+        val variation = editorInfo!!.inputType and InputType.TYPE_MASK_VARIATION
+        return variation == InputType.TYPE_NUMBER_VARIATION_PASSWORD
+    }
+
+    fun numberAllowsDecimal(editorInfo: EditorInfo?): Boolean {
+        if (!isNumberClass(editorInfo)) return false
+        return editorInfo!!.inputType and InputType.TYPE_NUMBER_FLAG_DECIMAL != 0
+    }
+
+    fun numberAllowsSigned(editorInfo: EditorInfo?): Boolean {
+        if (!isNumberClass(editorInfo)) return false
+        return editorInfo!!.inputType and InputType.TYPE_NUMBER_FLAG_SIGNED != 0
+    }
+
+    fun isIncognito(editorInfo: EditorInfo?): Boolean =
+        LearningPolicy.hasNoPersonalizedLearningFlag(editorInfo)
+
     /** Editors that ask the IME not to show a suggestion strip. */
     fun suppressSuggestions(editorInfo: EditorInfo?): Boolean {
         if (editorInfo == null) return false

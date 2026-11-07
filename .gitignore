@@ -2,6 +2,10 @@
 /build/
 /app/build/
 /local.properties
+/keystore.properties
+/*.jks
+/*.keystore
+/signing/
 /.idea/
 /.kotlin/
 *.iml

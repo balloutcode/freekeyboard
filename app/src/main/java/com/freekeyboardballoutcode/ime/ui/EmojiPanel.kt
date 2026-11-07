@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.PrimaryScrollableTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
@@ -18,6 +19,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -85,9 +87,11 @@ fun EmojiPanel(
     onClose: () -> Unit,
     numberRow: Boolean = false,
     includeSuggestionStrip: Boolean = true,
+    emojiFontScale: Float = 1f,
     modifier: Modifier = Modifier,
 ) {
     var selected by remember { mutableIntStateOf(if (recent.isNotEmpty()) 0 else 1) }
+    var query by remember { mutableStateOf("") }
     val tabs = categories.mapIndexed { index, category ->
         if (index == 0) category.copy(emoji = recent.ifEmpty { listOf("🙂") }) else category
     }
@@ -99,21 +103,42 @@ fun EmojiPanel(
         includeSuggestionStrip = includeSuggestionStrip,
     )
 
-    // Gboard-like: category tabs on top, grid, ABC return on the bottom-left.
+    val visible = remember(selected, query, tabs) {
+        val base = tabs[selected].emoji
+        if (query.isBlank()) {
+            base
+        } else {
+            val q = query.trim().lowercase()
+            val all = tabs.drop(1).flatMap { it.emoji }.distinct()
+            val titleHit = tabs.filter { it.title.lowercase().contains(q) }.flatMap { it.emoji }
+            EmojiSearch.searchAll(all, q, titleHit).ifEmpty { base }
+        }
+    }
+
     Column(
         modifier = modifier
             .fillMaxWidth()
-            // Match letter-layer content height so opening emoji does not jump the field.
             .height(panelHeight)
             .padding(horizontal = 4.dp),
     ) {
-        PrimaryScrollableTabRow(selectedTabIndex = selected, edgePadding = 8.dp) {
-            tabs.forEachIndexed { index, category ->
-                Tab(
-                    selected = selected == index,
-                    onClick = { selected = index },
-                    text = { Text(category.title) },
-                )
+        OutlinedTextField(
+            value = query,
+            onValueChange = { query = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 8.dp, vertical = 4.dp),
+            singleLine = true,
+            placeholder = { Text("Поиск эмодзи") },
+        )
+        if (query.isBlank()) {
+            PrimaryScrollableTabRow(selectedTabIndex = selected, edgePadding = 8.dp) {
+                tabs.forEachIndexed { index, category ->
+                    Tab(
+                        selected = selected == index,
+                        onClick = { selected = index },
+                        text = { Text(category.title) },
+                    )
+                }
             }
         }
         LazyVerticalGrid(
@@ -125,10 +150,10 @@ fun EmojiPanel(
                 .fillMaxWidth()
                 .weight(1f),
         ) {
-            items(tabs[selected].emoji) { emoji ->
+            items(visible) { emoji ->
                 Text(
                     text = emoji,
-                    fontSize = 26.sp,
+                    fontSize = (26 * emojiFontScale).sp,
                     modifier = Modifier
                         .clickable { onEmoji(emoji) }
                         .padding(6.dp),

@@ -9,6 +9,12 @@ enum class KeyboardLayer {
     LETTERS,
     SYMBOLS,
     EMOJI,
+    NUMBER,
+}
+
+enum class OneHandedSide {
+    LEFT,
+    RIGHT,
 }
 
 enum class ThemePreference {
@@ -47,6 +53,17 @@ data class UserPreferences(
     val blockOffensiveWords: Boolean = true,
     val autoCapitalization: Boolean = true,
     val doubleSpacePeriod: Boolean = true,
+    /** Show dedicated number row in password fields even when global number row is off. */
+    val numberRowForPasswords: Boolean = false,
+    val oneHandedMode: Boolean = false,
+    val oneHandedSide: OneHandedSide = OneHandedSide.RIGHT,
+    val clipboardHistoryEnabled: Boolean = true,
+    val soundVolume: Float = 1f,
+    val hapticStrength: Float = 1f,
+    val emojiFontScale: Float = 1f,
+    /** Offline autocorrect on space (dictionary edit-distance). */
+    val autocorrectEnabled: Boolean = false,
+    val personalDictionary: List<String> = emptyList(),
 ) {
     fun withLanguageEnabled(language: InputLanguage, enabled: Boolean): UserPreferences {
         val next = if (enabled) {

@@ -93,6 +93,21 @@ class SettingsActivity : ComponentActivity() {
                         onLongPressDelay = { ms ->
                             lifecycleScope.launch { prefs.setLongPressDelayMs(ms) }
                         },
+                        onSoundVolume = { v ->
+                            lifecycleScope.launch { prefs.setSoundVolume(v) }
+                        },
+                        onHapticStrength = { v ->
+                            lifecycleScope.launch { prefs.setHapticStrength(v) }
+                        },
+                        onEmojiFontScale = { v ->
+                            lifecycleScope.launch { prefs.setEmojiFontScale(v) }
+                        },
+                        onAddPersonalWord = { w ->
+                            lifecycleScope.launch { prefs.addPersonalWord(w) }
+                        },
+                        onRemovePersonalWord = { w ->
+                            lifecycleScope.launch { prefs.removePersonalWord(w) }
+                        },
                         onOpenImeSettings = {
                             startActivity(Intent(Settings.ACTION_INPUT_METHOD_SETTINGS))
                         },
